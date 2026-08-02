@@ -22,6 +22,7 @@ const CrmRedirect = () => {
 };
 
 const Login = lazy(() => import("./pages/Login"));
+const NexatectDemo = lazy(() => import("./pages/NexatectDemo"));
 const Signup = lazy(() => import("./pages/Signup"));
 const ForgotPassword = lazy(() => import("./pages/ForgotPassword"));
 const ResetPassword = lazy(() => import("./pages/ResetPassword"));
@@ -355,6 +356,7 @@ const App = () => {
           <Suspense fallback={<Loading />}>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/nexatect-demo" element={<NexatectDemo />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/forgot-password" element={<ForgotPassword />} />
