@@ -1,6 +1,8 @@
 # Project Memory
 
 ## Core
+READ `.lovable/memory/MEMORY-BOOK.md` BEFORE asking the owner anything. It is the consolidated ledger.
+Owner infra: NO Docker, NO Python. Caddy + systemd on Hetzner. Bun/Node/Rust only. New AI work uses OWNER'S OpenRouter key.
 HostFlow AI - multi-industry AI scheduling platform. Primary 168 70% 38% teal.
 7-day free trial (SQL handle_new_user locked), then Basic $15/Standard $39/Premium $99 monthly.
 8 industries ONLY: hospitality, airlines, car_rental, healthcare, education, logistics, events_entertainment, railways.
@@ -38,6 +40,8 @@ Healthcare scheme: deep navy + medical red + WHITE accent (no teal/mint). Heartb
 - [Never-mix rules](mem://constraints/never-mix-rules) — Industry/sub-type/plan isolation rules
 - [Replit backend contract](mem://features/replit-backend-contract) — JWT, plan enforcement, SSE advisor contract
 - [No mock data](mem://constraints/no-mock-data) — Forbid hardcoded sample arrays in production UI
+- [MEMORY BOOK](mem://MEMORY-BOOK) — Consolidated ledger: products, 3 Supabase map, Polar status, infra, open decisions
+- [Infra stack rules](mem://constraints/infra-stack-rules) — No Docker/Python, Caddy+systemd, OpenRouter, copy-paste handoff
 - [Nexatect brand](mem://design/nexatect-brand) — Planned rebrand HostFlow AI → NEXATECT, logo + palette locked, do not start without owner say-so
 - [Polar webhook secret locked](mem://features/polar-webhook-secret-locked) — Supabase #2 = ANEXVOT AI PAY brain; POLAR_WEBHOOK_SECRET is single chokepoint for all products; Deno-only constitution; new JWT Signing Keys usage
 - [Payment Brain Supabase #2](mem://features/payment-brain-supabase2) — All Polar logic on Supabase #2; Lovable Cloud has none; Rust bridge syncs status
