@@ -36,8 +36,16 @@ Hetzner `api.hostflowai.net` — Jimmy (CEO, qwen3:8b, 3M ctx), Sherlock (audit,
 ## 6. Hard rules
 SQL = truth · No mock data · Strict industry isolation (8 industries) · 7-day trial · Copy-paste handoff for non-Lovable systems · Nexatect colours (Charcoal #121418 / Navy #1F385C / Gold #CBB393) not applied to live pages until owner says go.
 
-## 7. Open decisions
-- Vector store → **Supabase #3 (AXONET)** — recommended, keeps RAG/AI data out of the operations DB.
+## 7. Vector store / RAG (LOCKED — DONE)
+- Lives on **Supabase #3 (AXONETIS BUILDER)**. Verified live 4 Aug 2026:
+  - `public.hf_documents` — `vector(1536)` + HNSW index, row count 0 (empty, ready).
+  - `public.match_hf_documents(vector, int, jsonb)` — exists (1 row in `pg_proc`), execute granted to `service_role` + `authenticated`.
+- Embeddings + chat = **OpenRouter only** (owner's key). No Lovable AI, no Python.
+- Flowise is the RAG orchestrator, runs on Hetzner via **Node + systemd** (port 3100), reverse-proxied by **Caddy** at `flowise.hostflowai.net`. No Docker.
+
+## 7b. Caddy (LOCKED)
+- **Caddy is installed on the owner's Hetzner box (88.198.208.90)** and is the ONLY web server / reverse proxy / TLS terminator for every domain and subdomain.
+- All new services = new Caddy block + systemd unit. Never suggest nginx, Docker, or Traefik.
 
 ## 8. Domains owned (Namecheap)
 anexvotpay.com · anexomail.com · nexatect.com (pointed to Caddy) · axonetis.com · hostflowai.net

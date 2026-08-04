@@ -25,6 +25,8 @@ NO MOCK DATA in any dashboard/workspace component. Owner must see exactly what p
 CRM is named "AI CRM" everywhere user-facing. Route is /ai-crm; legacy /crm redirects to /ai-crm preserving query/hash. Internal file/component/hook names (CRM.tsx, useCrm, CrmFoo) stay as is.
 Healthcare scheme: deep navy + medical red + WHITE accent (no teal/mint). Heartbeat = lub-dub double-thump then breathing glow, 5s cycle. Each industry gets its OWN signature motion (Airlines=radar sweep done; rest pending owner approval one-by-one). Landing page colors NOT touched without explicit approval.
 
+RAG vector store LIVE on Supabase #3: hf_documents + match_hf_documents. OpenRouter embeddings only. Caddy on Hetzner 88.198.208.90 is the only web server/proxy — no Docker, no nginx.
+
 ## Memories
 - [Pricing tiers](mem://features/pricing) — Plan features and limits for Basic/Standard/Premium
 - [Industries](mem://features/industries) — 8 supported industry types and their configs
