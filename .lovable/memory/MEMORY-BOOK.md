@@ -12,12 +12,13 @@ type: preference
 | 1 | HostFlow AI → rebranding to **NEXATECT** | hostflowai.net (+ industry subdomains) | Live |
 | 2 | **ANEXVOT AI PAY** — payment brain | Supabase #2 edge functions | Live |
 | 3 | **AXONET / AXONETIS** builder | aiaxonet.hostflowai.net / founderbuilder.axonetis.com | Building |
-| 4 | **AxoMail Workspace** | axomailworkspace.com | Separate Lovable project |
+| 4 | **ANEXOMAIL** (ex AxoMail Workspace) | anexomail.com | Separate Lovable project, Supabase #4 |
 
 ## 2. Supabase map (never confuse)
 - **#1 Operations** `qsfmsjyorhicydtoiluk` — this Lovable project. Users, CRM, bookings, subscriptions **mirror**.
 - **#2 Payment brain** `yinpfejochafukrwmkgg` — ALL Polar (`polar-checkout`, `polar-webhook`). **Already migrated & deployed.**
 - **#3 AXONET builder** — builder data, agents, AI/vector workloads.
+- **#4 ANEXOMAIL** — mail workspace data. Separate project, never mixed with #1/#2/#3.
 - Rust bridge syncs Polar sub status from #2 → #1 / #3 via `metadata.product` (`nexatect` | `axonetis`).
 
 ## 3. Polar (DONE — do not re-ask)
@@ -37,3 +38,13 @@ SQL = truth · No mock data · Strict industry isolation (8 industries) · 7-day
 
 ## 7. Open decisions
 - Vector store → **Supabase #3 (AXONET)** — recommended, keeps RAG/AI data out of the operations DB.
+
+## 8. Domains owned (Namecheap)
+anexvotpay.com · anexomail.com · nexatect.com (pointed to Caddy) · axonetis.com · hostflowai.net
+
+## 9. Nexatect migration order (owner-locked, starts next month)
+1. Polar payments made fully working (Supabase #2) — blocker, must be green first.
+2. Full frontend recolour to Nexatect palette (Charcoal #121418 / Navy #1F385C / Gold #CBB393).
+3. Footer gets full brand/company info block.
+4. Rebrand HostFlow AI → NEXATECT + domain cutover to nexatect.com via Caddy.
+Site has been dormant ~4 months; rebrand is the relaunch.
