@@ -12,6 +12,7 @@ import { backendFetch, syncManifest, notifyChangelog } from "@/lib/backend";
 import { connectBrainStream } from "@/lib/brain-sync";
 import AiLimitModal from "@/components/AiLimitModal";
 import SurfaceGuard from "@/components/SurfaceGuard";
+import FounderOnlyGate from "@/components/gate/FounderOnlyGate";
 import { FloatingAdvisorChatProvider } from "@/components/advisor/FloatingAdvisorChat";
 import JimmyJohnChat from "@/components/founder/JimmyJohnChat";
 
