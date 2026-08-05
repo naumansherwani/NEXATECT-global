@@ -36,6 +36,15 @@ Hetzner `api.hostflowai.net` — Jimmy (CEO, qwen3:8b, 3M ctx), Sherlock (audit,
 ## 6. Hard rules
 SQL = truth · No mock data · Strict industry isolation (8 industries) · 7-day trial · Copy-paste handoff for non-Lovable systems · Nexatect colours (Charcoal #121418 / Navy #1F385C / Gold #CBB393) not applied to live pages until owner says go.
 
+## 6b. Locked tech stack (Aug 2026)
+tRPC → Bun → Rust/Tokio → OpenRouter/self-hosted models → Supabase + SDK → Caddy (HTTP/3, QUIC, auto TLS).
+REST = optional legacy only. Transports: WebTransport (super primary) > WebSockets (fallback) > SSE (compat).
+Frontend React 19 + TS + Vite + Tailwind 4, TanStack Query + Zustand. Infra: Hetzner, Caddy, Bun, Rust, Redis, systemd, Git/GitHub. No Docker, no Python.
+Full detail: `.lovable/memory/constraints/tech-stack-2026.md`. Live Caddyfile map: `.lovable/memory/features/caddyfile-live.md`.
+
+## 6c. Public site status (Aug 2026)
+Website is in **founder-only mode**: public visitors see the "work in progress" Maintenance page; only owner emails (see ownerIdentity.ts) see the real site. Gate: `src/components/gate/FounderOnlyGate.tsx` in App.tsx. Auth routes (/login, /forgot-password, /reset-password, /maintenance, /unsubscribe) stay open.
+
 ## 7. Vector store / RAG (LOCKED — DONE)
 - Lives on **Supabase #3 (AXONETIS BUILDER)**. Verified live 4 Aug 2026:
   - `public.hf_documents` — `vector(1536)` + HNSW index, row count 0 (empty, ready).
