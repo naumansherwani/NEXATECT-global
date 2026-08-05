@@ -1,4 +1,4 @@
-import logoImg from "@/assets/logo-h-cal-4.png";
+import logoAsset from "@/assets/nexatect-logo.jpg.asset.json";
 
 interface LogoProps {
   size?: "sm" | "md" | "lg" | "xl" | "2xl" | "hero";
@@ -28,21 +28,21 @@ const textSizeMap = {
 const Logo = ({ size = "md", className, showName = false, showTagline = false }: LogoProps) => (
   <div className={`flex items-center gap-3 ${className || ""}`}>
     <img
-      src={logoImg}
-      alt="HostFlow AI"
-      className={`${sizeMap[size]} shrink-0 object-contain`}
+      src={logoAsset.url}
+      alt="NEXATECT"
+      className={`${sizeMap[size]} shrink-0 object-contain rounded-md`}
       loading="lazy"
-      width={1024}
-      height={1024}
+      width={512}
+      height={512}
     />
     {showName && (
       <div className="flex flex-col">
-        <span className={`${textSizeMap[size]} font-extrabold leading-none bg-gradient-to-r from-[hsl(174,62%,50%)] to-[hsl(213,97%,87%)] bg-clip-text text-transparent drop-shadow-[0_0_10px_hsl(174,62%,50%,0.5)]`}>
-          HostFlow AI
+        <span className={`${textSizeMap[size]} font-extrabold uppercase tracking-[0.14em] leading-none bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(35,45%,82%)] bg-clip-text text-transparent`}>
+          Nexatect
         </span>
         {showTagline && (
-          <span className="text-[11px] font-light tracking-[0.08em] mt-0.5 bg-gradient-to-r from-[#6366F1] to-[#06B6D4] bg-clip-text text-transparent">
-            Automating The Future of AI SaaS
+          <span className="text-[11px] font-light tracking-[0.14em] mt-1 uppercase text-[hsl(35,34%,68%)]/70">
+            Autonomous Revenue Infrastructure
           </span>
         )}
       </div>
