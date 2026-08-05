@@ -12,6 +12,7 @@ import { backendFetch, syncManifest, notifyChangelog } from "@/lib/backend";
 import { connectBrainStream } from "@/lib/brain-sync";
 import AiLimitModal from "@/components/AiLimitModal";
 import SurfaceGuard from "@/components/SurfaceGuard";
+import FounderOnlyGate from "@/components/gate/FounderOnlyGate";
 import { FloatingAdvisorChatProvider } from "@/components/advisor/FloatingAdvisorChat";
 import JimmyJohnChat from "@/components/founder/JimmyJohnChat";
 
@@ -354,6 +355,7 @@ const App = () => {
           <SurfaceGuard />
           <FloatingAdvisorChatProvider>
           <Suspense fallback={<Loading />}>
+            <FounderOnlyGate>
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/nexatect-demo" element={<NexatectDemo />} />
@@ -401,6 +403,7 @@ const App = () => {
               <Route path="/railway" element={<ProtectedRoute><RailwayDashboard /></ProtectedRoute>} />
               <Route path="*" element={<NotFound />} />
             </Routes>
+            </FounderOnlyGate>
           </Suspense>
           </FloatingAdvisorChatProvider>
           <JimmyJohnChat />

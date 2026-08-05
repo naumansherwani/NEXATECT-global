@@ -27,6 +27,9 @@ Healthcare scheme: deep navy + medical red + WHITE accent (no teal/mint). Heartb
 
 RAG vector store LIVE on Supabase #3: hf_documents + match_hf_documents. OpenRouter embeddings only. Caddy on Hetzner 88.198.208.90 is the only web server/proxy — no Docker, no nginx.
 
+STACK LOCKED (Aug 2026): tRPC primary (REST optional legacy) → Bun → Rust/Tokio → OpenRouter/self-hosted → Supabase → Caddy HTTP/3+QUIC. Transport: WebTransport primary, WS fallback, SSE compat. React 19 + Vite + Tailwind 4 + TanStack Query + Zustand. Redis. No Docker, no Python.
+SITE IS FOUNDER-ONLY: public sees Maintenance "work in progress"; only owner emails see the real site (src/components/gate/FounderOnlyGate.tsx).
+
 ## Memories
 - [Pricing tiers](mem://features/pricing) — Plan features and limits for Basic/Standard/Premium
 - [Industries](mem://features/industries) — 8 supported industry types and their configs
@@ -58,3 +61,5 @@ RAG vector store LIVE on Supabase #3: hf_documents + match_hf_documents. OpenRou
 - [SQL advisor endpoints (LOCKED)](mem://features/sql-advisor-endpoints) — Jimmy + 8 advisors → /api/founder/jimmy/orchestrate. Sherlock → /api/founder/adviser. Owner mailbox via Supabase edge (graceful 5xx fallback). Resend removed; Google Workspace wiring pending.
 - [AI models architecture (LOCKED)](mem://features/ai-models-architecture) — Jimmy/Sherlock=qwen3:8b, advisors=qwen3:4b. Gemini fallback ONLY for Jimmy+Sherlock when balance available. No Groq/OpenAI in founder stack.
 - [Industry subdomains (LOCKED)](mem://features/industry-subdomains) — Each industry on its own subdomain of hostflowai.net (hospitality/airlines/car-rental/healthcare/education/logistics/events/railways). Root = landing + chooser. Helper: src/lib/industryDomain.ts.
+- [Tech stack 2026 (LOCKED)](mem://constraints/tech-stack-2026) — tRPC/Bun/Rust/WebTransport/Caddy stack, REST optional, no Docker/Python
+- [Live Caddyfile map](mem://features/caddyfile-live) — nexatect/anexvotpay/axonetis domain → port map, founder IP allowlist
