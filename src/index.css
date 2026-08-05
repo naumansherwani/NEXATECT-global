@@ -105,25 +105,33 @@ html {
   }
 
   .dark {
-    --background: 222 47% 11%;
-    --foreground: 240 20% 98%;
-    --card: 222 40% 14%;
-    --card-foreground: 240 20% 98%;
-    --popover: 222 40% 14%;
-    --popover-foreground: 240 20% 98%;
-    --primary: 174 62% 55%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 216 88% 55%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 222 30% 18%;
-    --muted-foreground: 215 15% 60%;
-    --accent: 216 88% 55%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 222 30% 22%;
-    --input: 222 30% 22%;
-    --ring: 174 62% 55%;
+    /* NEXATECT cinematic: charcoal #121418 / navy #1F385C / champagne gold #CBB393 */
+    --background: 220 9% 8%;
+    --foreground: 40 20% 95%;
+    --card: 220 10% 11%;
+    --card-foreground: 40 20% 95%;
+    --popover: 220 10% 11%;
+    --popover-foreground: 40 20% 95%;
+    --primary: 35 34% 68%;
+    --primary-foreground: 220 9% 8%;
+    --secondary: 214 50% 24%;
+    --secondary-foreground: 40 20% 95%;
+    --muted: 220 10% 15%;
+    --muted-foreground: 40 8% 62%;
+    --accent: 214 50% 30%;
+    --accent-foreground: 40 20% 95%;
+    --destructive: 0 62.8% 38%;
+    --destructive-foreground: 40 20% 95%;
+    --border: 220 10% 18%;
+    --input: 220 10% 18%;
+    --ring: 35 34% 68%;
+
+    --nexa-charcoal: 220 9% 8%;
+    --nexa-navy: 214 50% 24%;
+    --nexa-gold: 35 34% 68%;
+    --gradient-primary: linear-gradient(135deg, #CBB393, #1F385C);
+    --gradient-hero: linear-gradient(135deg, #121418 0%, #1F385C 100%);
+    --gradient-accent: linear-gradient(135deg, #1F385C, #CBB393);
   }
 }
 
