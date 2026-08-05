@@ -354,6 +354,7 @@ const App = () => {
           <SurfaceGuard />
           <FloatingAdvisorChatProvider>
           <Suspense fallback={<Loading />}>
+            <FounderOnlyGate>
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/nexatect-demo" element={<NexatectDemo />} />
@@ -401,6 +402,7 @@ const App = () => {
               <Route path="/railway" element={<ProtectedRoute><RailwayDashboard /></ProtectedRoute>} />
               <Route path="*" element={<NotFound />} />
             </Routes>
+            </FounderOnlyGate>
           </Suspense>
           </FloatingAdvisorChatProvider>
           <JimmyJohnChat />
