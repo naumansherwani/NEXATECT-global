@@ -3,7 +3,8 @@ import { useFounderTheme } from "./FounderTheme";
 import { useAuth } from "@/hooks/useAuth";
 import { useNavigate, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import logoImg from "@/assets/logo-h-cal-4.png";
+import logoAsset from "@/assets/nexatect-logo.jpg.asset.json";
+const logoImg = logoAsset.url;
 
 export type FounderSection =
   | "overview" | "executive" | "revenue" | "customers" | "leads" | "crm"
