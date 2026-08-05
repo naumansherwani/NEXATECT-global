@@ -22,25 +22,25 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 );
 
 const SOCIAL_LINKS = [
-  { href: "mailto:connectai@hostflowai.net", icon: Mail, label: "connectai@hostflowai.net" },
-  { href: "https://instagram.com/hostflowai", icon: InstagramIcon, label: "Instagram" },
+  { href: "mailto:connect@nexatect.com", icon: Mail, label: "connect@nexatect.com" },
+  { href: "https://instagram.com/nexatect", icon: InstagramIcon, label: "Instagram" },
   { href: "https://wa.me/923001234567", icon: WhatsAppIcon, label: "WhatsApp" },
-  { href: "https://facebook.com/hostflowai", icon: Facebook, label: "Facebook" },
-  { href: "https://x.com/hostflowai", icon: XIcon, label: "X (Twitter)" },
-  { href: "https://linkedin.com/company/hostflowai", icon: Linkedin, label: "LinkedIn" },
+  { href: "https://facebook.com/nexatect", icon: Facebook, label: "Facebook" },
+  { href: "https://x.com/nexatect", icon: XIcon, label: "X (Twitter)" },
+  { href: "https://linkedin.com/company/nexatect", icon: Linkedin, label: "LinkedIn" },
 ];
 
 const Footer = () => (
   <footer className="py-16 relative overflow-hidden">
-    <div className="absolute inset-0 bg-[hsl(222,47%,6%)]" />
-    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,hsl(174,62%,50%,0.03),transparent_60%)]" />
+    <div className="absolute inset-0 bg-[hsl(220,9%,6%)]" />
+    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,hsl(35,34%,68%,0.05),transparent_60%)]" />
     
     <div className="container relative z-10">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="space-y-4">
           <Logo size="md" showName />
           <p className="text-sm text-white/40 leading-relaxed">
-            AI-powered scheduling & booking platform built for 8 industries. Smarter calendars, zero conflicts, maximum revenue.
+            Autonomous revenue infrastructure for 8 industries. Built on Bun, Rust, tRPC and WebTransport — sovereign, real-time, zero conflicts.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ const Footer = () => (
               { href: "/contact", label: "Contact" },
             ].map(link => (
               <li key={link.label}>
-                <a href={link.href} className="text-sm text-white/40 hover:text-[hsl(174,62%,50%)] transition-colors duration-300">{link.label}</a>
+                <a href={link.href} className="text-sm text-white/40 hover:text-[hsl(35,34%,68%)] transition-colors duration-300">{link.label}</a>
               </li>
             ))}
           </ul>
@@ -66,7 +66,7 @@ const Footer = () => (
           <ul className="space-y-2.5">
             {SOCIAL_LINKS.map(s => (
               <li key={s.label}>
-                <a href={s.href} target={s.href.startsWith("mailto") ? undefined : "_blank"} rel="noopener noreferrer" className="flex items-center gap-2.5 text-sm text-white/40 hover:text-[hsl(174,62%,50%)] transition-colors duration-300">
+                <a href={s.href} target={s.href.startsWith("mailto") ? undefined : "_blank"} rel="noopener noreferrer" className="flex items-center gap-2.5 text-sm text-white/40 hover:text-[hsl(35,34%,68%)] transition-colors duration-300">
                   <s.icon className="w-4 h-4" /> {s.label}
                 </a>
               </li>
@@ -76,8 +76,8 @@ const Footer = () => (
       </div>
 
       <div className="mt-14 pt-6 border-t border-white/[0.06] flex flex-col md:flex-row items-center justify-between gap-3">
-        <p className="text-xs text-white/30">© 2026 HostFlow AI Technologies. All rights reserved.</p>
-        <p className="text-xs text-white/30">Powered by AI · Built for every industry · Made with ❤️</p>
+        <p className="text-xs text-white/30">© 2026 NEXATECT. All rights reserved.</p>
+        <p className="text-xs text-white/30">Bun · Rust · tRPC · WebTransport · Caddy HTTP/3</p>
       </div>
     </div>
   </footer>
