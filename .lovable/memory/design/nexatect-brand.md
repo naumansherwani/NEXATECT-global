@@ -4,7 +4,13 @@ description: HostFlow AI will be rebranded to NEXATECT. Domain nexatect.com (Cad
 type: design
 ---
 
-HostFlow AI → NEXATECT rebrand is PLANNED, NOT started. Do not change branding/copy/logos/colors on the live HostFlow AI site without an explicit "start nexatect migration" instruction.
+NEXATECT MIGRATION IS STARTED (Aug 2026). hostflowai.net is RETIRED on Caddy. All new UI/copy/branding must be NEXATECT. Site stays founder-only (Maintenance gate) until every feature is verified working, then goes live on nexatect.com.
+
+## Cinematic palette (LOCKED)
+- Charcoal #121418 → hsl(220 9% 8%) — background
+- Navy #1F385C → hsl(214 50% 24%) — secondary/accent
+- Champagne Gold #CBB393 → hsl(35 34% 68%) — primary
+Dark theme tokens in src/index.css already use these. Cinematic hero + Bun/Rust/tRPC/WebTransport stack messaging everywhere.
 
 ## Brand
 - Name: NEXATECT (all caps wordmark)
