@@ -3,7 +3,9 @@
 ## Core
 READ `.lovable/memory/MEMORY-BOOK.md` BEFORE asking the owner anything. It is the consolidated ledger.
 Owner infra: NO Docker, NO Python. Caddy + systemd on Hetzner. Bun/Node/Rust only. New AI work uses OWNER'S OpenRouter key.
-HostFlow AI - multi-industry AI scheduling platform. Primary 168 70% 38% teal.
+NEXATECT (ex-HostFlow AI) — migration STARTED Aug 2026; hostflowai.net RETIRED on Caddy. Palette LOCKED: charcoal #121418, navy #1F385C, champagne gold #CBB393.
+Delivery rule: Lovable pushes to GitHub, owner runs `git pull` on Hetzner. Always end code work with the pull command.
+Site stays founder-only (Maintenance gate) until every feature verified working, then goes live on nexatect.com.
 7-day free trial (SQL handle_new_user locked), then Basic $15/Standard $39/Premium $99 monthly.
 8 industries ONLY: hospitality, airlines, car_rental, healthcare, education, logistics, events_entertainment, railways.
 Hospitality has 2 sub-types in profiles.business_subtype: hotel_property | travel_tours. NEVER mix hotel data with tour data.
