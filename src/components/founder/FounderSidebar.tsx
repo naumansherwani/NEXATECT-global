@@ -3,8 +3,7 @@ import { useFounderTheme } from "./FounderTheme";
 import { useAuth } from "@/hooks/useAuth";
 import { useNavigate, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import logoAsset from "@/assets/nexatect-logo.jpg.asset.json";
-const logoImg = logoAsset.url;
+import NexatectMark from "@/components/NexatectMark";
 
 export type FounderSection =
   | "overview" | "executive" | "revenue" | "customers" | "leads" | "crm"
@@ -69,7 +68,7 @@ export default function FounderSidebar({ active, onSelect }: { active: FounderSe
         className="px-6 py-6 border-b border-[var(--fos-border)] flex items-center gap-3 hover:bg-[var(--fos-card)]/50 transition-colors group relative"
         title="Return to landing page"
       >
-        <img src={logoImg} alt="HostFlow AI" className="w-10 h-10 shrink-0 object-contain drop-shadow-[0_0_8px_rgba(34,211,238,0.4)] group-hover:scale-105 transition-transform" />
+        <NexatectMark className="w-10 h-10 shrink-0 drop-shadow-[0_0_10px_rgba(203,179,147,0.35)] group-hover:scale-105 transition-transform" />
         <div className="flex-1">
           <div className="fos-gold-text text-sm font-bold leading-tight tracking-wide">Founder OS</div>
           <div className="text-[var(--fos-accent)]/70 text-[10px] tracking-[0.22em] uppercase">HostFlow AI</div>
