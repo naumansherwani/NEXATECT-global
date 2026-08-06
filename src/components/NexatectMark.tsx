@@ -16,10 +16,11 @@ const NexatectMark = ({ className }: MarkProps) => (
         <stop offset="100%" stopColor="#1F385C" />
       </linearGradient>
     </defs>
+    <rect x="1" y="1" width="62" height="62" rx="14" fill="url(#nx-navy)" stroke="#CBB393" strokeOpacity="0.35" />
     {/* N uprights + diagonal */}
-    <path d="M10 54V10h7l20 30V10h7v44h-7L17 24v30z" fill="url(#nx-navy)" />
-    {/* gold chevron overlay */}
-    <path d="M20 16l12 34 12-34h-8l-4 13-4-13z" fill="url(#nx-gold)" opacity="0.95" />
+    <path d="M13 51V13h6l17 26V13h6v38h-6L19 27v24z" fill="url(#nx-gold)" />
+    {/* gold chevron accent */}
+    <path d="M26 19l6 20 6-20h-4.6L32 28l-1.4-9z" fill="#F3E6CE" opacity="0.9" />
   </svg>
 );
 
