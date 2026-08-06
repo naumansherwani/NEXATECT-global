@@ -148,16 +148,16 @@ export default function AiOnboardingWizard({ industry, userName, companyName, on
     return null;
   }
 
-  const industryColor = INDUSTRY_CONFIGS[industry]?.color || "hsl(174,62%,50%)";
+  const industryColor = INDUSTRY_CONFIGS[industry]?.color || "hsl(35,34%,68%)";
   const total = plan?.steps.length || 0;
   const done = completed.size;
   const pct = total ? Math.round((done / total) * 100) : 0;
 
   return (
-    <div className="min-h-screen bg-[hsl(222,47%,8%)] flex flex-col relative overflow-hidden">
+    <div className="min-h-screen bg-[hsl(220,9%,8%)] flex flex-col relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full blur-[120px]" style={{ background: `${industryColor}10` }} />
-        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[hsl(217,91%,60%)]/10 rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[hsl(214,50%,38%)]/10 rounded-full blur-[120px]" />
       </div>
 
       <main className="flex-1 flex items-center justify-center px-4 py-10 relative z-10">
@@ -196,7 +196,7 @@ export default function AiOnboardingWizard({ industry, userName, companyName, on
                 <div className="w-full max-w-md mx-auto h-1.5 bg-white/10 rounded-full overflow-hidden">
                   <div
                     className="h-full rounded-full transition-all duration-500"
-                    style={{ width: `${pct}%`, background: `linear-gradient(90deg, ${industryColor}, hsl(217,91%,60%))` }}
+                    style={{ width: `${pct}%`, background: `linear-gradient(90deg, ${industryColor}, hsl(214,50%,38%))` }}
                   />
                 </div>
               </div>
@@ -249,7 +249,7 @@ export default function AiOnboardingWizard({ industry, userName, companyName, on
                   onClick={handleFinish}
                   size="lg"
                   className="px-8 font-bold text-white rounded-xl shadow-lg"
-                  style={{ background: `linear-gradient(135deg, ${industryColor}, hsl(217,91%,60%))` }}
+                  style={{ background: `linear-gradient(135deg, ${industryColor}, hsl(214,50%,38%))` }}
                 >
                   {plan.first_action_cta || "Go to Dashboard"} <ArrowRight className="w-4 h-4 ml-1" />
                 </Button>

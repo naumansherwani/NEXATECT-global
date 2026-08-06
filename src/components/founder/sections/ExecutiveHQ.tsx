@@ -25,7 +25,7 @@ const Kpi = ({ icon: Icon, label, value, tone = "default", hint }: any) => (
 );
 
 const CmdBtn = ({ icon: Icon, label, onClick, accent }: any) => (
-  <button onClick={onClick} className="founder-cmd-btn w-full justify-start" style={accent ? { borderColor: "rgba(34,211,238,0.4)" } : undefined}>
+  <button onClick={onClick} className="founder-cmd-btn w-full justify-start" style={accent ? { borderColor: "rgba(203,179,147,0.4)" } : undefined}>
     <Icon className="w-3.5 h-3.5" /> {label}
   </button>
 );

@@ -55,7 +55,7 @@ const Reviews = () => {
                   key={s}
                   className={`w-5 h-5 ${
                     s <= Math.round(Number(avgRating))
-                      ? "fill-[hsl(38,92%,55%)] text-[hsl(38,92%,55%)]"
+                      ? "fill-[hsl(35,40%,66%)] text-[hsl(35,40%,66%)]"
                       : "text-white/20"
                   }`}
                 />

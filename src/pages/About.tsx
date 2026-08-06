@@ -14,8 +14,8 @@ const About = () => {
   const reasons = [
     { icon: Brain, title: t("about.why1Title"), desc: t("about.why1Desc"), color: "hsl(var(--primary))" },
     { icon: Globe, title: t("about.why2Title"), desc: t("about.why2Desc"), color: "hsl(270, 80%, 70%)" },
-    { icon: Shield, title: t("about.why3Title"), desc: t("about.why3Desc"), color: "hsl(160, 60%, 45%)" },
-    { icon: TrendingUp, title: t("about.why4Title"), desc: t("about.why4Desc"), color: "hsl(38, 92%, 60%)" },
+    { icon: Shield, title: t("about.why3Title"), desc: t("about.why3Desc"), color: "hsl(35,34%,68%)" },
+    { icon: TrendingUp, title: t("about.why4Title"), desc: t("about.why4Desc"), color: "hsl(35,40%,66%)" },
   ];
 
   const founderFeatures = [
@@ -23,8 +23,8 @@ const About = () => {
     { icon: ShieldCheck, title: t("about.founderFeat2Title"), desc: t("about.founderFeat2Desc"), color: "hsl(216, 88%, 60%)" },
     { icon: Bot, title: t("about.founderFeat3Title"), desc: t("about.founderFeat3Desc"), color: "hsl(270, 80%, 70%)" },
     { icon: HeartHandshake, title: t("about.founderFeat4Title"), desc: t("about.founderFeat4Desc"), color: "hsl(340, 75%, 60%)" },
-    { icon: CalendarClock, title: t("about.founderFeat5Title"), desc: t("about.founderFeat5Desc"), color: "hsl(160, 60%, 45%)" },
-    { icon: LineChart, title: t("about.founderFeat6Title"), desc: t("about.founderFeat6Desc"), color: "hsl(38, 92%, 60%)" },
+    { icon: CalendarClock, title: t("about.founderFeat5Title"), desc: t("about.founderFeat5Desc"), color: "hsl(35,34%,68%)" },
+    { icon: LineChart, title: t("about.founderFeat6Title"), desc: t("about.founderFeat6Desc"), color: "hsl(35,40%,66%)" },
     { icon: Languages, title: t("about.founderFeat7Title"), desc: t("about.founderFeat7Desc"), color: "hsl(190, 80%, 50%)" },
   ];
 
@@ -38,7 +38,7 @@ const About = () => {
           <div className="text-center space-y-4">
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
               <span className="text-foreground">About </span>
-              <span className="bg-gradient-to-r from-primary via-[hsl(216,88%,55%)] to-[hsl(270,80%,65%)] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary via-[hsl(216,88%,55%)] to-[hsl(214,50%,30%)] bg-clip-text text-transparent">
                 HostFlow AI Technologies
               </span>
             </h1>
@@ -47,14 +47,14 @@ const About = () => {
 
           {/* Founder Message */}
           <Card className="relative overflow-hidden border-primary/30 shadow-xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-[hsl(216,88%,55%)]/5 to-[hsl(270,80%,65%)]/10 pointer-events-none" />
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-[hsl(216,88%,55%)] to-[hsl(270,80%,65%)]" />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-[hsl(216,88%,55%)]/5 to-[hsl(214,50%,30%)]/10 pointer-events-none" />
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-[hsl(216,88%,55%)] to-[hsl(214,50%,30%)]" />
             <CardContent className="relative p-8 md:p-12 space-y-6">
               <div className="flex flex-col items-center text-center space-y-3">
                 <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-[hsl(216,88%,55%)] flex items-center justify-center shadow-lg">
                   <Quote className="w-7 h-7 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-primary via-[hsl(216,88%,55%)] to-[hsl(270,80%,65%)] bg-clip-text text-transparent">
+                <h2 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-primary via-[hsl(216,88%,55%)] to-[hsl(214,50%,30%)] bg-clip-text text-transparent">
                   {t("about.founderMsgTitle")}
                 </h2>
               </div>
@@ -83,7 +83,7 @@ const About = () => {
               <div className="space-y-5 text-muted-foreground text-base md:text-lg leading-relaxed pt-2">
                 <p>{t("about.founderMsgP4")}</p>
                 <p>{t("about.founderMsgP5")}</p>
-                <p className="text-foreground font-semibold text-lg md:text-xl text-center px-4 py-5 rounded-xl bg-gradient-to-r from-primary/10 via-[hsl(216,88%,55%)]/10 to-[hsl(270,80%,65%)]/10 border border-primary/20">
+                <p className="text-foreground font-semibold text-lg md:text-xl text-center px-4 py-5 rounded-xl bg-gradient-to-r from-primary/10 via-[hsl(216,88%,55%)]/10 to-[hsl(214,50%,30%)]/10 border border-primary/20">
                   {t("about.founderMsgClosing")}
                 </p>
               </div>

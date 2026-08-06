@@ -49,7 +49,7 @@ const HowItWorksGuide = () => {
 
         <Card className="border-border/50 bg-card/80 hover:border-primary/30 transition-colors cursor-pointer group" onClick={() => navigate("/ai-crm")}>
           <CardContent className="p-5 flex items-start gap-4">
-            <div className="p-3 rounded-xl bg-[hsl(217,91%,60%)]/10 text-[hsl(217,91%,60%)] shrink-0">
+            <div className="p-3 rounded-xl bg-[hsl(214,50%,38%)]/10 text-[hsl(214,50%,38%)] shrink-0">
               <Users className="w-6 h-6" />
             </div>
             <div className="space-y-1.5">
@@ -57,7 +57,7 @@ const HowItWorksGuide = () => {
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Manage contacts, leads, and customer interactions
               </p>
-              <span className="inline-flex items-center gap-1 text-xs text-[hsl(217,91%,60%)] font-medium group-hover:gap-2 transition-all">
+              <span className="inline-flex items-center gap-1 text-xs text-[hsl(214,50%,38%)] font-medium group-hover:gap-2 transition-all">
                 Open AI CRM <ArrowRight className="w-3 h-3" />
               </span>
             </div>

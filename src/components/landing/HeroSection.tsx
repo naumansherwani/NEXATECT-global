@@ -22,13 +22,13 @@ const HeroSection = () => {
   return (
     <section className="relative pt-24 pb-16 md:pt-32 md:pb-20 overflow-hidden">
       {/* Premium dark background */}
-      <div className="absolute inset-0 bg-[hsl(222,47%,8%)]" />
+      <div className="absolute inset-0 bg-[hsl(220,9%,8%)]" />
       
       {/* Animated gradient mesh */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[hsl(174,62%,50%)]/8 rounded-full blur-[120px] animate-pulse" />
-        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[hsl(217,91%,60%)]/8 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: "1s" }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[hsl(270,80%,60%)]/5 rounded-full blur-[150px] animate-pulse" style={{ animationDelay: "2s" }} />
+        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[hsl(35,34%,68%)]/8 rounded-full blur-[120px] animate-pulse" />
+        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[hsl(214,50%,38%)]/8 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: "1s" }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[hsl(214,50%,30%)]/5 rounded-full blur-[150px] animate-pulse" style={{ animationDelay: "2s" }} />
       </div>
 
       {/* Grid pattern overlay */}
@@ -45,13 +45,13 @@ const HeroSection = () => {
             <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold leading-[1.05] tracking-tight">
               <span className="text-white">Grow Smarter.</span>
               <br />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(174,62%,50%)] via-[hsl(190,80%,55%)] to-[hsl(217,91%,60%)]">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(35,34%,68%)] via-[hsl(35,45%,80%)] to-[hsl(214,50%,38%)]">
                 AI Runs Your
               </span>
               {" "}
               <span 
                 key={wordIndex}
-                className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[hsl(38,92%,60%)] to-[hsl(25,95%,55%)] animate-fade-in min-w-[180px] md:min-w-[240px]"
+                className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[hsl(35,40%,66%)] to-[hsl(35,45%,58%)] animate-fade-in min-w-[180px] md:min-w-[240px]"
               >
                 {ROTATING_WORDS[wordIndex]}
               </span>
@@ -71,16 +71,16 @@ const HeroSection = () => {
           {/* Sub-headline */}
           <div className="max-w-3xl mx-auto space-y-4">
             <p className="text-xl md:text-2xl font-semibold leading-relaxed tracking-wide">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(174,62%,50%)] via-[hsl(190,80%,55%)] to-[hsl(217,91%,60%)] drop-shadow-[0_0_20px_rgba(45,212,191,0.35)]">The World's First Industry-Sovereign AI OS.</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(35,34%,68%)] via-[hsl(35,45%,80%)] to-[hsl(214,50%,38%)] drop-shadow-[0_0_20px_rgba(203,179,147,0.35)]">The World's First Industry-Sovereign AI OS.</span>
               <br className="hidden md:block" />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(280,100%,70%)] via-[hsl(320,90%,65%)] to-[hsl(350,95%,65%)] drop-shadow-[0_0_15px_rgba(168,85,247,0.3)] text-lg md:text-xl">Don't Just Manage Data</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(35,45%,80%)] via-[hsl(35,34%,68%)] to-[hsl(35,30%,58%)] drop-shadow-[0_0_15px_rgba(31,56,92,0.3)] text-lg md:text-xl">Don't Just Manage Data</span>
               <span className="text-white/30">—</span>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(174,62%,50%)] to-[hsl(217,91%,60%)] drop-shadow-[0_0_15px_rgba(45,212,191,0.4)]">Command Your Business</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)] drop-shadow-[0_0_15px_rgba(203,179,147,0.4)]">Command Your Business</span>
             </p>
             <p className="text-base max-w-2xl mx-auto leading-relaxed font-medium">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(38,92%,65%)] via-[hsl(174,62%,50%)] to-[hsl(270,80%,65%)] drop-shadow-[0_0_12px_rgba(45,212,191,0.2)]">Predict Revenue, Automate Operations, and lead with voice-activated intelligence.</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(35,40%,66%)] via-[hsl(35,34%,68%)] to-[hsl(214,50%,30%)] drop-shadow-[0_0_12px_rgba(203,179,147,0.2)]">Predict Revenue, Automate Operations, and lead with voice-activated intelligence.</span>
               <br className="hidden md:block" />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(217,91%,65%)] via-[hsl(0,72%,60%)] via-[hsl(270,80%,65%)] to-[hsl(174,62%,55%)] drop-shadow-[0_0_12px_rgba(96,165,250,0.2)]">Dedicated AI workspaces for Airlines, Healthcare, Logistics, and beyond.</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(214,50%,38%)] via-[hsl(214,50%,38%)] via-[hsl(214,50%,30%)] to-[hsl(35,34%,68%)] drop-shadow-[0_0_12px_rgba(31,56,92,0.2)]">Dedicated AI workspaces for Airlines, Healthcare, Logistics, and beyond.</span>
             </p>
           </div>
 
@@ -106,7 +106,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
             <Button
               size="lg"
-              className="relative group bg-gradient-to-r from-[hsl(174,62%,50%)] to-[hsl(217,91%,60%)] hover:from-[hsl(174,62%,55%)] hover:to-[hsl(217,91%,65%)] text-white text-lg px-10 py-7 font-bold rounded-xl shadow-[0_0_40px_rgba(45,212,191,0.3)] hover:shadow-[0_0_60px_rgba(45,212,191,0.5)] transition-all duration-500 hover:scale-[1.03] border-0"
+              className="relative group bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)] hover:from-[hsl(35,34%,68%)] hover:to-[hsl(214,50%,38%)] text-white text-lg px-10 py-7 font-bold rounded-xl shadow-[0_0_40px_rgba(203,179,147,0.3)] hover:shadow-[0_0_60px_rgba(203,179,147,0.5)] transition-all duration-500 hover:scale-[1.03] border-0"
               onClick={() => navigate("/signup")}
             >
               Get Started Free
@@ -127,7 +127,7 @@ const HeroSection = () => {
             <div className="flex items-center gap-1.5">
               <div className="flex -space-x-2">
                 {[1,2,3,4,5].map(i => (
-                  <div key={i} className="w-8 h-8 rounded-full border-2 border-[hsl(222,47%,8%)] bg-gradient-to-br from-[hsl(174,62%,50%)] to-[hsl(217,91%,60%)]" style={{ opacity: 1 - i * 0.1 }} />
+                  <div key={i} className="w-8 h-8 rounded-full border-2 border-[hsl(220,9%,8%)] bg-gradient-to-br from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)]" style={{ opacity: 1 - i * 0.1 }} />
                 ))}
               </div>
               <span className="text-sm text-white/50 ml-2">
@@ -137,13 +137,13 @@ const HeroSection = () => {
             <div className="h-4 w-px bg-white/10 hidden md:block" />
             <div className="flex items-center gap-1">
               {[1,2,3,4,5].map(i => (
-                <Star key={i} className="w-4 h-4 fill-[hsl(38,92%,55%)] text-[hsl(38,92%,55%)]" />
+                <Star key={i} className="w-4 h-4 fill-[hsl(35,40%,66%)] text-[hsl(35,40%,66%)]" />
               ))}
               <span className="text-sm text-white/50 ml-1.5"><strong className="text-white/80">4.9/5</strong> rating</span>
             </div>
             <div className="h-4 w-px bg-white/10 hidden md:block" />
             <div className="flex items-center gap-1.5 text-sm text-white/50">
-              <Shield className="w-4 h-4 text-[hsl(160,60%,45%)]" />
+              <Shield className="w-4 h-4 text-[hsl(35,34%,68%)]" />
               <span>No credit card required</span>
             </div>
           </div>

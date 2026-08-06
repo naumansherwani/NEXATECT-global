@@ -57,7 +57,7 @@ export default function CheckoutSuccess() {
           )}
 
           <div className="flex flex-wrap gap-3 justify-center pt-2">
-            <Button asChild className="bg-gradient-to-r from-[hsl(174,62%,50%)] to-[hsl(217,91%,60%)] text-white">
+            <Button asChild className="bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)] text-white">
               <Link to="/dashboard">Go to Dashboard</Link>
             </Button>
             <Button asChild variant="outline">

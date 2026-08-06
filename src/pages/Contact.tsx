@@ -55,7 +55,7 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <Card className="bg-[hsl(222,40%,14%)] border-[hsl(217,91%,60%)]/20 text-center">
+          <Card className="bg-[hsl(222,40%,14%)] border-[hsl(214,50%,38%)]/20 text-center">
             <CardContent className="pt-6 space-y-3">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
                 <Mail className="w-5 h-5 text-primary" />
@@ -64,7 +64,7 @@ const Contact = () => {
               <p className="text-sm text-[hsl(213,97%,87%)]/70">Use the form below — we'll reply by email.</p>
             </CardContent>
           </Card>
-          <Card className="bg-[hsl(222,40%,14%)] border-[hsl(217,91%,60%)]/20 text-center">
+          <Card className="bg-[hsl(222,40%,14%)] border-[hsl(214,50%,38%)]/20 text-center">
             <CardContent className="pt-6 space-y-3">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
                 <Phone className="w-5 h-5 text-primary" />
@@ -73,7 +73,7 @@ const Contact = () => {
               <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline">Chat with us</a>
             </CardContent>
           </Card>
-          <Card className="bg-[hsl(222,40%,14%)] border-[hsl(217,91%,60%)]/20 text-center">
+          <Card className="bg-[hsl(222,40%,14%)] border-[hsl(214,50%,38%)]/20 text-center">
             <CardContent className="pt-6 space-y-3">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
                 <MessageSquare className="w-5 h-5 text-primary" />
@@ -84,7 +84,7 @@ const Contact = () => {
           </Card>
         </div>
 
-        <Card className="bg-[hsl(222,40%,14%)] border-[hsl(217,91%,60%)]/20 max-w-2xl mx-auto">
+        <Card className="bg-[hsl(222,40%,14%)] border-[hsl(214,50%,38%)]/20 max-w-2xl mx-auto">
           <CardContent className="pt-6">
             {submitted ? (
               <div className="text-center py-12 space-y-4">
@@ -105,20 +105,20 @@ const Contact = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name" className="text-white">Name</Label>
-                    <Input id="name" name="name" required placeholder="Your name" className="bg-[hsl(222,47%,11%)] border-[hsl(217,91%,60%)]/20 text-white" />
+                    <Input id="name" name="name" required placeholder="Your name" className="bg-[hsl(222,47%,11%)] border-[hsl(214,50%,38%)]/20 text-white" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email" className="text-white">Email</Label>
-                    <Input id="email" name="email" type="email" required placeholder="you@example.com" className="bg-[hsl(222,47%,11%)] border-[hsl(217,91%,60%)]/20 text-white" />
+                    <Input id="email" name="email" type="email" required placeholder="you@example.com" className="bg-[hsl(222,47%,11%)] border-[hsl(214,50%,38%)]/20 text-white" />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="subject" className="text-white">Subject</Label>
-                  <Input id="subject" name="subject" required placeholder="How can we help?" className="bg-[hsl(222,47%,11%)] border-[hsl(217,91%,60%)]/20 text-white" />
+                  <Input id="subject" name="subject" required placeholder="How can we help?" className="bg-[hsl(222,47%,11%)] border-[hsl(214,50%,38%)]/20 text-white" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="message" className="text-white">Message</Label>
-                  <Textarea id="message" name="message" required rows={5} placeholder="Tell us more..." className="bg-[hsl(222,47%,11%)] border-[hsl(217,91%,60%)]/20 text-white resize-none" />
+                  <Textarea id="message" name="message" required rows={5} placeholder="Tell us more..." className="bg-[hsl(222,47%,11%)] border-[hsl(214,50%,38%)]/20 text-white resize-none" />
                 </div>
                 <Button type="submit" disabled={loading} className="w-full bg-gradient-primary">
                   <Send className="w-4 h-4 mr-2" />

@@ -1,11 +1,11 @@
 import { Shield, Lock, CheckCircle, Globe, Server, Key } from "lucide-react";
 
 const BADGES = [
-  { icon: Shield, label: "Data Protection", desc: "Privacy-first architecture", color: "hsl(174,62%,50%)" },
-  { icon: Lock, label: "256-bit Encryption", desc: "Bank-level security", color: "hsl(217,91%,60%)" },
-  { icon: Key, label: "Row-Level Security", desc: "Data isolation per user", color: "hsl(270,80%,65%)" },
-  { icon: CheckCircle, label: "99.9% Uptime", desc: "Always available", color: "hsl(160,60%,45%)" },
-  { icon: Globe, label: "Multi-Region", desc: "Global data centers", color: "hsl(38,92%,55%)" },
+  { icon: Shield, label: "Data Protection", desc: "Privacy-first architecture", color: "hsl(35,34%,68%)" },
+  { icon: Lock, label: "256-bit Encryption", desc: "Bank-level security", color: "hsl(214,50%,38%)" },
+  { icon: Key, label: "Row-Level Security", desc: "Data isolation per user", color: "hsl(214,50%,30%)" },
+  { icon: CheckCircle, label: "99.9% Uptime", desc: "Always available", color: "hsl(35,34%,68%)" },
+  { icon: Globe, label: "Multi-Region", desc: "Global data centers", color: "hsl(35,40%,66%)" },
   { icon: Server, label: "Daily Backups", desc: "Automatic data backups", color: "hsl(0,72%,55%)" },
 ];
 

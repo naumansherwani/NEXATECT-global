@@ -40,14 +40,14 @@ const WhyDifferentSection = () => (
     <div className="container relative z-10">
       <div className="text-center mb-12 space-y-3">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-[hsl(174,62%,50%,0.12)] to-[hsl(217,91%,60%,0.12)] border border-[hsl(174,62%,50%,0.25)]">
-          <Sparkles className="w-3.5 h-3.5 text-[hsl(174,62%,55%)]" />
-          <span className="text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-[hsl(174,62%,60%)] to-[hsl(217,91%,65%)] bg-clip-text text-transparent">
+          <Sparkles className="w-3.5 h-3.5 text-[hsl(35,34%,68%)]" />
+          <span className="text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-[hsl(174,62%,60%)] to-[hsl(214,50%,38%)] bg-clip-text text-transparent">
             Why HostFlow AI is different
           </span>
         </div>
         <h2 className="text-3xl md:text-4xl font-extrabold text-white">
           The only platform built to{" "}
-          <span className="bg-gradient-to-r from-[hsl(174,62%,55%)] to-[hsl(217,91%,65%)] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)] bg-clip-text text-transparent">
             replace 6 SaaS tools
           </span>{" "}
           with one.
@@ -67,7 +67,7 @@ const WhyDifferentSection = () => (
               <item.icon className="w-4 h-4 text-[hsl(174,62%,60%)]" />
             </div>
             <h3 className="text-sm font-bold text-white mb-1">{item.title}</h3>
-            <p className="text-[11px] font-semibold uppercase tracking-wider bg-gradient-to-r from-[hsl(174,62%,60%)] to-[hsl(217,91%,65%)] bg-clip-text text-transparent mb-2">
+            <p className="text-[11px] font-semibold uppercase tracking-wider bg-gradient-to-r from-[hsl(174,62%,60%)] to-[hsl(214,50%,38%)] bg-clip-text text-transparent mb-2">
               {item.tagline}
             </p>
             <p className="text-xs text-white/50 leading-relaxed">{item.body}</p>

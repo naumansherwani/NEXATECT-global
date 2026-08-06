@@ -173,7 +173,7 @@ const Earnings = () => {
         <div className="flex justify-end">
           <Dialog open={withdrawOpen} onOpenChange={setWithdrawOpen}>
             <DialogTrigger asChild>
-              <Button className="bg-gradient-to-r from-[hsl(174,62%,50%)] to-[hsl(217,91%,60%)] text-white font-semibold gap-2">
+              <Button className="bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)] text-white font-semibold gap-2">
                 <ArrowDownToLine className="w-4 h-4" /> Withdraw Funds
               </Button>
             </DialogTrigger>
@@ -240,7 +240,7 @@ const Earnings = () => {
                 <Button
                   onClick={handleWithdraw}
                   disabled={submitting || availableBalance <= 0}
-                  className="bg-gradient-to-r from-[hsl(174,62%,50%)] to-[hsl(217,91%,60%)] text-white"
+                  className="bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)] text-white"
                 >
                   {submitting ? "Submitting..." : "Submit Request"}
                 </Button>

@@ -90,7 +90,7 @@ const AdminReviewsPanel = () => {
               <span className="font-medium text-foreground text-sm">{r.reviewer_name}</span>
               <div className="flex gap-0.5">
                 {Array.from({ length: r.rating }).map((_, i) => (
-                  <Star key={i} className="w-3 h-3 fill-[hsl(38,92%,55%)] text-[hsl(38,92%,55%)]" />
+                  <Star key={i} className="w-3 h-3 fill-[hsl(35,40%,66%)] text-[hsl(35,40%,66%)]" />
                 ))}
               </div>
               {r.region && (

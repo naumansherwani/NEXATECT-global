@@ -207,10 +207,10 @@ export default function Pricing() {
             return (
               <Card key={planKey} className={`relative flex flex-col transition-all duration-300 ${meta.starter ? "border-cyan-400/50 hover:ring-2 hover:ring-cyan-400/40 hover:shadow-[0_0_20px_hsl(186,80%,50%,0.3)]" : meta.popular ? "border-primary/50 hover:ring-2 hover:ring-primary/40 hover:shadow-[0_0_20px_hsl(174,62%,50%,0.3)]" : meta.highlight ? "border-yellow-500/50 hover:ring-2 hover:ring-yellow-500/40 hover:shadow-[0_0_25px_hsl(45,100%,50%,0.35)]" : ""}`}>
                 {meta.starter && (
-                  <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[hsl(174,62%,50%)] to-[hsl(217,91%,60%)] text-white border-0 shadow-lg px-4 py-1">🚀 Great Start</Badge>
+                  <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)] text-white border-0 shadow-lg px-4 py-1">🚀 Great Start</Badge>
                 )}
                 {meta.popular && (
-                  <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[hsl(174,62%,50%)] to-[hsl(217,91%,60%)] text-white border-0 shadow-lg px-4 py-1">
+                  <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)] text-white border-0 shadow-lg px-4 py-1">
                     <Crown className="w-3 h-3 mr-1" /> Most Popular
                   </Badge>
                 )}
@@ -260,7 +260,7 @@ export default function Pricing() {
                     )}
                   </ul>
                   <Button
-                    className="w-full font-semibold bg-gradient-to-r from-[hsl(174,62%,50%)] to-[hsl(217,91%,60%)] text-white shadow-[0_0_20px_rgba(45,212,191,0.3)] hover:shadow-[0_0_30px_rgba(45,212,191,0.5)]"
+                    className="w-full font-semibold bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)] text-white shadow-[0_0_20px_rgba(203,179,147,0.3)] hover:shadow-[0_0_30px_rgba(203,179,147,0.5)]"
                     disabled={!!isCurrent || !product || loadingPlan === planKey}
                     onClick={() => product && void handleSelect(product)}
                   >

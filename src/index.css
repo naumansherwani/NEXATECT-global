@@ -196,7 +196,7 @@ html {
   .crm-feature-star::after {
     bottom: -2px;
     left: -12px;
-    color: hsl(217, 91%, 60%);
+    color: hsl(214,50%,38%);
     font-size: 8px;
   }
 
@@ -446,7 +446,7 @@ html:not(.dark) .ghost-brand:hover .ghost-brand-mark {
   --fos-neon-gradient: linear-gradient(135deg, #F0CF60 0%, #D4AF37 35%, #22D3EE 70%, #A855F7 100%);
   background:
     radial-gradient(1200px 600px at 80% -10%, rgba(212,175,55,0.08), transparent 60%),
-    radial-gradient(900px 500px at -10% 100%, rgba(34,211,238,0.05), transparent 60%),
+    radial-gradient(900px 500px at -10% 100%, rgba(203,179,147,0.05), transparent 60%),
     var(--fos-bg);
   color: var(--fos-text);
   font-family: 'Inter', system-ui, sans-serif;
@@ -512,13 +512,13 @@ html:not(.dark) .ghost-brand:hover .ghost-brand-mark {
 /* Glow on lucide SVGs */
 .founder-os .fos-icon-neon {
   color: var(--fos-accent-bright);
-  filter: drop-shadow(0 0 4px rgba(212,175,55,0.55)) drop-shadow(0 0 10px rgba(34,211,238,0.18));
+  filter: drop-shadow(0 0 4px rgba(212,175,55,0.55)) drop-shadow(0 0 10px rgba(203,179,147,0.18));
   transition: filter .2s ease, color .2s ease;
 }
 .founder-os .fos-icon-neon:hover,
 .founder-os a:hover .fos-icon-neon,
 .founder-os button:hover .fos-icon-neon {
-  filter: drop-shadow(0 0 6px rgba(240,207,96,0.85)) drop-shadow(0 0 14px rgba(168,85,247,0.35));
+  filter: drop-shadow(0 0 6px rgba(240,207,96,0.85)) drop-shadow(0 0 14px rgba(31,56,92,0.35));
 }
 
 /* Sidebar nav rows: gold/neon active state */
@@ -531,7 +531,7 @@ html:not(.dark) .ghost-brand:hover .ghost-brand-mark {
 }
 .founder-os .founder-sidebar nav button[class*="text-[var(--fos-accent)]"],
 .founder-os .founder-sidebar nav button.fos-active {
-  background: linear-gradient(90deg, rgba(212,175,55,0.16), rgba(168,85,247,0.06) 60%, transparent) !important;
+  background: linear-gradient(90deg, rgba(212,175,55,0.16), rgba(31,56,92,0.06) 60%, transparent) !important;
   color: var(--fos-accent-bright) !important;
   box-shadow: inset 2px 0 0 var(--fos-accent), 0 0 18px -6px rgba(212,175,55,0.4);
 }
@@ -540,7 +540,7 @@ html:not(.dark) .ghost-brand:hover .ghost-brand-mark {
   transition: filter .2s ease, transform .2s ease;
 }
 .founder-os .founder-sidebar nav button:hover svg {
-  filter: drop-shadow(0 0 6px rgba(240,207,96,0.7)) drop-shadow(0 0 12px rgba(34,211,238,0.3));
+  filter: drop-shadow(0 0 6px rgba(240,207,96,0.7)) drop-shadow(0 0 12px rgba(203,179,147,0.3));
   transform: scale(1.06);
 }
 

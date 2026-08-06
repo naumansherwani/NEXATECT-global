@@ -30,7 +30,7 @@ const formatMoney = (n: number) =>
   n >= 1000 ? `$${(n / 1000).toFixed(1)}k` : `$${n.toFixed(0)}`;
 const formatPct = (n: number) => `${n.toFixed(1)}%`;
 
-const COLORS = ["hsl(var(--primary))", "hsl(217,91%,60%)", "hsl(160,60%,45%)", "hsl(330,70%,55%)", "hsl(38,92%,60%)", "hsl(270,80%,70%)", "hsl(190,70%,50%)"];
+const COLORS = ["hsl(var(--primary))", "hsl(214,50%,38%)", "hsl(35,34%,68%)", "hsl(330,70%,55%)", "hsl(35,40%,66%)", "hsl(270,80%,70%)", "hsl(190,70%,50%)"];
 
 interface MetricCardProps {
   icon: any; label: string; value: string; sub?: string; trend?: number; color?: string;
@@ -43,7 +43,7 @@ const MetricCard = ({ icon: Icon, label, value, sub, trend, color = "text-primar
           <Icon className="w-4 h-4" />
         </div>
         {typeof trend === "number" && (
-          <Badge variant="outline" className={`text-[10px] gap-1 ${trend >= 0 ? "text-[hsl(160,60%,45%)] border-[hsl(160,60%,45%)]/30" : "text-destructive border-destructive/30"}`}>
+          <Badge variant="outline" className={`text-[10px] gap-1 ${trend >= 0 ? "text-[hsl(35,34%,68%)] border-[hsl(35,34%,68%)]/30" : "text-destructive border-destructive/30"}`}>
             {trend >= 0 ? <ArrowUpRight className="w-3 h-3" /> : <ArrowDownRight className="w-3 h-3" />}
             {Math.abs(trend).toFixed(1)}%
           </Badge>
@@ -399,22 +399,22 @@ const OwnerMrrCommandCenter = () => {
           <>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               <MetricCard icon={DollarSign} label="MRR" value={formatMoney(metrics.mrr)} sub="Monthly Recurring" trend={metrics.netGrowth} color="text-primary" />
-              <MetricCard icon={TrendingUp} label="ARR" value={formatMoney(metrics.arr)} sub="Annualized" color="text-[hsl(160,60%,45%)]" />
-              <MetricCard icon={Users} label="Active Subscribers" value={String(metrics.activeSubs)} trend={0} color="text-[hsl(217,91%,60%)]" />
+              <MetricCard icon={TrendingUp} label="ARR" value={formatMoney(metrics.arr)} sub="Annualized" color="text-[hsl(35,34%,68%)]" />
+              <MetricCard icon={Users} label="Active Subscribers" value={String(metrics.activeSubs)} trend={0} color="text-[hsl(214,50%,38%)]" />
               <MetricCard icon={UserPlus} label="New This Month" value={String(metrics.newThisMonth)} color="text-[hsl(270,80%,70%)]" />
               <MetricCard icon={UserMinus} label="Churned" value={String(metrics.churnedThisMonth)} sub="This month" color="text-destructive" />
               <MetricCard icon={Activity} label="ARPU" value={`$${metrics.arpu.toFixed(0)}`} sub="Per user/month" color="text-[hsl(330,70%,55%)]" />
               <MetricCard icon={Crown} label="LTV" value={formatMoney(metrics.ltv)} sub={`${AVG_LIFETIME_MONTHS}mo avg`} color="text-yellow-400" />
-              <MetricCard icon={Target} label="Trial→Paid" value={formatPct(metrics.trialConversion)} color="text-[hsl(38,92%,60%)]" />
+              <MetricCard icon={Target} label="Trial→Paid" value={formatPct(metrics.trialConversion)} color="text-[hsl(35,40%,66%)]" />
               <MetricCard icon={Zap} label="Net Growth" value={formatPct(metrics.netGrowth)} sub="MoM" trend={metrics.netGrowth} color="text-primary" />
-              <MetricCard icon={Heart} label="Saved Revenue" value={formatMoney(metrics.savedRevenue)} sub="Churn recovery" color="text-[hsl(160,60%,45%)]" />
-              <MetricCard icon={ArrowUpRight} label="Expansion MRR" value={formatMoney(metrics.expansionMrr)} color="text-[hsl(217,91%,60%)]" />
+              <MetricCard icon={Heart} label="Saved Revenue" value={formatMoney(metrics.savedRevenue)} sub="Churn recovery" color="text-[hsl(35,34%,68%)]" />
+              <MetricCard icon={ArrowUpRight} label="Expansion MRR" value={formatMoney(metrics.expansionMrr)} color="text-[hsl(214,50%,38%)]" />
               <MetricCard
                 icon={ArrowDownRight}
                 label="Refund Rate (30d)"
                 value={formatPct(metrics.refundRate)}
                 sub={`${metrics.refundCount} refund${metrics.refundCount === 1 ? '' : 's'} · ${formatMoney(metrics.refundAmount)}`}
-                color={metrics.refundRate > 5 ? "text-destructive" : metrics.refundRate > 2 ? "text-[hsl(38,92%,60%)]" : "text-[hsl(160,60%,45%)]"}
+                color={metrics.refundRate > 5 ? "text-destructive" : metrics.refundRate > 2 ? "text-[hsl(35,40%,66%)]" : "text-[hsl(35,34%,68%)]"}
               />
             </div>
 
@@ -457,7 +457,7 @@ const OwnerMrrCommandCenter = () => {
                       <YAxis fontSize={11} tickFormatter={(v) => formatMoney(v)} />
                       <Tooltip contentStyle={{ background: "hsl(var(--card))", border: "1px solid hsl(var(--border))", borderRadius: 8, fontSize: 12 }} />
                       <Legend wrapperStyle={{ fontSize: 11 }} />
-                      <Bar dataKey="new" fill="hsl(160,60%,45%)" name="New MRR" radius={[4, 4, 0, 0]} />
+                      <Bar dataKey="new" fill="hsl(35,34%,68%)" name="New MRR" radius={[4, 4, 0, 0]} />
                       <Bar dataKey="churned" fill="hsl(0,70%,55%)" name="Churned MRR" radius={[4, 4, 0, 0]} />
                     </BarChart>
                   </ResponsiveContainer>
@@ -505,9 +505,9 @@ const OwnerMrrCommandCenter = () => {
         {section === "customers" && (
           <>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-              <MetricCard icon={Users} label="Active" value={String(metrics.activeSubs)} color="text-[hsl(160,60%,45%)]" />
-              <MetricCard icon={Activity} label="Trialing" value={String(metrics.trialing)} color="text-[hsl(217,91%,60%)]" />
-              <MetricCard icon={PauseCircle} label="Paused" value="0" color="text-[hsl(38,92%,60%)]" />
+              <MetricCard icon={Users} label="Active" value={String(metrics.activeSubs)} color="text-[hsl(35,34%,68%)]" />
+              <MetricCard icon={Activity} label="Trialing" value={String(metrics.trialing)} color="text-[hsl(214,50%,38%)]" />
+              <MetricCard icon={PauseCircle} label="Paused" value="0" color="text-[hsl(35,40%,66%)]" />
               <MetricCard icon={UserMinus} label="Churned" value={String(metrics.churnedThisMonth)} color="text-destructive" />
             </div>
             <Card>
@@ -559,7 +559,7 @@ const OwnerMrrCommandCenter = () => {
                     </div>
                     <div className="h-8 rounded-lg overflow-hidden bg-muted/30">
                       <div
-                        className="h-full bg-gradient-to-r from-primary to-[hsl(217,91%,60%)] flex items-center px-3 text-xs font-bold text-primary-foreground transition-all"
+                        className="h-full bg-gradient-to-r from-primary to-[hsl(214,50%,38%)] flex items-center px-3 text-xs font-bold text-primary-foreground transition-all"
                         style={{ width: `${Math.max(5, (step.count / (metrics.funnel[0].count || 1)) * 100)}%` }}
                       >
                         {step.count}
@@ -576,7 +576,7 @@ const OwnerMrrCommandCenter = () => {
         {section === "retention" && (
           <>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-              <MetricCard icon={Heart} label="Save Rate" value={formatPct(metrics.saveRate)} color="text-[hsl(160,60%,45%)]" />
+              <MetricCard icon={Heart} label="Save Rate" value={formatPct(metrics.saveRate)} color="text-[hsl(35,34%,68%)]" />
               <MetricCard icon={DollarSign} label="Saved Revenue" value={formatMoney(metrics.savedRevenue)} color="text-primary" />
               <MetricCard icon={UserMinus} label="Monthly Churn" value={formatPct(metrics.churnRate)} color="text-destructive" />
               <MetricCard icon={RefreshCw} label="Win-Back Rate" value="0%" sub="Coming soon" color="text-muted-foreground" />
@@ -642,14 +642,14 @@ const OwnerMrrCommandCenter = () => {
             <Card>
               <CardHeader><CardTitle className="text-sm">3-Month MRR Projection</CardTitle></CardHeader>
               <CardContent>
-                <p className="text-4xl font-bold text-[hsl(160,60%,45%)]">{formatMoney(forecast.threeMonth)}</p>
+                <p className="text-4xl font-bold text-[hsl(35,34%,68%)]">{formatMoney(forecast.threeMonth)}</p>
                 <p className="text-xs text-muted-foreground mt-2">Expected MRR in 90 days</p>
               </CardContent>
             </Card>
             <Card>
               <CardHeader><CardTitle className="text-sm">If Conversion +1%</CardTitle></CardHeader>
               <CardContent>
-                <p className="text-4xl font-bold text-[hsl(217,91%,60%)]">{formatMoney(forecast.ifConvBoost)}</p>
+                <p className="text-4xl font-bold text-[hsl(214,50%,38%)]">{formatMoney(forecast.ifConvBoost)}</p>
                 <p className="text-xs text-muted-foreground mt-2">MRR with 1% better trial conversion</p>
               </CardContent>
             </Card>
@@ -671,15 +671,15 @@ const OwnerMrrCommandCenter = () => {
               {alerts.map((a, i) => (
                 <div key={i} className={`p-3 rounded-lg border ${
                   a.severity === "high" ? "bg-destructive/10 border-destructive/30" :
-                  a.severity === "medium" ? "bg-[hsl(38,92%,60%)]/10 border-[hsl(38,92%,60%)]/30" :
-                  a.severity === "good" ? "bg-[hsl(160,60%,45%)]/10 border-[hsl(160,60%,45%)]/30" :
+                  a.severity === "medium" ? "bg-[hsl(35,40%,66%)]/10 border-[hsl(35,40%,66%)]/30" :
+                  a.severity === "good" ? "bg-[hsl(35,34%,68%)]/10 border-[hsl(35,34%,68%)]/30" :
                   "bg-muted/30 border-border/40"
                 }`}>
                   <div className="flex items-start gap-3">
                     <AlertTriangle className={`w-4 h-4 mt-0.5 ${
                       a.severity === "high" ? "text-destructive" :
-                      a.severity === "medium" ? "text-[hsl(38,92%,60%)]" :
-                      "text-[hsl(160,60%,45%)]"
+                      a.severity === "medium" ? "text-[hsl(35,40%,66%)]" :
+                      "text-[hsl(35,34%,68%)]"
                     }`} />
                     <div>
                       <p className="text-sm font-bold">{a.title}</p>
@@ -741,7 +741,7 @@ const OwnerMrrCommandCenter = () => {
                           <p className="text-sm font-bold truncate">{a.title}</p>
                           <Badge variant="outline" className={`text-[10px] capitalize ${
                             a.severity === "critical" ? "border-destructive text-destructive" :
-                            a.severity === "high" ? "border-[hsl(38,92%,60%)] text-[hsl(38,92%,60%)]" :
+                            a.severity === "high" ? "border-[hsl(35,40%,66%)] text-[hsl(35,40%,66%)]" :
                             "border-border"
                           }`}>
                             {a.severity}
@@ -800,14 +800,14 @@ const OwnerMrrCommandCenter = () => {
             </Card>
             <Card className="hover:border-primary/50 transition cursor-pointer" onClick={() => toast.info("Upgrade promo — coming soon")}>
               <CardContent className="p-5">
-                <ArrowUpRight className="w-6 h-6 text-[hsl(160,60%,45%)] mb-2" />
+                <ArrowUpRight className="w-6 h-6 text-[hsl(35,34%,68%)] mb-2" />
                 <p className="font-bold text-sm">Offer Upgrade Promo</p>
                 <p className="text-xs text-muted-foreground mt-1">Push Pro/Premium tiers</p>
               </CardContent>
             </Card>
             <Card className="hover:border-primary/50 transition cursor-pointer" onClick={exportCsv}>
               <CardContent className="p-5">
-                <Download className="w-6 h-6 text-[hsl(217,91%,60%)] mb-2" />
+                <Download className="w-6 h-6 text-[hsl(214,50%,38%)] mb-2" />
                 <p className="font-bold text-sm">Export Revenue Report</p>
                 <p className="text-xs text-muted-foreground mt-1">CSV with all metrics</p>
               </CardContent>

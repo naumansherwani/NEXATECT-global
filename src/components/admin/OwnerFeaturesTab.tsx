@@ -158,7 +158,7 @@ const OwnerFeaturesTab = ({ featureUsage, workspaces, showSecret }: OwnerFeature
               <div className="space-y-1">
                 {ind.features.map((f) => (
                   <div key={f} className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3 h-3 text-[hsl(160,60%,45%)]" />
+                    <CheckCircle2 className="w-3 h-3 text-[hsl(35,34%,68%)]" />
                     <span className="text-[10px] text-muted-foreground">{f}</span>
                   </div>
                 ))}

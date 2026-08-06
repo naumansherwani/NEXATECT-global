@@ -132,7 +132,7 @@ const OwnerConsole = () => {
             </Link>
             <Badge className="bg-yellow-400/10 text-yellow-400 border-yellow-400/30 text-[10px]">SECRET</Badge>
             <div className="flex items-center gap-1.5 ml-3">
-              <div className="w-2 h-2 rounded-full bg-[hsl(160,60%,45%)] animate-pulse" />
+              <div className="w-2 h-2 rounded-full bg-[hsl(35,34%,68%)] animate-pulse" />
               <span className="text-[10px] text-muted-foreground">
                 Synced {lastRefresh.toLocaleTimeString()}
               </span>
@@ -294,14 +294,14 @@ const OwnerConsole = () => {
                     <p className="text-2xl font-bold text-[hsl(330,70%,55%)]">{showSecret ? `$${totalDealValue.toLocaleString()}` : "•••"}</p>
                     <p className="text-xs text-muted-foreground mt-1">CRM Deal Pipeline</p>
                   </div>
-                  <div className="p-4 rounded-xl bg-[hsl(160,60%,45%)]/5 border border-[hsl(160,60%,45%)]/20 text-center">
-                    <p className="text-2xl font-bold text-[hsl(160,60%,45%)]">
+                  <div className="p-4 rounded-xl bg-[hsl(35,34%,68%)]/5 border border-[hsl(35,34%,68%)]/20 text-center">
+                    <p className="text-2xl font-bold text-[hsl(35,34%,68%)]">
                       {showSecret ? `$${recentBookings.length > 0 ? Math.round(totalRevenue / recentBookings.length) : 0}` : "•••"}
                     </p>
                     <p className="text-xs text-muted-foreground mt-1">Avg Booking Value</p>
                   </div>
-                  <div className="p-4 rounded-xl bg-[hsl(217,91%,60%)]/5 border border-[hsl(217,91%,60%)]/20 text-center">
-                    <p className="text-2xl font-bold text-[hsl(217,91%,60%)]">
+                  <div className="p-4 rounded-xl bg-[hsl(214,50%,38%)]/5 border border-[hsl(214,50%,38%)]/20 text-center">
+                    <p className="text-2xl font-bold text-[hsl(214,50%,38%)]">
                       {showSecret ? `$${(totalRevenue + totalDealValue).toLocaleString()}` : "•••"}
                     </p>
                     <p className="text-xs text-muted-foreground mt-1">Total Platform Value</p>

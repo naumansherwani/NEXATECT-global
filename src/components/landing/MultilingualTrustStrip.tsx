@@ -46,14 +46,14 @@ const MultilingualTrustStrip = () => {
           bg-[rgba(13,27,46,0.78)]
           border border-[#22D3EE]/30
           backdrop-blur-2xl
-          shadow-[0_25px_70px_-20px_rgba(0,0,0,0.55),0_0_60px_-25px_rgba(34,211,238,0.22)]
+          shadow-[0_25px_70px_-20px_rgba(0,0,0,0.55),0_0_60px_-25px_rgba(203,179,147,0.22)]
           transition-all duration-700
           animate-[breathe_10s_ease-in-out_infinite]
           ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"}
         `}
       >
         {/* subtle inner glow */}
-        <div className="pointer-events-none absolute inset-0 rounded-[26px] bg-[radial-gradient(ellipse_at_top,rgba(34,211,238,0.12),transparent_65%)]" />
+        <div className="pointer-events-none absolute inset-0 rounded-[26px] bg-[radial-gradient(ellipse_at_top,rgba(203,179,147,0.12),transparent_65%)]" />
 
         <div className="relative flex flex-col items-center gap-4 md:gap-5">
           {/* Row 1 + 2 — Real flags with native greetings underneath */}
@@ -144,8 +144,8 @@ const MultilingualTrustStrip = () => {
           50% { transform: rotate(0deg) translateY(-2px); }
         }
         @keyframes breathe {
-          0%, 100% { box-shadow: 0 25px 70px -20px rgba(0,0,0,0.50), 0 0 50px -28px rgba(34,211,238,0.16); }
-          50% { box-shadow: 0 25px 70px -20px rgba(0,0,0,0.50), 0 0 60px -26px rgba(34,211,238,0.22); }
+          0%, 100% { box-shadow: 0 25px 70px -20px rgba(0,0,0,0.50), 0 0 50px -28px rgba(203,179,147,0.16); }
+          50% { box-shadow: 0 25px 70px -20px rgba(0,0,0,0.50), 0 0 60px -26px rgba(203,179,147,0.22); }
         }
       `}</style>
     </div>

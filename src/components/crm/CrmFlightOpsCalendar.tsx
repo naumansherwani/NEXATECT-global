@@ -153,7 +153,7 @@ export default function CrmFlightOpsCalendar() {
           <h3 className="text-lg font-semibold">Flight Ops & Smart Calendar</h3>
           <Badge variant="secondary" className="text-[10px]">AI Pricing</Badge>
           <div className="flex items-center gap-1.5 ml-2">
-            <div className="w-2 h-2 rounded-full bg-[hsl(160,60%,45%)] animate-pulse" />
+            <div className="w-2 h-2 rounded-full bg-[hsl(35,34%,68%)] animate-pulse" />
             <span className="text-[10px] text-muted-foreground">Live</span>
           </div>
         </div>
@@ -197,7 +197,7 @@ export default function CrmFlightOpsCalendar() {
         </Card>
         <Card>
           <CardContent className="p-3 flex items-center gap-3">
-            <Users className="h-5 w-5 text-[hsl(217,91%,60%)]" />
+            <Users className="h-5 w-5 text-[hsl(214,50%,38%)]" />
             <div>
               <p className="text-lg font-bold text-foreground">{avgOccupancy}%</p>
               <p className="text-[10px] text-muted-foreground">Avg Occupancy</p>
@@ -206,7 +206,7 @@ export default function CrmFlightOpsCalendar() {
         </Card>
         <Card>
           <CardContent className="p-3 flex items-center gap-3">
-            <DollarSign className="h-5 w-5 text-[hsl(160,60%,45%)]" />
+            <DollarSign className="h-5 w-5 text-[hsl(35,34%,68%)]" />
             <div>
               <p className="text-lg font-bold text-foreground">${(totalRevenue / 1000).toFixed(0)}k</p>
               <p className="text-[10px] text-muted-foreground">Est. Revenue</p>
@@ -215,7 +215,7 @@ export default function CrmFlightOpsCalendar() {
         </Card>
         <Card className={conflicts.length > 0 ? "border-destructive/50" : ""}>
           <CardContent className="p-3 flex items-center gap-3">
-            <Shield className={`h-5 w-5 ${conflicts.length > 0 ? "text-destructive" : "text-[hsl(160,60%,45%)]"}`} />
+            <Shield className={`h-5 w-5 ${conflicts.length > 0 ? "text-destructive" : "text-[hsl(35,34%,68%)]"}`} />
             <div>
               <p className="text-lg font-bold text-foreground">{conflicts.length}</p>
               <p className="text-[10px] text-muted-foreground">Conflicts</p>
@@ -333,7 +333,7 @@ export default function CrmFlightOpsCalendar() {
                       </td>
                       <td className="py-2 text-center">
                         <div className="flex items-center justify-center gap-1">
-                          <span className={`text-xs font-medium ${occupancy > 90 ? "text-destructive" : occupancy > 70 ? "text-[hsl(38,92%,50%)]" : "text-[hsl(160,60%,45%)]"}`}>
+                          <span className={`text-xs font-medium ${occupancy > 90 ? "text-destructive" : occupancy > 70 ? "text-[hsl(35,40%,66%)]" : "text-[hsl(35,34%,68%)]"}`}>
                             {f.seatsSold}/{f.seatsTotal}
                           </span>
                           <span className="text-[10px] text-muted-foreground">({occupancy}%)</span>
@@ -341,16 +341,16 @@ export default function CrmFlightOpsCalendar() {
                       </td>
                       <td className="py-2 text-center">
                         <div className="flex items-center justify-center gap-1">
-                          <span className={`text-xs font-bold ${priceView === "ai" ? "text-[hsl(160,60%,45%)]" : "text-foreground"}`}>
+                          <span className={`text-xs font-bold ${priceView === "ai" ? "text-[hsl(35,34%,68%)]" : "text-foreground"}`}>
                             ${displayPrice}
                           </span>
                           {priceView === "ai" && priceDiff !== 0 && (
-                            <Badge className={`text-[8px] px-1 border-0 ${priceDiff > 0 ? "bg-[hsl(160,60%,45%)]/15 text-[hsl(160,60%,45%)]" : "bg-[hsl(38,92%,50%)]/15 text-[hsl(38,92%,50%)]"}`}>
+                            <Badge className={`text-[8px] px-1 border-0 ${priceDiff > 0 ? "bg-[hsl(35,34%,68%)]/15 text-[hsl(35,34%,68%)]" : "bg-[hsl(35,40%,66%)]/15 text-[hsl(35,40%,66%)]"}`}>
                               {priceDiff > 0 ? `+$${priceDiff} ↑` : `-$${Math.abs(priceDiff)} ↓`}
                             </Badge>
                           )}
                           {priceView === "ai" && (
-                            <Zap className="h-3 w-3 text-[hsl(160,60%,45%)]" />
+                            <Zap className="h-3 w-3 text-[hsl(35,34%,68%)]" />
                           )}
                         </div>
                       </td>

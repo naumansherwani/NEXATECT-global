@@ -24,11 +24,11 @@ interface OwnerStatsCardsProps {
 const OwnerStatsCards = ({ stats, totalRevenue, showSecret }: OwnerStatsCardsProps) => {
   const items = [
     { icon: Users, label: "Total Users", value: stats.totalUsers, color: "text-primary" },
-    { icon: Calendar, label: "Bookings", value: stats.totalBookings, color: "text-[hsl(217,91%,60%)]" },
-    { icon: Globe, label: "Resources", value: stats.totalResources, color: "text-[hsl(160,60%,45%)]" },
+    { icon: Calendar, label: "Bookings", value: stats.totalBookings, color: "text-[hsl(214,50%,38%)]" },
+    { icon: Globe, label: "Resources", value: stats.totalResources, color: "text-[hsl(35,34%,68%)]" },
     { icon: Shield, label: "Active Subs", value: stats.activeSubscriptions, color: "text-[hsl(270,80%,70%)]" },
-    { icon: Activity, label: "Trialing", value: stats.trialingUsers, color: "text-[hsl(38,92%,60%)]" },
-    { icon: DollarSign, label: "Revenue", value: `$${totalRevenue.toLocaleString()}`, color: "text-[hsl(160,60%,45%)]" },
+    { icon: Activity, label: "Trialing", value: stats.trialingUsers, color: "text-[hsl(35,40%,66%)]" },
+    { icon: DollarSign, label: "Revenue", value: `$${totalRevenue.toLocaleString()}`, color: "text-[hsl(35,34%,68%)]" },
     { icon: Briefcase, label: "CRM Contacts", value: stats.totalCrmContacts, color: "text-[hsl(200,80%,55%)]" },
     { icon: FileText, label: "CRM Deals", value: stats.totalCrmDeals, color: "text-[hsl(330,70%,55%)]" },
     { icon: Layers, label: "Workspaces", value: stats.totalWorkspaces, color: "text-[hsl(45,90%,50%)]" },

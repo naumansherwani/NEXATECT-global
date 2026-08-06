@@ -35,10 +35,10 @@ export function isTicketIndustry(industry: IndustryType): boolean {
 
 function getIndustryLabel(industry: IndustryType) {
   switch (industry) {
-    case "airlines": return { icon: Plane, label: "BOARDING PASS", color: "hsl(217,91%,60%)", bg: "hsl(217,91%,60%,0.08)", accent: "hsl(217,91%,60%)" };
-    case "railways": return { icon: TrainFront, label: "TRAIN TICKET", color: "hsl(38,92%,55%)", bg: "hsl(38,92%,55%,0.08)", accent: "hsl(38,92%,55%)" };
-    case "events_entertainment": return { icon: Theater, label: "EVENT TICKET", color: "hsl(270,80%,65%)", bg: "hsl(270,80%,65%,0.08)", accent: "hsl(270,80%,65%)" };
-    default: return { icon: Hash, label: "TICKET", color: "hsl(174,62%,50%)", bg: "hsl(174,62%,50%,0.08)", accent: "hsl(174,62%,50%)" };
+    case "airlines": return { icon: Plane, label: "BOARDING PASS", color: "hsl(214,50%,38%)", bg: "hsl(217,91%,60%,0.08)", accent: "hsl(214,50%,38%)" };
+    case "railways": return { icon: TrainFront, label: "TRAIN TICKET", color: "hsl(35,40%,66%)", bg: "hsl(38,92%,55%,0.08)", accent: "hsl(35,40%,66%)" };
+    case "events_entertainment": return { icon: Theater, label: "EVENT TICKET", color: "hsl(214,50%,30%)", bg: "hsl(270,80%,65%,0.08)", accent: "hsl(214,50%,30%)" };
+    default: return { icon: Hash, label: "TICKET", color: "hsl(35,34%,68%)", bg: "hsl(174,62%,50%,0.08)", accent: "hsl(35,34%,68%)" };
   }
 }
 

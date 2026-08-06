@@ -300,7 +300,7 @@ export default function AIAgentsEmailCenter() {
                   </div>
 
                   {selected.aiReply && (
-                    <div className="rounded-lg border p-4" style={{ borderColor: "rgba(34,211,238,0.4)", backgroundColor: "rgba(34,211,238,0.06)" }}>
+                    <div className="rounded-lg border p-4" style={{ borderColor: "rgba(203,179,147,0.4)", backgroundColor: "rgba(203,179,147,0.06)" }}>
                       <div className="flex items-center gap-2 mb-2">
                         <Sparkles className="w-3.5 h-3.5" style={{ color: "#22D3EE" }} />
                         <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "#22D3EE" }}>AI Response Sent</span>
