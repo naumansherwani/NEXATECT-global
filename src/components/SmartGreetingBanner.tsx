@@ -65,11 +65,11 @@ function formatClock(tz: string) {
 }
 
 function getGreeting(hour: number) {
-  if (hour < 5) return { text: "Good Night", emoji: "🌙", gradient: "from-sky-400/10 to-blue-400/10" };
-  if (hour < 12) return { text: "Good Morning", emoji: "☀️", gradient: "from-sky-400/10 to-blue-400/10" };
-  if (hour < 17) return { text: "Good Afternoon", emoji: "🌤️", gradient: "from-sky-400/10 to-blue-400/10" };
-  if (hour < 21) return { text: "Good Evening", emoji: "🌅", gradient: "from-sky-400/10 to-blue-400/10" };
-  return { text: "Good Night", emoji: "🌙", gradient: "from-sky-400/10 to-blue-400/10" };
+  if (hour < 5) return { text: "Good Night", emoji: "🌙", gradient: "from-primary/10 to-secondary/20" };
+  if (hour < 12) return { text: "Good Morning", emoji: "☀️", gradient: "from-primary/10 to-secondary/20" };
+  if (hour < 17) return { text: "Good Afternoon", emoji: "🌤️", gradient: "from-primary/10 to-secondary/20" };
+  if (hour < 21) return { text: "Good Evening", emoji: "🌅", gradient: "from-primary/10 to-secondary/20" };
+  return { text: "Good Night", emoji: "🌙", gradient: "from-primary/10 to-secondary/20" };
 }
 
 function windDir(deg: number) {
@@ -250,14 +250,14 @@ export default function SmartGreetingBanner({ userName, compact = false }: Props
                       </div>
                     </div>
                     <div className="flex items-center gap-1.5 p-2 rounded-lg bg-muted/30">
-                      <Droplets className="h-3.5 w-3.5 text-blue-400 shrink-0" />
+                      <Droplets className="h-3.5 w-3.5 text-primary shrink-0" />
                       <div>
                         <p className="text-[10px] text-muted-foreground">Humidity</p>
                         <p className="text-xs font-semibold">{weather.humidity}%</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-1.5 p-2 rounded-lg bg-muted/30">
-                      <Wind className="h-3.5 w-3.5 text-teal-400 shrink-0" />
+                      <Wind className="h-3.5 w-3.5 text-primary shrink-0" />
                       <div>
                         <p className="text-[10px] text-muted-foreground">Wind</p>
                         <p className="text-xs font-semibold">{Math.round(weather.windSpeed)} km/h {windDir(weather.windDirection)}</p>
@@ -296,7 +296,7 @@ export default function SmartGreetingBanner({ userName, compact = false }: Props
                           <span className="text-base">{getWmo(h.code).emoji}</span>
                           <span className="text-xs font-semibold">{Math.round(h.temp)}°</span>
                           {h.precip > 0 && (
-                            <span className="text-[9px] text-blue-400">{h.precip}%</span>
+                            <span className="text-[9px] text-primary">{h.precip}%</span>
                           )}
                         </div>
                       ))}
@@ -315,7 +315,7 @@ export default function SmartGreetingBanner({ userName, compact = false }: Props
                             <span className="text-sm">{getWmo(d.code).emoji}</span>
                             <span className="text-[10px] text-muted-foreground flex-1 hidden sm:block">{getWmo(d.code).label}</span>
                             {d.precipProb > 0 && (
-                              <Badge variant="outline" className="text-[9px] px-1 py-0 text-blue-400 border-blue-400/20">
+                              <Badge variant="outline" className="text-[9px] px-1 py-0 text-primary border-primary/20">
                                 <Droplets className="h-2.5 w-2.5 mr-0.5" />{d.precipProb}%
                               </Badge>
                             )}
