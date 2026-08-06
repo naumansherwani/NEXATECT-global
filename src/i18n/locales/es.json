@@ -56,7 +56,7 @@
   "faq": {
     "title": "Preguntas Frecuentes",
     "label": "FAQ",
-    "q1": "¿Mis datos están seguros con HostFlow AI?",
+    "q1": "¿Mis datos están seguros con NEXATECT?",
     "a1": "Absolutamente. Utilizamos cifrado de nivel bancario, cumplimiento con RGPD y auditorías de seguridad regulares. Tus datos nunca se comparten con terceros.",
     "q2": "¿Cómo funciona la prueba gratuita de 3 días?",
     "a2": "Obtén acceso completo a todas las funciones durante 3 días sin tarjeta de crédito. Después, elige el plan que mejor se adapte a tu negocio.",
@@ -64,7 +64,7 @@
     "a3": "Ofrecemos Básico ($25/mes), Pro ($55/mes) y Enterprise ($109/mes). Cada plan incluye diferentes niveles de recursos, funciones de IA y soporte.",
     "q4": "¿Qué es el Marketplace?",
     "a4": "El Marketplace te permite publicar y descubrir servicios de programación, conectarte con proveedores de tu industria y hacer crecer tu red profesional.",
-    "q5": "¿Puedo usar HostFlow para múltiples industrias?",
+    "q5": "¿Puedo usar NEXATECT para múltiples industrias?",
     "a5": "¡Sí! Cada plan soporta una industria, pero puedes actualizar o agregar industrias adicionales. Nuestra IA se adapta a los requisitos específicos de cada sector.",
     "q6": "¿Qué tan preciso es el motor de precios con IA?",
     "a6": "Nuestro motor de precios dinámicos analiza la demanda del mercado, precios de competidores, estacionalidad y datos históricos para optimizar tus precios en tiempo real.",
@@ -78,19 +78,19 @@
     "getInTouch": "Contáctanos",
     "privacy": "Política de Privacidad",
     "terms": "Términos y Condiciones",
-    "rights": "© 2026 HostFlow AI Technologies. Todos los derechos reservados.",
+    "rights": "© 2026 NEXATECT Technologies. Todos los derechos reservados.",
     "poweredBy": "Impulsado por IA · Diseñado para cada industria · Hecho con ❤️"
   },
   "about": {
-    "title": "Acerca de HostFlow AI",
+    "title": "Acerca de NEXATECT",
     "subtitle": "Estamos construyendo el futuro de la programación inteligente para cada industria del planeta.",
     "missionTitle": "Nuestra Misión",
     "mission": "Eliminar el caos de programación y maximizar los ingresos de empresas en todo el mundo mediante la automatización impulsada por inteligencia artificial.",
     "visionTitle": "Nuestra Visión",
     "vision": "Un mundo donde ningún negocio pierda un solo dólar por conflictos de agenda, reservas perdidas o estimaciones manuales de precios — donde un calendario inteligente impulse cada industria, cada mercado y cada zona horaria de forma fluida.",
     "storyTitle": "Nuestra Historia",
-    "story": "Fundada en 2024, HostFlow AI nació de una simple frustración: ¿por qué las empresas siguen perdiendo dinero por reservas dobles, errores de precios y conflictos de programación? Construimos una IA que resuelve todos estos problemas — en 8 industrias, en una sola plataforma.",
-    "whyTitle": "¿Por Qué Elegir HostFlow AI?",
+    "story": "Fundada en 2024, NEXATECT nació de una simple frustración: ¿por qué las empresas siguen perdiendo dinero por reservas dobles, errores de precios y conflictos de programación? Construimos una IA que resuelve todos estos problemas — en 8 industrias, en una sola plataforma.",
+    "whyTitle": "¿Por Qué Elegir NEXATECT?",
     "why1Title": "Enfoque IA-First",
     "why1Desc": "Cada función está impulsada por IA — desde el pronóstico de demanda hasta precios dinámicos y resolución de conflictos.",
     "why2Title": "Multi-Industria",
@@ -179,7 +179,7 @@
   },
   "contact": {
     "title": "Ponte en Contacto",
-    "subtitle": "¿Tienes preguntas sobre HostFlow AI? Nos encantaría saber de ti. Envíanos un mensaje y te responderemos lo antes posible.",
+    "subtitle": "¿Tienes preguntas sobre NEXATECT? Nos encantaría saber de ti. Envíanos un mensaje y te responderemos lo antes posible.",
     "email": "Correo Electrónico",
     "whatsapp": "WhatsApp",
     "chatWithUs": "Chatea con nosotros",
@@ -229,7 +229,7 @@
     "termsAgree": "Al registrarte, aceptas nuestros Términos de Servicio y Política de Privacidad."
   },
   "onboarding": {
-    "welcome": "¡Bienvenido a HostFlow AI!",
+    "welcome": "¡Bienvenido a NEXATECT!",
     "selectIndustry": "Selecciona tu industria para comenzar",
     "setupProfile": "Configura tu perfil",
     "getStarted": "¡Vamos a comenzar!"
