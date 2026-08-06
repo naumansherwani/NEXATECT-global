@@ -266,7 +266,7 @@ const Settings = () => {
                   <CardTitle className="text-sm flex items-center gap-2">
                     <BarChart3 className="w-4 h-4 text-primary" /> Platform Overview
                   </CardTitle>
-                  <CardDescription>Your HostFlow AI platform status</CardDescription>
+                  <CardDescription>Your NEXATECT platform status</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="grid grid-cols-2 gap-4">
@@ -285,7 +285,7 @@ const Settings = () => {
                     </div>
                   </div>
                   <div className="p-4 rounded-lg bg-primary/5 border border-primary/20">
-                    <p className="text-sm font-medium text-foreground">🏢 HostFlow AI</p>
+                    <p className="text-sm font-medium text-foreground">🏢 NEXATECT</p>
                     <p className="text-xs text-muted-foreground mt-1">
                       Multi-industry AI platform · 8 Industries · AI CRM · AI Automation
                     </p>

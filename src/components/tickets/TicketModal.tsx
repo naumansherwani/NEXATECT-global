@@ -153,7 +153,7 @@ const TicketModal = ({ open, onClose, ticket }: TicketModalProps) => {
   </div>
   <div class="ticket-footer">
     <div>
-      <div class="brand">HostFlow AI</div>
+      <div class="brand">NEXATECT</div>
     </div>
     <div class="qr-section">
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=${encodeURIComponent(qrValue)}" width="80" height="80" alt="QR Code" />
@@ -250,7 +250,7 @@ const TicketModal = ({ open, onClose, ticket }: TicketModalProps) => {
             <div className="flex items-center justify-between pt-4 border-t border-dashed border-border">
               <div>
                 <p className="text-[10px] text-muted-foreground">Powered by</p>
-                <p className="text-sm font-bold text-foreground">HostFlow AI</p>
+                <p className="text-sm font-bold text-foreground">NEXATECT</p>
               </div>
               <div className="flex flex-col items-center gap-1">
                 <QRCodeSVG value={qrValue} size={72} level="M" />

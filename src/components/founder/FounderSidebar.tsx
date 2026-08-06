@@ -71,7 +71,7 @@ export default function FounderSidebar({ active, onSelect }: { active: FounderSe
         <NexatectMark className="w-10 h-10 shrink-0 drop-shadow-[0_0_10px_rgba(203,179,147,0.35)] group-hover:scale-105 transition-transform" />
         <div className="flex-1">
           <div className="fos-gold-text text-sm font-bold leading-tight tracking-wide">Founder OS</div>
-          <div className="text-[var(--fos-accent)]/70 text-[10px] tracking-[0.22em] uppercase">HostFlow AI</div>
+          <div className="text-[var(--fos-accent)]/70 text-[10px] tracking-[0.22em] uppercase">NEXATECT</div>
         </div>
         <button
           onClick={(e) => { e.preventDefault(); e.stopPropagation(); setPinned((p) => !p); }}

@@ -5,7 +5,7 @@ const TESTIMONIALS = [
   {
     name: "S. Mitchell",
     role: "Hotel Manager",
-    text: "HostFlow AI eliminated our double-booking nightmares. Revenue up 34% in the first month with AI dynamic pricing.",
+    text: "NEXATECT eliminated our double-booking nightmares. Revenue up 34% in the first month with AI dynamic pricing.",
     rating: 5,
     industry: "Hospitality",
     avatar: "SM",
@@ -21,7 +21,7 @@ const TESTIMONIALS = [
   {
     name: "J. Rodriguez",
     role: "Fleet Director, Car Rental Agency",
-    text: "We manage 500+ vehicles across 12 locations. HostFlow's AI prevents conflicts and maximizes utilization effortlessly.",
+    text: "We manage 500+ vehicles across 12 locations. NEXATECT's AI prevents conflicts and maximizes utilization effortlessly.",
     rating: 5,
     industry: "Car Rental",
     avatar: "JR",
@@ -37,7 +37,7 @@ const TESTIMONIALS = [
   {
     name: "Prof. D. Okafor",
     role: "Academic Director, University",
-    text: "Scheduling 200+ classes across 50 rooms with no conflicts? HostFlow AI makes the impossible look easy.",
+    text: "Scheduling 200+ classes across 50 rooms with no conflicts? NEXATECT makes the impossible look easy.",
     rating: 5,
     industry: "Education",
     avatar: "DO",
@@ -53,7 +53,7 @@ const TESTIMONIALS = [
   {
     name: "Capt. R. Müller",
     role: "Operations Director, Regional Airline",
-    text: "Crew scheduling and gate management used to be chaos. HostFlow AI resolved 98% of conflicts automatically.",
+    text: "Crew scheduling and gate management used to be chaos. NEXATECT resolved 98% of conflicts automatically.",
     rating: 5,
     industry: "Airlines",
     avatar: "RM",

@@ -50,7 +50,7 @@ const Contact = () => {
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-3">Get in Touch</h1>
           <p className="text-[hsl(213,97%,87%)]/70 max-w-lg mx-auto">
-            Have questions about HostFlow AI? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            Have questions about NEXATECT? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
           </p>
         </div>
 

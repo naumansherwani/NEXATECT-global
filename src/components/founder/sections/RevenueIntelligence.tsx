@@ -112,7 +112,7 @@ async function exportPdf(report: Report) {
       y += size + 4;
     }
   };
-  line("HostFlow AI · Revenue Intelligence", 18, true); y += 4;
+  line("NEXATECT · Revenue Intelligence", 18, true); y += 4;
   line(`${report.periodLabel} · Generated ${fmtDate(report.createdAt)}`, 10);
   line(`Confidence ${report.confidenceScore}% · Status ${report.status}`, 10);
   y += 8;
@@ -344,7 +344,7 @@ export default function RevenueIntelligence() {
               <div className="relative grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 items-center">
                 <div>
                   <div className="text-[10px] uppercase tracking-[0.2em] text-cyan-400/80 font-semibold">
-                    HostFlow Value Generated
+                    NEXATECT Value Generated
                   </div>
                   <div className="text-4xl md:text-6xl font-bold tabular-nums text-[var(--fos-text)] mt-2">
                     {safe(s10.totalCostSavings)}
@@ -359,7 +359,7 @@ export default function RevenueIntelligence() {
                   </div>
                 </div>
                 <div className="md:pl-6 md:border-l md:border-[var(--fos-border)]">
-                  <Gauge value={Number(s10.hostflowValueScore) || 0} size={140} label="HostFlow Score" />
+                  <Gauge value={Number(s10.hostflowValueScore) || 0} size={140} label="NEXATECT Score" />
                 </div>
               </div>
             </div>
@@ -389,7 +389,7 @@ export default function RevenueIntelligence() {
             </SectionShell>
 
             {/* S3 */}
-            <SectionShell number={3} title="Cost Savings" subtitle="HostFlow vs Traditional">
+            <SectionShell number={3} title="Cost Savings" subtitle="NEXATECT vs Traditional">
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 <MetricTile label="vs OTA / Marketplace" value={safe(report.s3_cost_savings.vsMarketplaceFees)} />
                 <MetricTile label="vs Manual Support" value={safe(report.s3_cost_savings.vsManualSupport)} />
@@ -597,7 +597,7 @@ export default function RevenueIntelligence() {
                 <MetricTile label="Cost Savings" value={safe(s10.totalCostSavings)} />
                 <MetricTile label="ROI Multiplier" value={safe(s10.totalROIEstimate)} highlight />
                 <div className="founder-kpi p-4 rounded-lg flex items-center justify-center">
-                  <Gauge value={Number(s10.hostflowValueScore) || 0} size={92} label="HostFlow Score" />
+                  <Gauge value={Number(s10.hostflowValueScore) || 0} size={92} label="NEXATECT Score" />
                 </div>
               </div>
               <div className="border-t border-[var(--fos-border)] pt-5">

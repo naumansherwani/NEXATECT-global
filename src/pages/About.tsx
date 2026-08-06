@@ -39,7 +39,7 @@ const About = () => {
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
               <span className="text-foreground">About </span>
               <span className="bg-gradient-to-r from-primary via-[hsl(216,88%,55%)] to-[hsl(214,50%,30%)] bg-clip-text text-transparent">
-                HostFlow AI Technologies
+                NEXATECT Technologies
               </span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t("about.subtitle")}</p>

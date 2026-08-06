@@ -350,7 +350,7 @@ html:not(.dark) .ghost-sidebar-bg .ghost-sidebar-active {
   background: linear-gradient(135deg, rgba(var(--industry-rgb, 15 23 42), 0.12) 0%, rgba(var(--industry-rgb, 15 23 42), 0.04) 100%);
 }
 
-/* ===== Ghost Sidebar — HostFlow AI brand header ("H" + wordmark) =====
+/* ===== Ghost Sidebar — NEXATECT brand header ("H" + wordmark) =====
    Dark mode keeps the original plain H logo.
    Light mode keeps the premium industry-colored treatment. */
 .ghost-brand-mark {
@@ -1075,7 +1075,7 @@ html.dark[data-industry="railways"] {
   --sidebar-ring: 0 100% 50%;
 }
 
-/* -------- BRAND (HostFlow Teal — fallback when user picks "Brand" mode) --------
+/* -------- BRAND (NEXATECT Teal — fallback when user picks "Brand" mode) --------
    Explicitly mirrors the default :root / .dark tokens so the brand selection
    feels deliberate and consistent across all industries. */
 [data-industry="brand"] {

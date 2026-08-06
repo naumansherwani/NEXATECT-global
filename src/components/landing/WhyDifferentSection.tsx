@@ -11,7 +11,7 @@ const ITEMS = [
     icon: Sparkles,
     title: "Pricing",
     tagline: "Transparent. Trial-first.",
-    body: "No hidden fees, no annual lock-ins, no per-seat tax. Start with a 7-day full-access trial — no credit card — and only pay when HostFlow proves its ROI.",
+    body: "No hidden fees, no annual lock-ins, no per-seat tax. Start with a 7-day full-access trial — no credit card — and only pay when NEXATECT proves its ROI.",
   },
   {
     icon: Brain,
@@ -42,7 +42,7 @@ const WhyDifferentSection = () => (
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-[hsl(174,62%,50%,0.12)] to-[hsl(217,91%,60%,0.12)] border border-[hsl(174,62%,50%,0.25)]">
           <Sparkles className="w-3.5 h-3.5 text-[hsl(35,34%,68%)]" />
           <span className="text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-[hsl(174,62%,60%)] to-[hsl(214,50%,38%)] bg-clip-text text-transparent">
-            Why HostFlow AI is different
+            Why NEXATECT is different
           </span>
         </div>
         <h2 className="text-3xl md:text-4xl font-extrabold text-white">
@@ -53,7 +53,7 @@ const WhyDifferentSection = () => (
           with one.
         </h2>
         <p className="text-base text-white/50 max-w-2xl mx-auto leading-relaxed">
-          While other platforms force you to stitch together a calendar, a CRM, a pricing engine and a review tool — HostFlow AI delivers all of it, natively unified, with industry-trained AI at the core.
+          While other platforms force you to stitch together a calendar, a CRM, a pricing engine and a review tool — NEXATECT delivers all of it, natively unified, with industry-trained AI at the core.
         </p>
       </div>
 
@@ -76,7 +76,7 @@ const WhyDifferentSection = () => (
       </div>
 
       <p className="text-center text-xs text-white/40 italic mt-10 max-w-3xl mx-auto">
-        Where competitors sell software, HostFlow AI delivers an autonomous operating layer for your business — designed, trained and continuously refined to outperform every legacy SaaS in its category.
+        Where competitors sell software, NEXATECT delivers an autonomous operating layer for your business — designed, trained and continuously refined to outperform every legacy SaaS in its category.
       </p>
     </div>
   </section>

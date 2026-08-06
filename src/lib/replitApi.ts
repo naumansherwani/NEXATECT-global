@@ -3,7 +3,7 @@ import { SOVEREIGN_TOKEN } from "@/lib/replitBase";
 import { supabase } from "@/integrations/supabase/client";
 
 /**
- * Thin wrapper for calling Replit (HostFlow Brain) routes.
+ * Thin wrapper for calling Replit (NEXATECT Brain) routes.
  *
  * Returns { data, error } shape — drop-in replacement for
  * supabase.functions.invoke(name, { body }) in the frontend.
@@ -71,7 +71,7 @@ export async function replitCall<T = any>(
   try {
     const auth = await getAuthHeader();
     const surfaceHeader = init.surface
-      ? { "X-HostFlow-Surface": init.surface }
+      ? { "X-NEXATECT-Surface": init.surface }
       : {};
     const res = await fetch(url, {
       method,

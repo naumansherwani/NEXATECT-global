@@ -104,7 +104,7 @@ export default function Inbox() {
 
   const reply = (it: InboxItem) => {
     if (it.type === "enterprise_lead" && it.raw.work_email) {
-      window.location.href = `mailto:${it.raw.work_email}?subject=Re: HostFlow AI Enterprise Inquiry`;
+      window.location.href = `mailto:${it.raw.work_email}?subject=Re: NEXATECT Enterprise Inquiry`;
     } else {
       toast({ title: "Reply", description: "Open this item in its source module to reply." });
     }

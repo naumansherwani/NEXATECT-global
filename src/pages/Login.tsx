@@ -204,7 +204,7 @@ export default function Login() {
           <p className="text-xs font-medium tracking-[0.35em] uppercase text-primary/70">Welcome to</p>
           <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
             <span className="bg-gradient-to-r from-[hsl(35,34%,68%)] via-[hsl(200,80%,65%)] to-[hsl(214,50%,38%)] bg-clip-text text-transparent drop-shadow-[0_0_30px_hsl(174,62%,50%,0.3)]">
-              HostFlow AI
+              NEXATECT
             </span>
           </h1>
           <div className="flex items-center justify-center gap-3">

@@ -3,7 +3,7 @@ import { HelpCircle } from "lucide-react";
 
 const FAQS = [
   {
-    q: "Is my data safe with HostFlow AI?",
+    q: "Is my data safe with NEXATECT?",
     a: "Absolutely. We use 256-bit encryption, row-level security policies, and privacy-first data handling. Your data is isolated and never shared with other users or used for AI training."
   },
   {
@@ -19,7 +19,7 @@ const FAQS = [
     a: "The AI CRM is a Premium feature that helps you manage contacts, deals, tickets, and activities with AI-powered insights — all integrated with your scheduling workflow."
   },
   {
-    q: "Can I use HostFlow for multiple industries?",
+    q: "Can I use NEXATECT for multiple industries?",
     a: "Each plan supports 1 industry. You can switch between industries anytime from your dashboard. Need multiple industries? Contact us for custom enterprise pricing."
   },
   {
@@ -44,7 +44,7 @@ const FAQSection = () => (
           <HelpCircle className="w-4 h-4" /> FAQ
         </div>
         <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">Frequently Asked Questions</h2>
-        <p className="text-muted-foreground">Everything you need to know about HostFlow AI.</p>
+        <p className="text-muted-foreground">Everything you need to know about NEXATECT.</p>
       </div>
       <Accordion type="single" collapsible className="space-y-3">
         {FAQS.map((faq, i) => (

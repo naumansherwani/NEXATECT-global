@@ -605,7 +605,7 @@ export default function CrmContactDetailPanel({ contact, industry, onBack, onUpd
                     setEducationLoading(true);
                     setTimeout(() => {
                       setEducationSummary(
-                        `Dear ${contact.name},\n\nYour doctor found signs of early nerve damage (neuropathy) related to diabetes. This can cause tingling, numbness, or tiredness in your hands and feet.\n\n📌 What to do:\n• Take your medicines (Metformin & Gabapentin) as prescribed.\n• Check your feet daily for cuts or sores.\n• Keep blood sugar under control — aim for HbA1c below 7%.\n• Walk 20-30 minutes daily if possible.\n\n📅 Next visit: 4 weeks from today.\n\nIf you feel sudden weakness, severe dizziness, or chest pain, go to the emergency room immediately.\n\n— ${contact.company || "HostFlow AI Healthcare"}`
+                        `Dear ${contact.name},\n\nYour doctor found signs of early nerve damage (neuropathy) related to diabetes. This can cause tingling, numbness, or tiredness in your hands and feet.\n\n📌 What to do:\n• Take your medicines (Metformin & Gabapentin) as prescribed.\n• Check your feet daily for cuts or sores.\n• Keep blood sugar under control — aim for HbA1c below 7%.\n• Walk 20-30 minutes daily if possible.\n\n📅 Next visit: 4 weeks from today.\n\nIf you feel sudden weakness, severe dizziness, or chest pain, go to the emergency room immediately.\n\n— ${contact.company || "NEXATECT Healthcare"}`
                       );
                       setEducationLoading(false);
                       toast.success("📄 Patient-friendly summary generated — ready to print or share");

@@ -9,7 +9,7 @@ import { invokeShim } from "@/lib/replitApi";
 import { toast } from "sonner";
 
 const SEND_IDENTITIES = [
-  { id: "advisor",    address: "connectai@hostflowai.net",     label: "HostFlow ConnectAI",       sub: "AI Advisor",          color: "#06B6D4" },
+  { id: "advisor",    address: "connectai@hostflowai.net",     label: "NEXATECT ConnectAI",       sub: "AI Advisor",          color: "#06B6D4" },
   { id: "enterprise", address: "connectai@hostflowai.net",     label: "Enterprise Sales",         sub: "Owner",               color: "#F59E0B" },
   { id: "support",    address: "support@hostflowai.net",       label: "Support",                  sub: "Customer Success",    color: "#10B981" },
   { id: "billing",    address: "billing@hostflowai.net",       label: "Billing",                  sub: "Finance",             color: "#3B82F6" },
@@ -20,23 +20,23 @@ type SendIdentityId = typeof SEND_IDENTITIES[number]["id"];
 type Template = { key: string; label: string; icon: any; subject: string; body: string };
 const TEMPLATES: Template[] = [
   { key: "welcome",    label: "Welcome",    icon: Star,
-    subject: "Welcome to HostFlow AI Technologies",
-    body: "Hi {{name}},\n\nThank you for reaching out to HostFlow AI Technologies. I'm Nauman, founder of HostFlow AI.\n\nI'd love to learn more about your business and how we can help you scale.\n\nBest,\nNauman Sherwani\nFounder, HostFlow AI Technologies" },
+    subject: "Welcome to NEXATECT Technologies",
+    body: "Hi {{name}},\n\nThank you for reaching out to NEXATECT Technologies. I'm Nauman, founder of NEXATECT.\n\nI'd love to learn more about your business and how we can help you scale.\n\nBest,\nNauman Sherwani\nFounder, NEXATECT Technologies" },
   { key: "demo",       label: "Demo",       icon: Calendar,
-    subject: "Your HostFlow AI Demo · Booking Confirmation",
-    body: "Hi {{name}},\n\nI've reserved time on the calendar for your HostFlow AI demo.\n\nMeeting link: {{link}}\nDate & time: {{date}}\n\nLooking forward to it.\n\nNauman" },
+    subject: "Your NEXATECT Demo · Booking Confirmation",
+    body: "Hi {{name}},\n\nI've reserved time on the calendar for your NEXATECT demo.\n\nMeeting link: {{link}}\nDate & time: {{date}}\n\nLooking forward to it.\n\nNauman" },
   { key: "followup",   label: "Follow-up",  icon: MessageSquare,
     subject: "Quick follow-up",
     body: "Hi {{name}},\n\nFollowing up on my last note — happy to jump on a quick call this week if useful.\n\nBest,\nNauman" },
   { key: "proposal",   label: "Proposal",   icon: FileText,
-    subject: "HostFlow AI · Proposal Inside",
+    subject: "NEXATECT · Proposal Inside",
     body: "Hi {{name}},\n\nAs discussed, here is the tailored proposal for your team. I've kept it focused on the highest-ROI items first.\n\nLet me know what stands out.\n\nNauman" },
   { key: "payment",    label: "Payment",    icon: CreditCard,
     subject: "Friendly payment reminder",
     body: "Hi {{name}},\n\nA quick reminder that invoice {{invoice}} is due. Let me know if you need anything from our side.\n\nThanks,\nNauman" },
   { key: "enterprise", label: "Enterprise", icon: Building2,
-    subject: "Welcome to HostFlow AI Enterprise",
-    body: "Hi {{name}},\n\nWelcome aboard. Our enterprise onboarding team will reach out within 24 hours with your dedicated success manager.\n\nMy direct line is below — use it any time.\n\nNauman Sherwani\nFounder, HostFlow AI Technologies" },
+    subject: "Welcome to NEXATECT Enterprise",
+    body: "Hi {{name}},\n\nWelcome aboard. Our enterprise onboarding team will reach out within 24 hours with your dedicated success manager.\n\nMy direct line is below — use it any time.\n\nNauman Sherwani\nFounder, NEXATECT Technologies" },
 ];
 
 const AI_MODES = [

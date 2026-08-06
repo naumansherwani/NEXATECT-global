@@ -52,7 +52,7 @@ export default function Emails() {
               <span className="text-[var(--fos-text)] text-sm font-semibold">AI Advisor</span>
             </div>
             <p className="text-[var(--fos-muted)] text-[11px] leading-relaxed">
-              Compose as <span className="text-[var(--fos-text)]">HostFlow ConnectAI</span> with the auto-appended advisor signature.
+              Compose as <span className="text-[var(--fos-text)]">NEXATECT ConnectAI</span> with the auto-appended advisor signature.
             </p>
           </button>
           <button
@@ -76,7 +76,7 @@ export default function Emails() {
               <span className="text-[var(--fos-text)] text-sm font-semibold">Founder</span>
             </div>
             <p className="text-[var(--fos-muted)] text-[11px] leading-relaxed">
-              Send personally as Nauman Sherwani · Founder, HostFlow AI.
+              Send personally as Nauman Sherwani · Founder, NEXATECT.
             </p>
           </button>
         </div>

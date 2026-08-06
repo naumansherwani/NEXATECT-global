@@ -41,7 +41,7 @@ const ReviewsSection = () => {
             Say
           </h2>
           <p className="text-white/40 max-w-xl mx-auto text-lg">
-            Honest experiences from people who use HostFlow AI every day to run their business.
+            Honest experiences from people who use NEXATECT every day to run their business.
           </p>
         </div>
 

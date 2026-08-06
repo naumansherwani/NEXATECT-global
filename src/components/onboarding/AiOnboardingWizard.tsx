@@ -98,7 +98,7 @@ export default function AiOnboardingWizard({ industry, userName, companyName, on
       console.error(e);
       toast.error("Could not load AI onboarding. Showing default plan.");
       setPlan({
-        welcome_title: "Welcome to HostFlow AI",
+        welcome_title: "Welcome to NEXATECT",
         welcome_message: "Let's get your workspace set up in a few quick steps.",
         steps: steps.map(s => ({ ...s, ai_tip: "" })),
         first_action_cta: "Start",

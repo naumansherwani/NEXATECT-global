@@ -20,7 +20,7 @@ export function setWorkspaceThemeMode(mode: WorkspaceThemeMode) {
 /**
  * Applies `data-industry` attribute to <html> based on user's chosen theme mode:
  *  - "industry" (default): uses activeWorkspace.industry
- *  - "brand": forces HostFlow teal brand identity
+ *  - "brand": forces NEXATECT teal brand identity
  *  - "system": clears attribute → falls back to base brand teal (same as default)
  *
  * CSS in index.css scopes each industry's color tokens via [data-industry="X"].

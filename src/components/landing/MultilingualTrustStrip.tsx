@@ -111,7 +111,7 @@ const MultilingualTrustStrip = () => {
 
           {/* Row 4 — Value line */}
           <p className="text-[13px] md:text-sm text-[#94A3B8] text-center max-w-[720px] leading-relaxed">
-            From leads, bookings, WhatsApp, support, calendars, and payments — HostFlow AI helps run your business naturally in 14 languages.
+            From leads, bookings, WhatsApp, support, calendars, and payments — NEXATECT helps run your business naturally in 14 languages.
           </p>
 
           {/* Row 5 — Trust badges */}

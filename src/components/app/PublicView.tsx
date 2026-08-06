@@ -221,7 +221,7 @@ export default function PublicView({ onReturn, onIndustrySelect, currentIndustry
                 Run Your Business with <span className="text-primary">Intelligent Automation</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                HostFlow AI is an all-in-one platform that combines smart scheduling, predictive analytics, and AI-powered CRM to help businesses across 8 industries operate efficiently and grow revenue.
+                NEXATECT is an all-in-one platform that combines smart scheduling, predictive analytics, and AI-powered CRM to help businesses across 8 industries operate efficiently and grow revenue.
               </p>
             </>
           )}
@@ -328,7 +328,7 @@ export default function PublicView({ onReturn, onIndustrySelect, currentIndustry
         <section className="py-20">
           <div className="container text-center max-w-2xl mx-auto space-y-6">
             <h2 className="text-3xl font-bold">Ready to Transform Your Operations?</h2>
-            <p className="text-muted-foreground">Join thousands of businesses using HostFlow AI to automate operations and maximize revenue.</p>
+            <p className="text-muted-foreground">Join thousands of businesses using NEXATECT to automate operations and maximize revenue.</p>
             <Button size="lg" className="gap-2"><Rocket className="w-4 h-4" /> Start Free Trial</Button>
           </div>
         </section>
@@ -352,7 +352,7 @@ export default function PublicView({ onReturn, onIndustrySelect, currentIndustry
             ))}
           </div>
           <div className="border-t border-border/30 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
-            <p className="text-xs text-muted-foreground">© 2026 HostFlow AI Technologies. All rights reserved.</p>
+            <p className="text-xs text-muted-foreground">© 2026 NEXATECT Technologies. All rights reserved.</p>
             <p className="text-xs text-muted-foreground">AI-Powered · Multi-Industry · Built for Growth</p>
           </div>
         </div>

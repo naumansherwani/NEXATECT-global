@@ -174,7 +174,7 @@ export function AppSidebar() {
             <Logo size="sm" />
             {!collapsed && (
               <span className="text-lg font-extrabold bg-gradient-to-r from-[hsl(35,34%,68%)] via-[hsl(200,80%,65%)] to-[hsl(214,50%,38%)] bg-clip-text text-transparent">
-                HostFlow AI
+                NEXATECT
               </span>
             )}
           </button>

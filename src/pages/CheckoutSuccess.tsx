@@ -35,7 +35,7 @@ export default function CheckoutSuccess() {
             Welcome aboard! 🎉
           </h1>
           <p className="text-lg text-muted-foreground">
-            Your payment was successful. Your HostFlow AI plan is being activated now.
+            Your payment was successful. Your NEXATECT plan is being activated now.
           </p>
 
           <div className="rounded-xl border border-border/50 bg-card/50 backdrop-blur-sm p-6 text-left space-y-3">
