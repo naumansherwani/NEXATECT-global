@@ -1,5 +1,5 @@
 /**
- * Central pricing configuration for HostFlow AI.
+ * Central pricing configuration for NEXATECT.
  * Used by frontend pricing cards AND backend (mirror in edge functions).
  * Base currency: GBP (£). Polar prices created in GBP.
  */

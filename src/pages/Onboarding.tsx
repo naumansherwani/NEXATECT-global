@@ -12,12 +12,12 @@ import type { BusinessSubtype } from "@/hooks/useProfile";
 import AiOnboardingWizard from "@/components/onboarding/AiOnboardingWizard";
 
 const industryOptions: { value: IndustryType; label: string; icon: React.ReactNode; desc: string; color: string }[] = [
-  { value: "hospitality", label: "Travel, Tourism & Hospitality", icon: <Hotel className="w-7 h-7" />, desc: "Hotels, vacation rentals, B&Bs, tours, travel agencies", color: "hsl(174,62%,50%)" },
-  { value: "airlines", label: "Airlines & Aviation", icon: <Plane className="w-7 h-7" />, desc: "Flights, seat management, crew scheduling", color: "hsl(217,91%,60%)" },
-  { value: "car_rental", label: "Car Rental", icon: <Car className="w-7 h-7" />, desc: "Fleet management, vehicle bookings", color: "hsl(190,80%,55%)" },
+  { value: "hospitality", label: "Travel, Tourism & Hospitality", icon: <Hotel className="w-7 h-7" />, desc: "Hotels, vacation rentals, B&Bs, tours, travel agencies", color: "hsl(35,34%,68%)" },
+  { value: "airlines", label: "Airlines & Aviation", icon: <Plane className="w-7 h-7" />, desc: "Flights, seat management, crew scheduling", color: "hsl(214,50%,38%)" },
+  { value: "car_rental", label: "Car Rental", icon: <Car className="w-7 h-7" />, desc: "Fleet management, vehicle bookings", color: "hsl(35,45%,80%)" },
   { value: "healthcare", label: "Healthcare & Clinics", icon: <Stethoscope className="w-7 h-7" />, desc: "Appointments, doctors, patients", color: "hsl(0,72%,55%)" },
-  { value: "education", label: "Education & Training", icon: <GraduationCap className="w-7 h-7" />, desc: "Timetables, classes, rooms", color: "hsl(270,80%,65%)" },
-  { value: "logistics", label: "Logistics & Shipping", icon: <Truck className="w-7 h-7" />, desc: "Deliveries, routes, warehouses", color: "hsl(25,95%,55%)" },
+  { value: "education", label: "Education & Training", icon: <GraduationCap className="w-7 h-7" />, desc: "Timetables, classes, rooms", color: "hsl(214,50%,30%)" },
+  { value: "logistics", label: "Logistics & Shipping", icon: <Truck className="w-7 h-7" />, desc: "Deliveries, routes, warehouses", color: "hsl(35,45%,58%)" },
   { value: "events_entertainment", label: "Events & Entertainment", icon: <Theater className="w-7 h-7" />, desc: "Venues, tickets, performers", color: "hsl(300,80%,65%)" },
   { value: "railways", label: "Railways & Trains", icon: <TrainFront className="w-7 h-7" />, desc: "Train scheduling, platforms, crews", color: "hsl(200,70%,50%)" },
 ];
@@ -28,14 +28,14 @@ const subtypeOptions: { value: BusinessSubtype; label: string; icon: React.React
     label: "Hotel & Property",
     icon: <Building2 className="w-8 h-8" />,
     desc: "Hotels, resorts, vacation rentals, B&Bs, serviced apartments",
-    color: "hsl(174,62%,50%)",
+    color: "hsl(35,34%,68%)",
   },
   {
     value: "travel_tours",
     label: "Travel & Tours",
     icon: <Globe className="w-8 h-8" />,
     desc: "Travel agencies, tour operators, adventure tours, day trips, packages",
-    color: "hsl(217,91%,60%)",
+    color: "hsl(214,50%,38%)",
   },
 ];
 
@@ -151,10 +151,10 @@ const Onboarding = () => {
   if (isSettingUp) {
     const subtypeLabel = selectedSubtype === "travel_tours" ? "Travel & Tours" : selectedSubtype === "hotel_property" ? "Hotel & Property" : selectedIndustry?.replace(/_/g, " ");
     return (
-      <div className="min-h-screen bg-[hsl(222,47%,8%)] flex flex-col items-center justify-center relative overflow-hidden">
+      <div className="min-h-screen bg-[hsl(220,9%,8%)] flex flex-col items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/3 w-[400px] h-[400px] bg-[hsl(174,62%,50%)]/10 rounded-full blur-[120px] animate-pulse" />
-          <div className="absolute bottom-1/4 right-1/3 w-[300px] h-[300px] bg-[hsl(217,91%,60%)]/10 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: "0.5s" }} />
+          <div className="absolute top-1/4 left-1/3 w-[400px] h-[400px] bg-[hsl(35,34%,68%)]/10 rounded-full blur-[120px] animate-pulse" />
+          <div className="absolute bottom-1/4 right-1/3 w-[300px] h-[300px] bg-[hsl(214,50%,38%)]/10 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: "0.5s" }} />
         </div>
         <div className="relative z-10 text-center space-y-8">
           <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto animate-pulse">
@@ -167,7 +167,7 @@ const Onboarding = () => {
           <div className="w-72 mx-auto">
             <div className="h-2 bg-white/10 rounded-full overflow-hidden">
               <div
-                className="h-full bg-gradient-to-r from-[hsl(174,62%,50%)] to-[hsl(217,91%,60%)] rounded-full transition-all duration-300 ease-out"
+                className="h-full bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)] rounded-full transition-all duration-300 ease-out"
                 style={{ width: `${Math.min(setupProgress, 100)}%` }}
               />
             </div>
@@ -181,10 +181,10 @@ const Onboarding = () => {
   // Sub-type selector for hospitality
   if (step === "subtype") {
     return (
-      <div className="min-h-screen bg-[hsl(222,47%,8%)] flex flex-col relative overflow-hidden">
+      <div className="min-h-screen bg-[hsl(220,9%,8%)] flex flex-col relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[hsl(174,62%,50%)]/6 rounded-full blur-[120px]" />
-          <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[hsl(217,91%,60%)]/6 rounded-full blur-[120px]" />
+          <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[hsl(35,34%,68%)]/6 rounded-full blur-[120px]" />
+          <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[hsl(214,50%,38%)]/6 rounded-full blur-[120px]" />
         </div>
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
@@ -244,13 +244,13 @@ const Onboarding = () => {
                     {opt.value === "hotel_property" ? (
                       <div className="flex flex-wrap gap-1.5 justify-center">
                         {["Owner", "Manager", "Floor Mgr", "Front Desk"].map(r => (
-                          <span key={r} className="text-[10px] px-2 py-0.5 rounded-full bg-[hsl(174,62%,50%)]/10 text-[hsl(174,62%,50%)] border border-[hsl(174,62%,50%)]/20">{r}</span>
+                          <span key={r} className="text-[10px] px-2 py-0.5 rounded-full bg-[hsl(35,34%,68%)]/10 text-[hsl(35,34%,68%)] border border-[hsl(35,34%,68%)]/20">{r}</span>
                         ))}
                       </div>
                     ) : (
                       <div className="flex flex-wrap gap-1.5 justify-center">
                         {["Owner", "Manager", "Travel Agent", "Tour Guide"].map(r => (
-                          <span key={r} className="text-[10px] px-2 py-0.5 rounded-full bg-[hsl(217,91%,60%)]/10 text-[hsl(217,91%,60%)] border border-[hsl(217,91%,60%)]/20">{r}</span>
+                          <span key={r} className="text-[10px] px-2 py-0.5 rounded-full bg-[hsl(214,50%,38%)]/10 text-[hsl(214,50%,38%)] border border-[hsl(214,50%,38%)]/20">{r}</span>
                         ))}
                       </div>
                     )}
@@ -265,7 +265,7 @@ const Onboarding = () => {
                 onClick={handleSubtypeContinue}
                 disabled={!selectedSubtype}
                 size="lg"
-                className="px-12 py-6 text-lg font-bold bg-gradient-to-r from-[hsl(174,62%,50%)] to-[hsl(217,91%,60%)] text-white shadow-[0_0_30px_rgba(45,212,191,0.3)] hover:shadow-[0_0_50px_rgba(45,212,191,0.5)] transition-all duration-500 disabled:opacity-40 disabled:shadow-none rounded-xl"
+                className="px-12 py-6 text-lg font-bold bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)] text-white shadow-[0_0_30px_rgba(203,179,147,0.3)] hover:shadow-[0_0_50px_rgba(203,179,147,0.5)] transition-all duration-500 disabled:opacity-40 disabled:shadow-none rounded-xl"
               >
                 Continue
               </Button>
@@ -278,10 +278,10 @@ const Onboarding = () => {
 
   // Industry selector (step 1)
   return (
-    <div className="min-h-screen bg-[hsl(222,47%,8%)] flex flex-col relative overflow-hidden">
+    <div className="min-h-screen bg-[hsl(220,9%,8%)] flex flex-col relative overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[hsl(174,62%,50%)]/6 rounded-full blur-[120px]" />
-        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[hsl(217,91%,60%)]/6 rounded-full blur-[120px]" />
+        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[hsl(35,34%,68%)]/6 rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[hsl(214,50%,38%)]/6 rounded-full blur-[120px]" />
       </div>
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
@@ -338,7 +338,7 @@ const Onboarding = () => {
               onClick={handleIndustryContinue}
               disabled={!selectedIndustry}
               size="lg"
-              className="px-12 py-6 text-lg font-bold bg-gradient-to-r from-[hsl(174,62%,50%)] to-[hsl(217,91%,60%)] text-white shadow-[0_0_30px_rgba(45,212,191,0.3)] hover:shadow-[0_0_50px_rgba(45,212,191,0.5)] transition-all duration-500 disabled:opacity-40 disabled:shadow-none rounded-xl"
+              className="px-12 py-6 text-lg font-bold bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)] text-white shadow-[0_0_30px_rgba(203,179,147,0.3)] hover:shadow-[0_0_50px_rgba(203,179,147,0.5)] transition-all duration-500 disabled:opacity-40 disabled:shadow-none rounded-xl"
             >
               Continue
             </Button>

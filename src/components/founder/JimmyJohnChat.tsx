@@ -416,7 +416,7 @@ export default function JimmyJohnChat() {
             <ModulePanel title="Think Mode" subtitle="Deep reasoning before acting — chains, plans, and self-critique.">
               {[
                 { icon: Brain, t: "Chain-of-thought planner", d: "Multi-step plan with explicit assumptions and risks" },
-                { icon: Sparkles, t: "Strategy synthesis", d: "Cross-project pattern detection across HostFlow, Custom AI, Rapid Pay" },
+                { icon: Sparkles, t: "Strategy synthesis", d: "Cross-project pattern detection across NEXATECT, Custom AI, Rapid Pay" },
                 { icon: Search, t: "Research & web grounding", d: "Cite sources, summarize, and store in Memory Vault" },
                 { icon: Shield, t: "Self-critique & guardrails", d: "Sherlock audits every directive before execution" },
               ].map((x, i) => (
@@ -434,7 +434,7 @@ export default function JimmyJohnChat() {
           {activeModule === "pulse" && (
             <ModulePanel title="Empire Pulse" subtitle="Live signals across every property the Chairman owns.">
               {[
-                ["MRR · HostFlow AI", "—", "AWAITING_CORE"],
+                ["MRR · NEXATECT", "—", "AWAITING_CORE"],
                 ["MRR · Custom AI", "—", "AWAITING_CORE"],
                 ["TPV · Rapid Pay", "—", "AWAITING_CORE"],
                 ["Active agents", String(AGENTS.length), "ONLINE"],

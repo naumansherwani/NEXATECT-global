@@ -33,28 +33,28 @@ interface AiInsight {
 
 const PACKAGE_TEMPLATES: Record<string, ComposeInitial> = {
   proposal: {
-    subject: "HostFlow AI · Custom Enterprise Proposal",
-    body: "Hi {{name}},\n\nThank you for your interest in HostFlow AI. Based on your requirements ({{industry}}, {{team}} team), I've prepared a tailored proposal:\n\n• Multi-user workspace with SSO\n• Custom AI workflows for your operations\n• Dedicated async onboarding (no calls required)\n• Priority support with SLA\n• Invoice / contract billing in GBP\n\nI'll send the full PDF proposal in a follow-up email shortly. Let me know if you'd like any adjustments.\n\nBest regards,\nNauman Sherwani\nFounder, HostFlow AI Technologies\nconnectai@hostflowai.net",
+    subject: "NEXATECT · Custom Enterprise Proposal",
+    body: "Hi {{name}},\n\nThank you for your interest in NEXATECT. Based on your requirements ({{industry}}, {{team}} team), I've prepared a tailored proposal:\n\n• Multi-user workspace with SSO\n• Custom AI workflows for your operations\n• Dedicated async onboarding (no calls required)\n• Priority support with SLA\n• Invoice / contract billing in GBP\n\nI'll send the full PDF proposal in a follow-up email shortly. Let me know if you'd like any adjustments.\n\nBest regards,\nNauman Sherwani\nFounder, NEXATECT Technologies\nconnectai@hostflowai.net",
     fromIdentity: "advisor",
   },
   pricing: {
-    subject: "HostFlow AI · Enterprise Pricing",
+    subject: "NEXATECT · Enterprise Pricing",
     body: "Hi {{name}},\n\nAs requested, here's our Enterprise pricing structure tailored for {{company}}:\n\n• Tier 1 (up to 25 seats): from £499/month\n• Tier 2 (26–100 seats): from £1,200/month\n• Tier 3 (100+ seats): custom quote\n\nAll Enterprise tiers include dedicated onboarding, custom workflows, SSO, and priority support. Final pricing depends on your selected workflows and integrations.\n\nHappy to walk through anything by email.\n\nNauman",
     fromIdentity: "advisor",
   },
   contract: {
-    subject: "HostFlow AI · Service Agreement Ready for Review",
-    body: "Hi {{name}},\n\nPlease find attached the HostFlow AI Service Agreement for {{company}}.\n\nKey terms:\n• 12-month initial term, monthly auto-renewal thereafter\n• 30-day termination notice\n• 99.9% uptime SLA\n• GDPR-compliant data processing addendum included\n\nReply with any redlines and we'll iterate. Once signed, we'll generate the first invoice.\n\nBest,\nNauman",
+    subject: "NEXATECT · Service Agreement Ready for Review",
+    body: "Hi {{name}},\n\nPlease find attached the NEXATECT Service Agreement for {{company}}.\n\nKey terms:\n• 12-month initial term, monthly auto-renewal thereafter\n• 30-day termination notice\n• 99.9% uptime SLA\n• GDPR-compliant data processing addendum included\n\nReply with any redlines and we'll iterate. Once signed, we'll generate the first invoice.\n\nBest,\nNauman",
     fromIdentity: "advisor",
   },
   invoice: {
-    subject: "HostFlow AI · Invoice for {{company}}",
+    subject: "NEXATECT · Invoice for {{company}}",
     body: "Hi {{name}},\n\nPlease find your invoice attached.\n\nAmount due: £___\nDue date: Net 14\nPayment methods: Bank transfer or custom payment link (details below).\n\nLet me know once payment is initiated and we'll trigger account activation.\n\nBilling team\nbilling@hostflowai.net",
     fromIdentity: "billing",
   },
   bank_transfer: {
-    subject: "HostFlow AI · Bank Transfer Details for {{company}}",
-    body: "Hi {{name}},\n\nFor bank transfer payment, please use the following details:\n\nBank: Clear Bank UK\nAccount Name: HostFlow AI Technologies Ltd\nSort Code: __-__-__\nAccount Number: ________\nIBAN: GB__ CLRB ____ ____ ____ __\nSWIFT/BIC: CLRBGB22\nReference: {{company}}-ENT\n\nKindly send the remittance confirmation to billing@hostflowai.net so we can match the payment quickly.\n\nThanks,\nBilling team",
+    subject: "NEXATECT · Bank Transfer Details for {{company}}",
+    body: "Hi {{name}},\n\nFor bank transfer payment, please use the following details:\n\nBank: Clear Bank UK\nAccount Name: NEXATECT Technologies Ltd\nSort Code: __-__-__\nAccount Number: ________\nIBAN: GB__ CLRB ____ ____ ____ __\nSWIFT/BIC: CLRBGB22\nReference: {{company}}-ENT\n\nKindly send the remittance confirmation to billing@hostflowai.net so we can match the payment quickly.\n\nThanks,\nBilling team",
     fromIdentity: "billing",
   },
 };

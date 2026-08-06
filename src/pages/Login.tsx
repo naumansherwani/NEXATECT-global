@@ -203,8 +203,8 @@ export default function Login() {
         <div className="text-center space-y-3 cursor-pointer" onClick={() => navigate("/")}>
           <p className="text-xs font-medium tracking-[0.35em] uppercase text-primary/70">Welcome to</p>
           <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
-            <span className="bg-gradient-to-r from-[hsl(174,62%,55%)] via-[hsl(200,80%,65%)] to-[hsl(217,91%,60%)] bg-clip-text text-transparent drop-shadow-[0_0_30px_hsl(174,62%,50%,0.3)]">
-              HostFlow AI
+            <span className="bg-gradient-to-r from-[hsl(35,34%,68%)] via-[hsl(200,80%,65%)] to-[hsl(214,50%,38%)] bg-clip-text text-transparent drop-shadow-[0_0_30px_hsl(174,62%,50%,0.3)]">
+              NEXATECT
             </span>
           </h1>
           <div className="flex items-center justify-center gap-3">
@@ -213,7 +213,7 @@ export default function Login() {
             <span className="h-px w-12 bg-gradient-to-l from-transparent to-primary/40" />
           </div>
           {isOwner ? (
-            <p className="text-sm font-semibold bg-gradient-to-r from-[hsl(174,62%,55%)] to-[hsl(217,91%,60%)] bg-clip-text text-transparent">
+            <p className="text-sm font-semibold bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)] bg-clip-text text-transparent">
               👑 Welcome Back, Mr. Nauman Sherwani
             </p>
           ) : (

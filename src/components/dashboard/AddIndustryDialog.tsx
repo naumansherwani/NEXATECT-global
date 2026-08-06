@@ -42,12 +42,12 @@ const PLAN_CONFIG = {
 };
 
 const industryOptions: { value: IndustryType; label: string; icon: React.ReactNode; color: string }[] = [
-  { value: "hospitality", label: "Travel, Tourism & Hospitality", icon: <Hotel className="w-6 h-6" />, color: "hsl(174,62%,50%)" },
-  { value: "airlines", label: "Airlines & Aviation", icon: <Plane className="w-6 h-6" />, color: "hsl(217,91%,60%)" },
-  { value: "car_rental", label: "Car Rental", icon: <Car className="w-6 h-6" />, color: "hsl(190,80%,55%)" },
+  { value: "hospitality", label: "Travel, Tourism & Hospitality", icon: <Hotel className="w-6 h-6" />, color: "hsl(35,34%,68%)" },
+  { value: "airlines", label: "Airlines & Aviation", icon: <Plane className="w-6 h-6" />, color: "hsl(214,50%,38%)" },
+  { value: "car_rental", label: "Car Rental", icon: <Car className="w-6 h-6" />, color: "hsl(35,45%,80%)" },
   { value: "healthcare", label: "Healthcare & Clinics", icon: <Stethoscope className="w-6 h-6" />, color: "hsl(0,72%,55%)" },
-  { value: "education", label: "Education & Training", icon: <GraduationCap className="w-6 h-6" />, color: "hsl(270,80%,65%)" },
-  { value: "logistics", label: "Logistics & Shipping", icon: <Truck className="w-6 h-6" />, color: "hsl(25,95%,55%)" },
+  { value: "education", label: "Education & Training", icon: <GraduationCap className="w-6 h-6" />, color: "hsl(214,50%,30%)" },
+  { value: "logistics", label: "Logistics & Shipping", icon: <Truck className="w-6 h-6" />, color: "hsl(35,45%,58%)" },
   { value: "events_entertainment", label: "Events & Entertainment", icon: <Theater className="w-6 h-6" />, color: "hsl(300,80%,65%)" },
   { value: "railways", label: "Railways & Trains", icon: <TrainFront className="w-6 h-6" />, color: "hsl(200,70%,50%)" },
 ];

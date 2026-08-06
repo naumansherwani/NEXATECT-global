@@ -9,7 +9,7 @@ import { TrendingUp, DollarSign, Users, Target } from "lucide-react";
 interface Props { industry: IndustryType; }
 
 const COLORS = [
-  "hsl(var(--primary))", "hsl(217, 91%, 60%)", "hsl(280, 65%, 60%)",
+  "hsl(var(--primary))", "hsl(214,50%,38%)", "hsl(280, 65%, 60%)",
   "hsl(40, 96%, 53%)", "hsl(0, 84%, 60%)", "hsl(150, 60%, 40%)",
 ];
 
@@ -138,7 +138,7 @@ export default function CrmRevenueChart({ industry }: Props) {
                 <YAxis className="text-xs" tick={{ fontSize: 11 }} tickFormatter={v => `$${v >= 1000 ? `${(v / 1000).toFixed(0)}k` : v}`} />
                 <Tooltip formatter={(v: number) => [`$${v.toLocaleString()}`, ""]} />
                 <Area type="monotone" dataKey="revenue" stroke="hsl(var(--primary))" fill="hsl(var(--primary))" fillOpacity={0.2} name="Won" />
-                <Area type="monotone" dataKey="pipeline" stroke="hsl(217, 91%, 60%)" fill="hsl(217, 91%, 60%)" fillOpacity={0.1} name="Pipeline" />
+                <Area type="monotone" dataKey="pipeline" stroke="hsl(214,50%,38%)" fill="hsl(214,50%,38%)" fillOpacity={0.1} name="Pipeline" />
               </AreaChart>
             </ResponsiveContainer>
           </CardContent>

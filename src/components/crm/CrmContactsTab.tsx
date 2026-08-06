@@ -311,14 +311,14 @@ export default function CrmContactsTab({ industry }: Props) {
                   <div className="w-24 text-center" onClick={e => e.stopPropagation()}>
                     <div className="flex items-center gap-1 justify-center">
                       <Button variant="ghost" size="icon" className="h-7 w-7" title="Contact via Email" onClick={() => setEmailContact(contact)}>
-                        <Mail className="h-3 w-3 text-[hsl(217,91%,60%)]" />
+                        <Mail className="h-3 w-3 text-[hsl(214,50%,38%)]" />
                       </Button>
                       <Button variant="ghost" size="icon" className="h-7 w-7" title="Voice Note" onClick={() => {
                         navigator.mediaDevices?.getUserMedia({ audio: true })
                           .then(() => toast.info(`🎤 Listening for voice note on ${contact.name}...`))
                           .catch(() => toast.error("Microphone access required"));
                       }}>
-                        <Mic className="h-3 w-3 text-[hsl(270,80%,60%)]" />
+                        <Mic className="h-3 w-3 text-[hsl(214,50%,30%)]" />
                       </Button>
                       <Button variant="ghost" size="icon" className="h-7 w-7" onClick={() => setSelectedContact(contact)}>
                         <Eye className="h-3 w-3" />
@@ -354,7 +354,7 @@ export default function CrmContactsTab({ industry }: Props) {
         <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle className="flex items-center gap-2">
-              <Mail className="h-5 w-5 text-[hsl(217,91%,60%)]" />
+              <Mail className="h-5 w-5 text-[hsl(214,50%,38%)]" />
               Contact {emailContact?.name}
             </DialogTitle>
           </DialogHeader>

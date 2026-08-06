@@ -87,7 +87,7 @@ const ReviewForm = ({ existingReview, onSuccess }: ReviewFormProps) => {
           >
             <Star className={`w-6 h-6 transition-colors ${
               star <= (hoverRating || rating)
-                ? "fill-[hsl(38,92%,55%)] text-[hsl(38,92%,55%)]"
+                ? "fill-[hsl(35,40%,66%)] text-[hsl(35,40%,66%)]"
                 : "text-white/20"
             }`} />
           </button>

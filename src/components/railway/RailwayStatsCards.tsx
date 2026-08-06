@@ -39,9 +39,9 @@ const RailwayStatsCards = () => {
 
   const stats = [
     { label: "Active Trains", value: trains ?? 0, icon: TrainFront, color: "hsl(200,70%,50%)", bg: "hsl(200,70%,50%,0.1)" },
-    { label: "Routes", value: routes ?? 0, icon: Route, color: "hsl(160,60%,45%)", bg: "hsl(160,60%,45%,0.1)" },
-    { label: "Today's Runs", value: schedules ?? 0, icon: TrendingUp, color: "hsl(38,92%,55%)", bg: "hsl(38,92%,55%,0.1)" },
-    { label: "Total Bookings", value: bookings ?? 0, icon: Ticket, color: "hsl(270,80%,65%)", bg: "hsl(270,80%,65%,0.1)" },
+    { label: "Routes", value: routes ?? 0, icon: Route, color: "hsl(35,34%,68%)", bg: "hsl(160,60%,45%,0.1)" },
+    { label: "Today's Runs", value: schedules ?? 0, icon: TrendingUp, color: "hsl(35,40%,66%)", bg: "hsl(38,92%,55%,0.1)" },
+    { label: "Total Bookings", value: bookings ?? 0, icon: Ticket, color: "hsl(214,50%,30%)", bg: "hsl(270,80%,65%,0.1)" },
   ];
 
   return (

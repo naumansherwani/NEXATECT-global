@@ -149,20 +149,20 @@ export default function OwnerGrowthCommandCenter() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         <MetricCard label="Total MRR" value={fmtMoney(global.mrr)} accent="hsl(168, 70%, 38%)" />
         <MetricCard label="ARR" value={fmtMoney(global.arr)} accent="hsl(220, 80%, 55%)" />
-        <MetricCard label="Active Subscribers" value={global.active.toLocaleString()} accent="hsl(160, 60%, 45%)" />
+        <MetricCard label="Active Subscribers" value={global.active.toLocaleString()} accent="hsl(35,34%,68%)" />
         <MetricCard label="Trialing" value={global.trialing.toLocaleString()} accent="hsl(45, 90%, 55%)" />
         <MetricCard label="Trial → Paid (30d)" value={fmtPct(global.trialToPaidPct)} accent="hsl(262, 60%, 55%)" />
         <MetricCard label="Global Churn (30d)" value={fmtPct(global.churnPct)} accent="hsl(356, 72%, 55%)" />
-        <MetricCard label="Net Growth (30d)" value={fmtPct(global.netGrowthPct)} accent={global.netGrowthPct >= 0 ? "hsl(160, 60%, 45%)" : "hsl(356, 72%, 55%)"} />
+        <MetricCard label="Net Growth (30d)" value={fmtPct(global.netGrowthPct)} accent={global.netGrowthPct >= 0 ? "hsl(35,34%,68%)" : "hsl(356, 72%, 55%)"} />
         <MetricCard label="ARPU" value={fmtMoney(global.arpu)} accent="hsl(310, 60%, 50%)" />
       </div>
 
       {/* Best / Lowest */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {best && (
-          <Card className="border-[hsl(160,60%,45%)]/30 bg-[hsl(160,60%,45%)]/5">
+          <Card className="border-[hsl(35,34%,68%)]/30 bg-[hsl(35,34%,68%)]/5">
             <CardHeader className="pb-2">
-              <CardTitle className="text-xs text-[hsl(160,60%,45%)] flex items-center gap-1.5">
+              <CardTitle className="text-xs text-[hsl(35,34%,68%)] flex items-center gap-1.5">
                 <TrendingUp className="w-3.5 h-3.5" /> Best Performing Industry
               </CardTitle>
             </CardHeader>
@@ -227,7 +227,7 @@ export default function OwnerGrowthCommandCenter() {
                     <td className="py-2.5 text-right text-muted-foreground">{r.trialing}</td>
                     <td className="py-2.5 text-right font-semibold text-foreground">{fmtMoney(r.mrr)}</td>
                     <td className="py-2.5 text-right">
-                      <span className={r.trialToPaidPct >= 30 ? "text-[hsl(160,60%,45%)]" : "text-muted-foreground"}>
+                      <span className={r.trialToPaidPct >= 30 ? "text-[hsl(35,34%,68%)]" : "text-muted-foreground"}>
                         {fmtPct(r.trialToPaidPct)}
                       </span>
                     </td>

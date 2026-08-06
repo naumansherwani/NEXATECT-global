@@ -2,11 +2,11 @@ import { useEffect, useState, useRef, useCallback } from "react";
 import { Users, Calendar, TrendingUp, Shield, Globe, Zap } from "lucide-react";
 
 const STATS = [
-  { icon: Users, value: 10000, suffix: "+", label: "Active Businesses", color: "hsl(174,62%,50%)" },
-  { icon: Calendar, value: 2.5, suffix: "M+", label: "Bookings Managed", color: "hsl(217,91%,60%)" },
-  { icon: TrendingUp, value: 34, suffix: "%", label: "Avg Revenue Increase", color: "hsl(160,60%,45%)" },
-  { icon: Shield, value: 99.9, suffix: "%", label: "Uptime Guarantee", color: "hsl(270,80%,65%)" },
-  { icon: Globe, value: 50, suffix: "+", label: "Countries Served", color: "hsl(38,92%,55%)" },
+  { icon: Users, value: 10000, suffix: "+", label: "Active Businesses", color: "hsl(35,34%,68%)" },
+  { icon: Calendar, value: 2.5, suffix: "M+", label: "Bookings Managed", color: "hsl(214,50%,38%)" },
+  { icon: TrendingUp, value: 34, suffix: "%", label: "Avg Revenue Increase", color: "hsl(35,34%,68%)" },
+  { icon: Shield, value: 99.9, suffix: "%", label: "Uptime Guarantee", color: "hsl(214,50%,30%)" },
+  { icon: Globe, value: 50, suffix: "+", label: "Countries Served", color: "hsl(35,40%,66%)" },
   { icon: Zap, value: 0, suffix: "Zero", label: "Double Bookings", color: "hsl(0,72%,55%)" },
 ];
 
@@ -73,7 +73,7 @@ function AnimatedCounter({ target, suffix, duration = 2000 }: { target: number; 
 
 const StatsSection = () => (
   <section className="py-20 relative overflow-hidden">
-    <div className="absolute inset-0 bg-[hsl(222,47%,8%)]" />
+    <div className="absolute inset-0 bg-[hsl(220,9%,8%)]" />
     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(174,62%,50%,0.05),transparent_70%)]" />
     
     <div className="container relative z-10">

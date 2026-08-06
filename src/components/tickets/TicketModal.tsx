@@ -35,10 +35,10 @@ export function isTicketIndustry(industry: IndustryType): boolean {
 
 function getIndustryLabel(industry: IndustryType) {
   switch (industry) {
-    case "airlines": return { icon: Plane, label: "BOARDING PASS", color: "hsl(217,91%,60%)", bg: "hsl(217,91%,60%,0.08)", accent: "hsl(217,91%,60%)" };
-    case "railways": return { icon: TrainFront, label: "TRAIN TICKET", color: "hsl(38,92%,55%)", bg: "hsl(38,92%,55%,0.08)", accent: "hsl(38,92%,55%)" };
-    case "events_entertainment": return { icon: Theater, label: "EVENT TICKET", color: "hsl(270,80%,65%)", bg: "hsl(270,80%,65%,0.08)", accent: "hsl(270,80%,65%)" };
-    default: return { icon: Hash, label: "TICKET", color: "hsl(174,62%,50%)", bg: "hsl(174,62%,50%,0.08)", accent: "hsl(174,62%,50%)" };
+    case "airlines": return { icon: Plane, label: "BOARDING PASS", color: "hsl(214,50%,38%)", bg: "hsl(217,91%,60%,0.08)", accent: "hsl(214,50%,38%)" };
+    case "railways": return { icon: TrainFront, label: "TRAIN TICKET", color: "hsl(35,40%,66%)", bg: "hsl(38,92%,55%,0.08)", accent: "hsl(35,40%,66%)" };
+    case "events_entertainment": return { icon: Theater, label: "EVENT TICKET", color: "hsl(214,50%,30%)", bg: "hsl(270,80%,65%,0.08)", accent: "hsl(214,50%,30%)" };
+    default: return { icon: Hash, label: "TICKET", color: "hsl(35,34%,68%)", bg: "hsl(174,62%,50%,0.08)", accent: "hsl(35,34%,68%)" };
   }
 }
 
@@ -153,7 +153,7 @@ const TicketModal = ({ open, onClose, ticket }: TicketModalProps) => {
   </div>
   <div class="ticket-footer">
     <div>
-      <div class="brand">HostFlow AI</div>
+      <div class="brand">NEXATECT</div>
     </div>
     <div class="qr-section">
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=${encodeURIComponent(qrValue)}" width="80" height="80" alt="QR Code" />
@@ -250,7 +250,7 @@ const TicketModal = ({ open, onClose, ticket }: TicketModalProps) => {
             <div className="flex items-center justify-between pt-4 border-t border-dashed border-border">
               <div>
                 <p className="text-[10px] text-muted-foreground">Powered by</p>
-                <p className="text-sm font-bold text-foreground">HostFlow AI</p>
+                <p className="text-sm font-bold text-foreground">NEXATECT</p>
               </div>
               <div className="flex flex-col items-center gap-1">
                 <QRCodeSVG value={qrValue} size={72} level="M" />

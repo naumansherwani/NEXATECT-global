@@ -1,5 +1,5 @@
 /**
- * HostFlow AI — Replit Brain API client.
+ * NEXATECT — Replit Brain API client.
  *
  * Single source of truth for talking to the Replit backend.
  * - Base URL pinned to Replit (override via VITE_REPLIT_ADVISOR_URL).
@@ -59,8 +59,8 @@ function buildUrl(path: string): string {
 /**
  * Detect the current surface from the URL path.
  * Backend uses this to enforce dashboard-vs-CRM access:
- *   X-HostFlow-Surface: dashboard → all plans allowed
- *   X-HostFlow-Surface: crm       → Premium plan only (else CRM_PREMIUM_ONLY 403)
+ *   X-NEXATECT-Surface: dashboard → all plans allowed
+ *   X-NEXATECT-Surface: crm       → Premium plan only (else CRM_PREMIUM_ONLY 403)
  * Wrong surface → SURFACE_MISMATCH 403. Header missing = fail-open (backwards compat).
  */
 function detectSurface(): "dashboard" | "crm" {
@@ -127,7 +127,7 @@ async function request<T>(method: string, path: string, body?: unknown, opts: { 
   const auth = opts.auth !== false;
   const headers: Record<string, string> = {
     "Content-Type": "application/json",
-    "X-HostFlow-Surface": detectSurface(),
+    "X-NEXATECT-Surface": detectSurface(),
   };
   if (auth) Object.assign(headers, await getAuthHeader());
 
@@ -205,7 +205,7 @@ async function streamSSE(path: string, body: unknown, handlers: StreamHandlers) 
   const headers: Record<string, string> = {
     "Content-Type": "application/json",
     Accept: "text/event-stream",
-    "X-HostFlow-Surface": detectSurface(),
+    "X-NEXATECT-Surface": detectSurface(),
     ...(await getAuthHeader()),
   };
 

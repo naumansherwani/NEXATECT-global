@@ -6,15 +6,15 @@ const STEPS = [
     step: "01",
     title: "Sign Up in 30 Seconds",
     desc: "Create your account, pick your industry, and start your 7-day free trial — no credit card needed.",
-    color: "hsl(174,62%,50%)",
-    glow: "rgba(45,212,191,0.15)",
+    color: "hsl(35,34%,68%)",
+    glow: "rgba(203,179,147,0.15)",
   },
   {
     icon: ListPlus,
     step: "02",
     title: "Add Your Resources",
     desc: "Set up your rooms, vehicles, staff, or equipment. AI auto-configures scheduling rules for your industry.",
-    color: "hsl(217,91%,60%)",
+    color: "hsl(214,50%,38%)",
     glow: "rgba(59,130,246,0.15)",
   },
   {
@@ -22,7 +22,7 @@ const STEPS = [
     step: "03",
     title: "Let AI Do The Rest",
     desc: "AI handles bookings, prevents conflicts, and grows your revenue — on autopilot. Pricing optimization available for select industries.",
-    color: "hsl(270,80%,65%)",
+    color: "hsl(214,50%,30%)",
     glow: "rgba(139,92,246,0.15)",
   },
 ];

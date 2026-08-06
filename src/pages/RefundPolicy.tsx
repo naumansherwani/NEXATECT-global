@@ -10,12 +10,12 @@ const RefundPolicy = () => (
         <p className="text-sm text-muted-foreground">Last updated: April 23, 2026</p>
 
         <section className="space-y-3">
-          <p>HostFlow AI Technologies offers digital software subscriptions and instant access services. Because our service activates immediately, the following fair-use refund terms apply:</p>
+          <p>NEXATECT Technologies offers digital software subscriptions and instant access services. Because our service activates immediately, the following fair-use refund terms apply:</p>
         </section>
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">7-Day Refund Window (First-Time Customers)</h2>
-          <p>A <strong>7-day refund window</strong> is available for first-time customers only. Refund requests must be submitted within 7 days of your <strong>first purchase</strong> of any HostFlow AI subscription.</p>
+          <p>A <strong>7-day refund window</strong> is available for first-time customers only. Refund requests must be submitted within 7 days of your <strong>first purchase</strong> of any NEXATECT subscription.</p>
         </section>
 
         <section className="space-y-3">

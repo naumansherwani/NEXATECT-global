@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/nexatect-logo.jpg.asset.json";
+import NexatectMark from "@/components/NexatectMark";
 
 interface LogoProps {
   size?: "sm" | "md" | "lg" | "xl" | "2xl" | "hero";
@@ -8,16 +8,16 @@ interface LogoProps {
 }
 
 const sizeMap = {
-  sm: "w-10 h-10",
-  md: "w-12 h-12",
-  lg: "w-14 h-14",
-  xl: "w-18 h-18",
-  "2xl": "w-24 h-24",
-  hero: "w-32 h-32",
+  sm: "w-8 h-8",
+  md: "w-10 h-10",
+  lg: "w-12 h-12",
+  xl: "w-16 h-16",
+  "2xl": "w-20 h-20",
+  hero: "w-28 h-28",
 };
 
 const textSizeMap = {
-  sm: "text-lg",
+  sm: "text-base",
   md: "text-xl",
   lg: "text-2xl",
   xl: "text-3xl",
@@ -27,21 +27,14 @@ const textSizeMap = {
 
 const Logo = ({ size = "md", className, showName = false, showTagline = false }: LogoProps) => (
   <div className={`flex items-center gap-3 ${className || ""}`}>
-    <img
-      src={logoAsset.url}
-      alt="NEXATECT"
-      className={`${sizeMap[size]} shrink-0 object-contain rounded-md`}
-      loading="lazy"
-      width={512}
-      height={512}
-    />
+    <NexatectMark className={`${sizeMap[size]} shrink-0`} />
     {showName && (
       <div className="flex flex-col">
-        <span className={`${textSizeMap[size]} font-extrabold uppercase tracking-[0.14em] leading-none bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(35,45%,82%)] bg-clip-text text-transparent`}>
+        <span className={`${textSizeMap[size]} font-extrabold uppercase tracking-[0.22em] leading-none text-primary`}>
           Nexatect
         </span>
         {showTagline && (
-          <span className="text-[11px] font-light tracking-[0.14em] mt-1 uppercase text-[hsl(35,34%,68%)]/70">
+          <span className="text-[10px] font-medium tracking-[0.28em] mt-1.5 uppercase text-primary/60">
             Autonomous Revenue Infrastructure
           </span>
         )}

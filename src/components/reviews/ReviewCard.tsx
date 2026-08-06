@@ -11,12 +11,12 @@ interface ReviewCardProps {
 }
 
 const AVATAR_COLORS = [
-  "from-[hsl(174,62%,50%)] to-[hsl(190,80%,55%)]",
-  "from-[hsl(0,72%,55%)] to-[hsl(25,95%,55%)]",
-  "from-[hsl(217,91%,60%)] to-[hsl(190,80%,55%)]",
-  "from-[hsl(300,80%,65%)] to-[hsl(270,80%,65%)]",
-  "from-[hsl(270,80%,65%)] to-[hsl(217,91%,60%)]",
-  "from-[hsl(38,92%,55%)] to-[hsl(25,95%,55%)]",
+  "from-[hsl(35,34%,68%)] to-[hsl(35,45%,80%)]",
+  "from-[hsl(0,72%,55%)] to-[hsl(35,45%,58%)]",
+  "from-[hsl(214,50%,38%)] to-[hsl(35,45%,80%)]",
+  "from-[hsl(300,80%,65%)] to-[hsl(214,50%,30%)]",
+  "from-[hsl(214,50%,30%)] to-[hsl(214,50%,38%)]",
+  "from-[hsl(35,40%,66%)] to-[hsl(35,45%,58%)]",
 ];
 
 const ReviewCard = ({ review }: ReviewCardProps) => {
@@ -31,11 +31,11 @@ const ReviewCard = ({ review }: ReviewCardProps) => {
     review.reviewer_name.charCodeAt(0) % AVATAR_COLORS.length;
 
   return (
-    <Card className="bg-white/[0.03] border-white/[0.06] hover:border-white/15 backdrop-blur-sm transition-all duration-500 group hover:-translate-y-1 hover:shadow-[0_20px_60px_-15px_rgba(45,212,191,0.1)]">
+    <Card className="bg-white/[0.03] border-white/[0.06] hover:border-white/15 backdrop-blur-sm transition-all duration-500 group hover:-translate-y-1 hover:shadow-[0_20px_60px_-15px_rgba(203,179,147,0.1)]">
       <CardContent className="p-7 space-y-5">
         <div className="flex items-center gap-1">
           {Array.from({ length: review.rating }).map((_, j) => (
-            <Star key={j} className="w-4 h-4 fill-[hsl(38,92%,55%)] text-[hsl(38,92%,55%)]" />
+            <Star key={j} className="w-4 h-4 fill-[hsl(35,40%,66%)] text-[hsl(35,40%,66%)]" />
           ))}
           {Array.from({ length: 5 - review.rating }).map((_, j) => (
             <Star key={`e-${j}`} className="w-4 h-4 text-white/10" />

@@ -25,7 +25,7 @@ const ReviewsSection = () => {
 
   return (
     <section className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[hsl(222,47%,8%)]" />
+      <div className="absolute inset-0 bg-[hsl(220,9%,8%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(174,62%,50%,0.05),transparent_60%)]" />
 
       <div className="container relative z-10 space-y-14">
@@ -35,13 +35,13 @@ const ReviewsSection = () => {
           </p>
           <h2 className="text-3xl md:text-5xl font-extrabold text-white">
             What Our{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(174,62%,50%)] to-[hsl(217,91%,60%)]">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)]">
               Verified Users
             </span>{" "}
             Say
           </h2>
           <p className="text-white/40 max-w-xl mx-auto text-lg">
-            Honest experiences from people who use HostFlow AI every day to run their business.
+            Honest experiences from people who use NEXATECT every day to run their business.
           </p>
         </div>
 

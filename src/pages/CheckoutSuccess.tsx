@@ -35,7 +35,7 @@ export default function CheckoutSuccess() {
             Welcome aboard! 🎉
           </h1>
           <p className="text-lg text-muted-foreground">
-            Your payment was successful. Your HostFlow AI plan is being activated now.
+            Your payment was successful. Your NEXATECT plan is being activated now.
           </p>
 
           <div className="rounded-xl border border-border/50 bg-card/50 backdrop-blur-sm p-6 text-left space-y-3">
@@ -57,7 +57,7 @@ export default function CheckoutSuccess() {
           )}
 
           <div className="flex flex-wrap gap-3 justify-center pt-2">
-            <Button asChild className="bg-gradient-to-r from-[hsl(174,62%,50%)] to-[hsl(217,91%,60%)] text-white">
+            <Button asChild className="bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)] text-white">
               <Link to="/dashboard">Go to Dashboard</Link>
             </Button>
             <Button asChild variant="outline">

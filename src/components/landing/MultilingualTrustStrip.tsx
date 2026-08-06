@@ -44,16 +44,16 @@ const MultilingualTrustStrip = () => {
         className={`
           relative rounded-[26px] px-5 py-5 md:px-7 md:py-[22px]
           bg-[rgba(13,27,46,0.78)]
-          border border-[#22D3EE]/30
+          border border-[#CBB393]/30
           backdrop-blur-2xl
-          shadow-[0_25px_70px_-20px_rgba(0,0,0,0.55),0_0_60px_-25px_rgba(34,211,238,0.22)]
+          shadow-[0_25px_70px_-20px_rgba(0,0,0,0.55),0_0_60px_-25px_rgba(203,179,147,0.22)]
           transition-all duration-700
           animate-[breathe_10s_ease-in-out_infinite]
           ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"}
         `}
       >
         {/* subtle inner glow */}
-        <div className="pointer-events-none absolute inset-0 rounded-[26px] bg-[radial-gradient(ellipse_at_top,rgba(34,211,238,0.12),transparent_65%)]" />
+        <div className="pointer-events-none absolute inset-0 rounded-[26px] bg-[radial-gradient(ellipse_at_top,rgba(203,179,147,0.12),transparent_65%)]" />
 
         <div className="relative flex flex-col items-center gap-4 md:gap-5">
           {/* Row 1 + 2 — Real flags with native greetings underneath */}
@@ -96,14 +96,14 @@ const MultilingualTrustStrip = () => {
           </div>
 
           {/* Divider */}
-          <div className="h-px w-2/3 bg-gradient-to-r from-transparent via-[#22D3EE]/25 to-transparent" />
+          <div className="h-px w-2/3 bg-gradient-to-r from-transparent via-[#CBB393]/25 to-transparent" />
 
           {/* Row 3 — Main message */}
           <div className="flex items-center gap-2">
             <Sparkles className="w-4 h-4 text-[#FBBF24]" />
             <p className="text-base md:text-lg font-bold text-[#F8FAFC] text-center">
               Your AI CRM Speaks{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#67E8F9] via-[#22D3EE] to-[#67E8F9]">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#E4D3B6] via-[#CBB393] to-[#E4D3B6]">
                 Your Customer's Language
               </span>
             </p>
@@ -111,7 +111,7 @@ const MultilingualTrustStrip = () => {
 
           {/* Row 4 — Value line */}
           <p className="text-[13px] md:text-sm text-[#94A3B8] text-center max-w-[720px] leading-relaxed">
-            From leads, bookings, WhatsApp, support, calendars, and payments — HostFlow AI helps run your business naturally in 14 languages.
+            From leads, bookings, WhatsApp, support, calendars, and payments — NEXATECT helps run your business naturally in 14 languages.
           </p>
 
           {/* Row 5 — Trust badges */}
@@ -119,7 +119,7 @@ const MultilingualTrustStrip = () => {
             {TRUST_BADGES.map((b) => (
               <li
                 key={b}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[rgba(7,17,31,0.6)] border border-[#22D3EE]/20 text-[11px] md:text-xs font-semibold text-[#F8FAFC]/85 backdrop-blur-sm hover:bg-[rgba(7,17,31,0.85)] hover:border-[#22D3EE]/50 hover:-translate-y-0.5 transition-all duration-200"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[rgba(31,56,92,0.6)] border border-[#CBB393]/20 text-[11px] md:text-xs font-semibold text-[#F8FAFC]/85 backdrop-blur-sm hover:bg-[rgba(31,56,92,0.85)] hover:border-[#CBB393]/50 hover:-translate-y-0.5 transition-all duration-200"
               >
                 <Check className="w-3 h-3 text-[#10B981]" />
                 {b}
@@ -131,8 +131,8 @@ const MultilingualTrustStrip = () => {
           <p className="text-[11px] md:text-[12px] text-[#94A3B8] text-center max-w-[640px] leading-relaxed">
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#FBBF24] mr-2 align-middle animate-pulse" />
             <span className="font-semibold text-[#F8FAFC]/90">Limited Launch Offer</span>
-            <span className="mx-1.5 text-[#22D3EE]/50">—</span>
-            First <span className="font-semibold text-[#67E8F9]">100 early users</span> lock discounted pricing for <span className="font-semibold text-[#F8FAFC]/90">12 months</span>.
+            <span className="mx-1.5 text-[#CBB393]/50">—</span>
+            First <span className="font-semibold text-[#E4D3B6]">100 early users</span> lock discounted pricing for <span className="font-semibold text-[#F8FAFC]/90">12 months</span>.
           </p>
         </div>
       </div>
@@ -144,8 +144,8 @@ const MultilingualTrustStrip = () => {
           50% { transform: rotate(0deg) translateY(-2px); }
         }
         @keyframes breathe {
-          0%, 100% { box-shadow: 0 25px 70px -20px rgba(0,0,0,0.50), 0 0 50px -28px rgba(34,211,238,0.16); }
-          50% { box-shadow: 0 25px 70px -20px rgba(0,0,0,0.50), 0 0 60px -26px rgba(34,211,238,0.22); }
+          0%, 100% { box-shadow: 0 25px 70px -20px rgba(0,0,0,0.50), 0 0 50px -28px rgba(203,179,147,0.16); }
+          50% { box-shadow: 0 25px 70px -20px rgba(0,0,0,0.50), 0 0 60px -26px rgba(203,179,147,0.22); }
         }
       `}</style>
     </div>

@@ -99,7 +99,7 @@ const BrainBridge = () => {
       notifyChangelog({
         event: "frontend_full_handoff",
         summary:
-          "Complete HostFlow AI experience-layer handoff to Replit Brain. Lists every industry, every per-industry AI feature, the full Owner/Founder dashboard surface, and every change Lovable has shipped on the frontend + Cloud edge layer. Source of truth for Replit so frontend and Brain stay in sync.",
+          "Complete NEXATECT experience-layer handoff to Replit Brain. Lists every industry, every per-industry AI feature, the full Owner/Founder dashboard surface, and every change Lovable has shipped on the frontend + Cloud edge layer. Source of truth for Replit so frontend and Brain stay in sync.",
         details: {
           handoff_version: "2026-05-06-full",
           ownership_model: {
@@ -126,7 +126,7 @@ const BrainBridge = () => {
               "railways",
             ],
             ai_assistant_names_per_industry: {
-              tourism_hospitality: "HostFlow AI",
+              tourism_hospitality: "NEXATECT",
               airlines: "SkyFlow AI",
               car_rental: "DriveFlow AI",
               healthcare: "MediFlow AI",

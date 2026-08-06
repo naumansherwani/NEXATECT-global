@@ -13,29 +13,29 @@ type Advisor = {
 };
 
 const ADVISORS: Advisor[] = [
-  { id: "all", label: "All Inboxes", emoji: "📧", email: null, fromName: "HostFlow ConnectAI" },
-  { id: "aria", label: "Aria (Hospitality)", emoji: "🏨", email: "aria@hostflowai.net", fromName: "Aria | HostFlow AI" },
-  { id: "orion", label: "Orion (Airlines)", emoji: "✈️", email: "orion@hostflowai.net", fromName: "Orion | HostFlow AI" },
-  { id: "rex", label: "Rex (Car Rental)", emoji: "🚗", email: "rex@hostflowai.net", fromName: "Rex | HostFlow AI" },
-  { id: "lyra", label: "Lyra (Healthcare)", emoji: "🏥", email: "lyra@hostflowai.net", fromName: "Lyra | HostFlow AI" },
-  { id: "sage", label: "Sage (Education)", emoji: "📚", email: "sage@hostflowai.net", fromName: "Sage | HostFlow AI" },
-  { id: "atlas", label: "Atlas (Logistics)", emoji: "🚚", email: "atlas@hostflowai.net", fromName: "Atlas | HostFlow AI" },
-  { id: "vega", label: "Vega (Events)", emoji: "🎭", email: "vega@hostflowai.net", fromName: "Vega | HostFlow AI" },
-  { id: "kai", label: "Kai (Railways)", emoji: "🚂", email: "kai@hostflowai.net", fromName: "Kai | HostFlow AI" },
-  { id: "sherlock", label: "Sherlock (Owner)", emoji: "🔍", email: "sherlock@hostflowai.net", fromName: "Sherlock | HostFlow AI" },
+  { id: "all", label: "All Inboxes", emoji: "📧", email: null, fromName: "NEXATECT ConnectAI" },
+  { id: "aria", label: "Aria (Hospitality)", emoji: "🏨", email: "aria@hostflowai.net", fromName: "Aria | NEXATECT" },
+  { id: "orion", label: "Orion (Airlines)", emoji: "✈️", email: "orion@hostflowai.net", fromName: "Orion | NEXATECT" },
+  { id: "rex", label: "Rex (Car Rental)", emoji: "🚗", email: "rex@hostflowai.net", fromName: "Rex | NEXATECT" },
+  { id: "lyra", label: "Lyra (Healthcare)", emoji: "🏥", email: "lyra@hostflowai.net", fromName: "Lyra | NEXATECT" },
+  { id: "sage", label: "Sage (Education)", emoji: "📚", email: "sage@hostflowai.net", fromName: "Sage | NEXATECT" },
+  { id: "atlas", label: "Atlas (Logistics)", emoji: "🚚", email: "atlas@hostflowai.net", fromName: "Atlas | NEXATECT" },
+  { id: "vega", label: "Vega (Events)", emoji: "🎭", email: "vega@hostflowai.net", fromName: "Vega | NEXATECT" },
+  { id: "kai", label: "Kai (Railways)", emoji: "🚂", email: "kai@hostflowai.net", fromName: "Kai | NEXATECT" },
+  { id: "sherlock", label: "Sherlock (Owner)", emoji: "🔍", email: "sherlock@hostflowai.net", fromName: "Sherlock | NEXATECT" },
 ];
 
 const FROM_IDENTITIES = [
-  { id: "advisor", email: "connectai@hostflowai.net", name: "HostFlow ConnectAI" },
-  { id: "aria", email: "aria@hostflowai.net", name: "Aria | HostFlow AI" },
-  { id: "orion", email: "orion@hostflowai.net", name: "Orion | HostFlow AI" },
-  { id: "rex", email: "rex@hostflowai.net", name: "Rex | HostFlow AI" },
-  { id: "lyra", email: "lyra@hostflowai.net", name: "Lyra | HostFlow AI" },
-  { id: "sage", email: "sage@hostflowai.net", name: "Sage | HostFlow AI" },
-  { id: "atlas", email: "atlas@hostflowai.net", name: "Atlas | HostFlow AI" },
-  { id: "vega", email: "vega@hostflowai.net", name: "Vega | HostFlow AI" },
-  { id: "kai", email: "kai@hostflowai.net", name: "Kai | HostFlow AI" },
-  { id: "sherlock", email: "sherlock@hostflowai.net", name: "Sherlock | HostFlow AI" },
+  { id: "advisor", email: "connectai@hostflowai.net", name: "NEXATECT ConnectAI" },
+  { id: "aria", email: "aria@hostflowai.net", name: "Aria | NEXATECT" },
+  { id: "orion", email: "orion@hostflowai.net", name: "Orion | NEXATECT" },
+  { id: "rex", email: "rex@hostflowai.net", name: "Rex | NEXATECT" },
+  { id: "lyra", email: "lyra@hostflowai.net", name: "Lyra | NEXATECT" },
+  { id: "sage", email: "sage@hostflowai.net", name: "Sage | NEXATECT" },
+  { id: "atlas", email: "atlas@hostflowai.net", name: "Atlas | NEXATECT" },
+  { id: "vega", email: "vega@hostflowai.net", name: "Vega | NEXATECT" },
+  { id: "kai", email: "kai@hostflowai.net", name: "Kai | NEXATECT" },
+  { id: "sherlock", email: "sherlock@hostflowai.net", name: "Sherlock | NEXATECT" },
   { id: "founder", email: "naumansherwani@hostflowai.net", name: "Nauman Sherwani" },
 ];
 
@@ -300,7 +300,7 @@ export default function AIAgentsEmailCenter() {
                   </div>
 
                   {selected.aiReply && (
-                    <div className="rounded-lg border p-4" style={{ borderColor: "rgba(34,211,238,0.4)", backgroundColor: "rgba(34,211,238,0.06)" }}>
+                    <div className="rounded-lg border p-4" style={{ borderColor: "rgba(203,179,147,0.4)", backgroundColor: "rgba(203,179,147,0.06)" }}>
                       <div className="flex items-center gap-2 mb-2">
                         <Sparkles className="w-3.5 h-3.5" style={{ color: "#22D3EE" }} />
                         <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "#22D3EE" }}>AI Response Sent</span>

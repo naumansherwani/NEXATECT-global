@@ -60,21 +60,21 @@ const VoiceAISection = () => {
 
   return (
     <section className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[hsl(222,47%,8%)]" />
+      <div className="absolute inset-0 bg-[hsl(220,9%,8%)]" />
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-[hsl(270,80%,60%)]/8 rounded-full blur-[140px] animate-pulse" />
-        <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-[hsl(174,62%,50%)]/6 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: "1.5s" }} />
+        <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-[hsl(214,50%,30%)]/8 rounded-full blur-[140px] animate-pulse" />
+        <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-[hsl(35,34%,68%)]/6 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: "1.5s" }} />
       </div>
 
       <div className="container relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center space-y-4 mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[hsl(270,80%,60%)]/10 border border-[hsl(270,80%,60%)]/20 text-[hsl(270,80%,65%)] text-sm font-semibold">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[hsl(214,50%,30%)]/10 border border-[hsl(214,50%,30%)]/20 text-[hsl(214,50%,30%)] text-sm font-semibold">
               <Volume2 className="w-4 h-4" /> ElevenLabs Voice Integration
             </div>
             <h2 className="text-3xl md:text-5xl font-extrabold text-white">
-              Talk to Your <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(270,80%,65%)] via-[hsl(320,90%,65%)] to-[hsl(174,62%,50%)]">Advanced AI CRM</span>
+              Talk to Your <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(214,50%,30%)] via-[hsl(35,34%,68%)] to-[hsl(35,34%,68%)]">Advanced AI CRM</span>
             </h2>
             <p className="text-lg text-white/50 max-w-2xl mx-auto">
               Just speak. Our AI understands context, takes action, and responds instantly — powered by ElevenLabs voice technology.
@@ -93,18 +93,18 @@ const VoiceAISection = () => {
                 {/* Header bar */}
                 <div className="flex items-center justify-between relative z-10">
                   <div className="flex items-center gap-3">
-                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-500 ${isListening ? "bg-[hsl(270,80%,60%)]/20 shadow-[0_0_20px_rgba(139,92,246,0.3)]" : "bg-white/5"}`}>
-                      {isListening ? <Mic className="w-5 h-5 text-[hsl(270,80%,65%)] animate-pulse" /> : <MicOff className="w-5 h-5 text-white/30" />}
+                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-500 ${isListening ? "bg-[hsl(214,50%,30%)]/20 shadow-[0_0_20px_rgba(139,92,246,0.3)]" : "bg-white/5"}`}>
+                      {isListening ? <Mic className="w-5 h-5 text-[hsl(214,50%,30%)] animate-pulse" /> : <MicOff className="w-5 h-5 text-white/30" />}
                     </div>
                     <div>
                       <p className="text-sm font-bold text-white/90">Advanced AI CRM Voice</p>
-                      <p className={`text-xs transition-colors duration-300 ${isListening ? "text-[hsl(270,80%,65%)]" : "text-white/40"}`}>
+                      <p className={`text-xs transition-colors duration-300 ${isListening ? "text-[hsl(214,50%,30%)]" : "text-white/40"}`}>
                         {isListening ? "● Listening..." : "Ready for commands"}
                       </p>
                     </div>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <div className={`w-2 h-2 rounded-full transition-all duration-300 ${isListening ? "bg-[hsl(270,80%,65%)] shadow-[0_0_8px_hsl(270,80%,65%)]" : "bg-white/20"}`} />
+                    <div className={`w-2 h-2 rounded-full transition-all duration-300 ${isListening ? "bg-[hsl(214,50%,30%)] shadow-[0_0_8px_hsl(214,50%,30%)]" : "bg-white/20"}`} />
                     <span className="text-xs text-white/30">ElevenLabs</span>
                   </div>
                 </div>
@@ -128,18 +128,18 @@ const VoiceAISection = () => {
 
                 {/* Command Display */}
                 <div className="space-y-3 relative z-10">
-                  <div className={`rounded-2xl bg-white/[0.04] border border-white/[0.06] px-5 py-4 transition-all duration-500 ${isListening ? "border-[hsl(270,80%,60%)]/20" : ""}`}>
+                  <div className={`rounded-2xl bg-white/[0.04] border border-white/[0.06] px-5 py-4 transition-all duration-500 ${isListening ? "border-[hsl(214,50%,30%)]/20" : ""}`}>
                     <p className="text-xs text-white/30 mb-1.5 flex items-center gap-1.5">
                       <Mic className="w-3 h-3" /> You said:
                     </p>
                     <p className="text-base text-white/90 font-medium">{current.cmd}</p>
                   </div>
 
-                  <div className={`rounded-2xl bg-[hsl(174,62%,50%)]/[0.04] border border-[hsl(174,62%,50%)]/[0.08] px-5 py-4 transition-all duration-500 ${showResponse ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}`}>
-                    <p className="text-xs text-[hsl(174,62%,50%)]/60 mb-1.5 flex items-center gap-1.5">
+                  <div className={`rounded-2xl bg-[hsl(35,34%,68%)]/[0.04] border border-[hsl(35,34%,68%)]/[0.08] px-5 py-4 transition-all duration-500 ${showResponse ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}`}>
+                    <p className="text-xs text-[hsl(35,34%,68%)]/60 mb-1.5 flex items-center gap-1.5">
                       <Brain className="w-3 h-3" /> AI Response:
                     </p>
-                    <p className="text-base text-[hsl(174,62%,55%)] font-medium">{current.response}</p>
+                    <p className="text-base text-[hsl(35,34%,68%)] font-medium">{current.response}</p>
                   </div>
                 </div>
               </div>
@@ -148,10 +148,10 @@ const VoiceAISection = () => {
             {/* Right: Feature Cards */}
             <div className="space-y-5">
               {[
-                { icon: Mic, title: "Voice Commands", desc: "Manage deals, contacts, and tasks with natural voice. No typing needed — just speak and let AI handle the rest.", gradient: "from-[hsl(270,80%,60%)] to-[hsl(320,90%,65%)]" },
-                { icon: Waves, title: "Real-Time AI Responses", desc: "ElevenLabs processes your voice instantly with lifelike AI responses. It's like having a personal assistant that never sleeps.", gradient: "from-[hsl(174,62%,50%)] to-[hsl(217,91%,60%)]" },
-                { icon: MessageSquare, title: "Smart Context Memory", desc: "AI remembers your conversation context. Say 'follow up on that' and it knows exactly what you mean.", gradient: "from-[hsl(38,92%,55%)] to-[hsl(25,95%,55%)]" },
-                { icon: Phone, title: "Hands-Free CRM", desc: "Drive, walk, or multitask — run your entire business with just your voice. Perfect for field sales teams.", gradient: "from-[hsl(160,60%,45%)] to-[hsl(174,62%,50%)]" },
+                { icon: Mic, title: "Voice Commands", desc: "Manage deals, contacts, and tasks with natural voice. No typing needed — just speak and let AI handle the rest.", gradient: "from-[hsl(214,50%,30%)] to-[hsl(35,34%,68%)]" },
+                { icon: Waves, title: "Real-Time AI Responses", desc: "ElevenLabs processes your voice instantly with lifelike AI responses. It's like having a personal assistant that never sleeps.", gradient: "from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)]" },
+                { icon: MessageSquare, title: "Smart Context Memory", desc: "AI remembers your conversation context. Say 'follow up on that' and it knows exactly what you mean.", gradient: "from-[hsl(35,40%,66%)] to-[hsl(35,45%,58%)]" },
+                { icon: Phone, title: "Hands-Free CRM", desc: "Drive, walk, or multitask — run your entire business with just your voice. Perfect for field sales teams.", gradient: "from-[hsl(35,34%,68%)] to-[hsl(35,34%,68%)]" },
               ].map((f) => (
                 <div key={f.title} className="group flex gap-4 p-5 rounded-2xl bg-white/[0.03] border border-white/[0.06] hover:bg-white/[0.06] hover:border-white/[0.12] transition-all duration-500">
                   <div className={`shrink-0 w-11 h-11 rounded-xl bg-gradient-to-br ${f.gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
@@ -166,7 +166,7 @@ const VoiceAISection = () => {
 
               <Button
                 size="lg"
-                className="w-full mt-4 bg-gradient-to-r from-[hsl(270,80%,60%)] to-[hsl(174,62%,50%)] hover:from-[hsl(270,80%,65%)] hover:to-[hsl(174,62%,55%)] text-white font-bold rounded-xl py-6 shadow-[0_0_30px_rgba(139,92,246,0.25)] hover:shadow-[0_0_50px_rgba(139,92,246,0.4)] transition-all duration-500 hover:scale-[1.02] border-0"
+                className="w-full mt-4 bg-gradient-to-r from-[hsl(214,50%,30%)] to-[hsl(35,34%,68%)] hover:from-[hsl(214,50%,30%)] hover:to-[hsl(35,34%,68%)] text-white font-bold rounded-xl py-6 shadow-[0_0_30px_rgba(139,92,246,0.25)] hover:shadow-[0_0_50px_rgba(139,92,246,0.4)] transition-all duration-500 hover:scale-[1.02] border-0"
                 onClick={() => navigate("/signup")}
               >
                 <Sparkles className="mr-2 w-5 h-5" /> Try Voice AI CRM Free

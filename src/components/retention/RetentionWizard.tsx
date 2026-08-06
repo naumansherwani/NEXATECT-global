@@ -256,7 +256,7 @@ export default function RetentionWizard({ open, onOpenChange, onCompleted }: Pro
         {step === 3 && (
           <div className="space-y-4">
             <div>
-              <h3 className="text-base font-semibold">Look what you've built with HostFlow AI</h3>
+              <h3 className="text-base font-semibold">Look what you've built with NEXATECT</h3>
               <p className="text-sm text-muted-foreground mt-1">All this will pause if you leave.</p>
             </div>
             {!valueSummary ? (

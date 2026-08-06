@@ -11,7 +11,7 @@ const PrivacyPolicy = () => (
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">1. Introduction</h2>
-          <p>HostFlow AI Technologies ("we," "us," or "our") operates the HostFlow AI platform at hostflowai.net. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform. Please read this policy carefully. By using HostFlow AI, you consent to the practices described herein.</p>
+          <p>NEXATECT Technologies ("we," "us," or "our") operates the NEXATECT platform at hostflowai.net. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform. Please read this policy carefully. By using NEXATECT, you consent to the practices described herein.</p>
         </section>
 
         <section className="space-y-3">
@@ -37,7 +37,7 @@ const PrivacyPolicy = () => (
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">3. How We Use Your Information</h2>
           <ul className="list-disc pl-6 space-y-2">
-            <li>To provide, operate, and maintain the HostFlow AI platform</li>
+            <li>To provide, operate, and maintain the NEXATECT platform</li>
             <li>To personalize your dashboard, AI recommendations, and scheduling</li>
             <li>To process payments and manage subscriptions via our payment provider</li>
             <li>To send appointment reminders, booking confirmations, and service notifications</li>
@@ -106,7 +106,7 @@ const PrivacyPolicy = () => (
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">12. Children's Privacy</h2>
-          <p>HostFlow AI is not intended for use by individuals under the age of 18. We do not knowingly collect personal information from children. If we become aware that we have collected data from a child, we will take steps to delete it promptly.</p>
+          <p>NEXATECT is not intended for use by individuals under the age of 18. We do not knowingly collect personal information from children. If we become aware that we have collected data from a child, we will take steps to delete it promptly.</p>
         </section>
 
         <section className="space-y-3">

@@ -64,7 +64,7 @@ export default function OwnerSalesFunnelTab() {
       { label: "Trial Started", count: trialing + paid, pct: pct(trialing + paid, signups), drop: signups - (trialing + paid), color: "hsl(262, 60%, 55%)" },
       { label: "Checkout Opened", count: opened, pct: pct(opened, trialing + paid), drop: Math.max((trialing + paid) - opened, 0), color: "hsl(45, 90%, 55%)" },
       { label: "Checkout Completed", count: completed, pct: pct(completed, opened), drop: opened - completed, color: "hsl(310, 60%, 50%)" },
-      { label: "Paid (active)", count: paid, pct: pct(paid, completed || opened), drop: Math.max(completed - paid, 0), color: "hsl(160, 60%, 45%)" },
+      { label: "Paid (active)", count: paid, pct: pct(paid, completed || opened), drop: Math.max(completed - paid, 0), color: "hsl(35,34%,68%)" },
     ];
 
     setStages(built);
@@ -189,7 +189,7 @@ export default function OwnerSalesFunnelTab() {
         <Card>
           <CardHeader className="pb-2">
             <CardTitle className="text-sm flex items-center gap-2">
-              <TrendingUp className="w-4 h-4 text-[hsl(160,60%,45%)]" />
+              <TrendingUp className="w-4 h-4 text-[hsl(35,34%,68%)]" />
               Smart Checkout Rescue
             </CardTitle>
           </CardHeader>
@@ -201,7 +201,7 @@ export default function OwnerSalesFunnelTab() {
               </div>
               <div>
                 <p className="text-[10px] uppercase text-muted-foreground">Accepted</p>
-                <p className="text-xl font-bold text-[hsl(160,60%,45%)]">{rescue.accepted}</p>
+                <p className="text-xl font-bold text-[hsl(35,34%,68%)]">{rescue.accepted}</p>
               </div>
               <div>
                 <p className="text-[10px] uppercase text-muted-foreground">Dismissed</p>

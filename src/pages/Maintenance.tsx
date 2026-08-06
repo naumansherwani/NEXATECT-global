@@ -9,8 +9,8 @@ export default function Maintenance() {
         </div>
 
         <h1 className="text-4xl sm:text-5xl font-extrabold">
-          <span className="bg-gradient-to-r from-[hsl(174,62%,55%)] via-[hsl(200,80%,65%)] to-[hsl(217,91%,60%)] bg-clip-text text-transparent">
-            HostFlow AI
+          <span className="bg-gradient-to-r from-[hsl(35,34%,68%)] via-[hsl(200,80%,65%)] to-[hsl(214,50%,38%)] bg-clip-text text-transparent">
+            NEXATECT
           </span>
         </h1>
 

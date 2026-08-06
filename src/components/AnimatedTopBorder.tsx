@@ -8,9 +8,9 @@ const AnimatedTopBorder = forwardRef<HTMLDivElement>(function AnimatedTopBorder(
         style={{
           backgroundSize: "300% 100%",
           backgroundImage:
-            "linear-gradient(90deg, #14B8A6, #0EA5E9, #4F46E5, #8B5CF6, #DB2777, #F97316, #D4AF37, #F59E0B, #22C55E, #14B8A6)",
+            "linear-gradient(90deg, #1F385C, #CBB393, #E4D3B6, #CBB393, #1F385C)",
           boxShadow:
-            "0 0 8px rgba(20,184,166,0.5), 0 0 16px rgba(14,165,233,0.3), 0 0 8px rgba(139,92,246,0.4)",
+            "0 0 10px rgba(203,179,147,0.45), 0 0 20px rgba(31,56,92,0.5)",
         }}
       />
     </div>

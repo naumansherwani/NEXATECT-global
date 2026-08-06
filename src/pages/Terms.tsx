@@ -11,12 +11,12 @@ const Terms = () => (
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">1. Acceptance of Terms</h2>
-          <p>By accessing or using HostFlow AI, a product of HostFlow AI Technologies ("the Platform," "we," "us"), you agree to be bound by these Terms & Conditions. If you do not agree, you may not use the Platform.</p>
+          <p>By accessing or using NEXATECT, a product of NEXATECT Technologies ("the Platform," "we," "us"), you agree to be bound by these Terms & Conditions. If you do not agree, you may not use the Platform.</p>
         </section>
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">2. Service Description</h2>
-          <p>HostFlow AI is a <strong>software-only, self-service SaaS platform</strong> providing AI-powered scheduling, booking management, CRM, and dynamic pricing tools. It serves multiple industries including hospitality, airlines, car rental, healthcare, education, logistics, events & entertainment, travel agencies, and railways.</p>
+          <p>NEXATECT is a <strong>software-only, self-service SaaS platform</strong> providing AI-powered scheduling, booking management, CRM, and dynamic pricing tools. It serves multiple industries including hospitality, airlines, car rental, healthcare, education, logistics, events & entertainment, travel agencies, and railways.</p>
           <p><strong>This is a software product only.</strong> All features are fully automated and AI-powered. No human-driven services, manual work, consulting, done-for-you setup, or agency-style services are included in any plan. Customers access and use the platform on a self-service basis.</p>
         </section>
 
@@ -34,7 +34,7 @@ const Terms = () => (
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">4. Subscription Plans & Pricing</h2>
-          <p>HostFlow AI offers the following subscription plans:</p>
+          <p>NEXATECT offers the following subscription plans:</p>
           <ul className="list-disc pl-6 space-y-2">
             <li><strong>Basic Plan — £25/month:</strong> 1 industry workspace, up to 100 CRM contacts, up to 50 bookings/month, limited AI features, basic analytics</li>
             <li><strong>Pro Plan — £52/month:</strong> 1 industry workspace, unlimited contacts and bookings, AI scheduling, AI follow-ups, client scoring, advanced analytics, priority support</li>
@@ -67,12 +67,12 @@ const Terms = () => (
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">8. AI Features Disclaimer</h2>
-          <p>HostFlow AI's artificial intelligence features — including auto-scheduling, dynamic pricing, demand forecasting, lead scoring, and AI recommendations — are provided as decision-support tools. You maintain full control over all business decisions and can override any AI suggestion. We do not guarantee specific revenue outcomes, scheduling accuracy, or business results from using AI features.</p>
+          <p>NEXATECT's artificial intelligence features — including auto-scheduling, dynamic pricing, demand forecasting, lead scoring, and AI recommendations — are provided as decision-support tools. You maintain full control over all business decisions and can override any AI suggestion. We do not guarantee specific revenue outcomes, scheduling accuracy, or business results from using AI features.</p>
         </section>
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">9. Data Ownership & Intellectual Property</h2>
-          <p>You retain full ownership of all data you input into the Platform, including booking data, customer information, CRM records, and business documents. We do not claim any intellectual property rights over your content. HostFlow AI, its logo, design, and underlying technology are the intellectual property of HostFlow AI Technologies.</p>
+          <p>You retain full ownership of all data you input into the Platform, including booking data, customer information, CRM records, and business documents. We do not claim any intellectual property rights over your content. NEXATECT, its logo, design, and underlying technology are the intellectual property of NEXATECT Technologies.</p>
         </section>
 
         <section className="space-y-3">
@@ -96,12 +96,12 @@ const Terms = () => (
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">12. Limitation of Liability</h2>
-          <p>To the maximum extent permitted by law, HostFlow AI Technologies shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use or inability to use the Platform. Our total aggregate liability shall not exceed the total amount paid by you to us in the 12 months preceding the claim.</p>
+          <p>To the maximum extent permitted by law, NEXATECT Technologies shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use or inability to use the Platform. Our total aggregate liability shall not exceed the total amount paid by you to us in the 12 months preceding the claim.</p>
         </section>
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">13. Indemnification</h2>
-          <p>You agree to indemnify and hold harmless HostFlow AI Technologies, its officers, directors, employees, and agents from any claims, damages, losses, or expenses (including legal fees) arising from your use of the Platform or violation of these Terms.</p>
+          <p>You agree to indemnify and hold harmless NEXATECT Technologies, its officers, directors, employees, and agents from any claims, damages, losses, or expenses (including legal fees) arising from your use of the Platform or violation of these Terms.</p>
         </section>
 
         <section className="space-y-3">

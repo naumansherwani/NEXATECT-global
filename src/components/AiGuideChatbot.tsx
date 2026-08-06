@@ -42,10 +42,10 @@ const QUICK_TOPICS: Record<PageContext, { label: string; question: string }[]> =
     { label: "💰 Pricing", question: "AI Auto Pricing kya hai aur kaise use karein?" },
     { label: "🎙️ Voice AI", question: "Voice Assistant kaise kaam karta hai? Latency kitni hai aur kin languages mein available hai?" },
     { label: "🚀 Onboarding", question: "AI Onboarding Wizard kya hai aur 15 languages mein kaise kaam karta hai?" },
-    { label: "🛡️ AI Safety", question: "HostFlow AI ke AI Guardrails kya hain? AI kya nahi karega?" },
+    { label: "🛡️ AI Safety", question: "NEXATECT ke AI Guardrails kya hain? AI kya nahi karega?" },
     { label: "📊 Growth Center", question: "Industry Growth Command Center kya hai aur kaunsi metrics dikhata hai?" },
     { label: "🛒 Sales Funnel", question: "Sales Conversion Funnel kaise kaam karta hai aur Smart Checkout Rescue kya hai?" },
-    { label: "🌐 Languages", question: "HostFlow AI kin 15 languages mein available hai? Har language ke liye kaunsi voice use hoti hai aur Language Switcher kahan hai?" },
+    { label: "🌐 Languages", question: "NEXATECT kin 15 languages mein available hai? Har language ke liye kaunsi voice use hoti hai aur Language Switcher kahan hai?" },
     { label: "💜 Win-Back", question: "Win-Back Offer kya hai? Cancel karne ke baad kya hota hai aur AI voice message kaise milta hai user ki apni language mein?" },
     { label: "📬 Live Inbox", question: "MRR Command Center mein Live Inbox aur Refund Rate metric kaise kaam karte hain? High-value churn alert kab trigger hota hai aur sab data live Supabase se kaise pull hota hai?" },
     { label: "🔒 Conflict Policy", question: "Agar Google Calendar aur AI Scheduler ke beech clash ho jaye to kaun jeetega? Backend par locked priority order kya hai aur admin isay kahan se control kar sakta hai?" },
@@ -392,7 +392,7 @@ export default function AiGuideChatbot({ context, industry }: AiGuideChatbotProp
               </Button>
             </div>
             <p className="text-[10px] text-muted-foreground/50 text-center mt-2">
-              AI-powered by HostFlow AI • {contextLabel} Guide
+              AI-powered by NEXATECT • {contextLabel} Guide
             </p>
           {showRemaining && (
             <p className="text-[10px] text-amber-600 dark:text-amber-400 text-center mt-1">

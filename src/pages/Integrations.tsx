@@ -14,7 +14,7 @@ export default function Integrations() {
         <h1 className="text-3xl font-bold tracking-tight flex items-center gap-2">
           <Plug className="w-7 h-7 text-primary" /> Integrations
         </h1>
-        <p className="text-muted-foreground mt-1.5">Connect HostFlow AI to the channels your business already runs on.</p>
+        <p className="text-muted-foreground mt-1.5">Connect NEXATECT to the channels your business already runs on.</p>
       </div>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((i) => (

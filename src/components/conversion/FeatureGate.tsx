@@ -47,7 +47,7 @@ export default function FeatureGate({ feature, children, fallback, hideWhenLocke
       <Button
         size="sm"
         onClick={() => navigate("/pricing")}
-        className="bg-gradient-to-r from-[hsl(174,62%,50%)] to-[hsl(217,91%,60%)] text-white"
+        className="bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)] text-white"
       >
         View Plans
       </Button>

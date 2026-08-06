@@ -49,11 +49,11 @@ const IndustriesSection = () => {
             <Zap className="w-4 h-4" /> Multi-Industry
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-foreground tracking-tight">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(174,62%,50%)] via-[hsl(217,91%,60%)] to-[hsl(270,80%,65%)] animate-pulse" style={{ animationDuration: '3s' }}>8</span> Independent Worlds.{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[hsl(35,34%,68%)] via-[hsl(214,50%,38%)] to-[hsl(214,50%,30%)] animate-pulse" style={{ animationDuration: '3s' }}>8</span> Independent Worlds.{" "}
             <span className="text-gradient-primary">One Unified Artificial Intelligence.</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto font-medium tracking-wide">
-            Zero Data Overlap<span className="inline-block w-1.5 h-1.5 rounded-full bg-[hsl(174,62%,50%)] mx-2 align-middle shadow-[0_0_8px_hsl(174,62%,50%)]" />Fully Isolated<span className="inline-block w-1.5 h-1.5 rounded-full bg-[hsl(270,80%,65%)] mx-2 align-middle shadow-[0_0_8px_hsl(270,80%,65%)]" />Enterprise Ready
+            Zero Data Overlap<span className="inline-block w-1.5 h-1.5 rounded-full bg-[hsl(35,34%,68%)] mx-2 align-middle shadow-[0_0_8px_hsl(35,34%,68%)]" />Fully Isolated<span className="inline-block w-1.5 h-1.5 rounded-full bg-[hsl(214,50%,30%)] mx-2 align-middle shadow-[0_0_8px_hsl(214,50%,30%)]" />Enterprise Ready
           </p>
         </div>
 

@@ -133,7 +133,7 @@ export default function EnterpriseContactDialog({ trigger }: EnterpriseContactDi
             <Building2 className="h-6 w-6 text-amber-400" />
           </div>
           <DialogTitle className="text-center text-xl">
-            {success ? "Request Received" : "Get Your Custom HostFlow AI Proposal"}
+            {success ? "Request Received" : "Get Your Custom NEXATECT Proposal"}
           </DialogTitle>
           <DialogDescription className="text-center">
             {success

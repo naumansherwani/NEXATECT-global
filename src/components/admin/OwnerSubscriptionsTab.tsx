@@ -19,12 +19,12 @@ const OwnerSubscriptionsTab = ({ subscriptions, showSecret }: OwnerSubscriptions
   return (
     <div className="space-y-4">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <div className="p-3 rounded-xl bg-[hsl(160,60%,45%)]/5 border border-[hsl(160,60%,45%)]/20 text-center">
-          <p className="text-2xl font-bold text-[hsl(160,60%,45%)]">{active.length}</p>
+        <div className="p-3 rounded-xl bg-[hsl(35,34%,68%)]/5 border border-[hsl(35,34%,68%)]/20 text-center">
+          <p className="text-2xl font-bold text-[hsl(35,34%,68%)]">{active.length}</p>
           <p className="text-xs text-muted-foreground">Active</p>
         </div>
-        <div className="p-3 rounded-xl bg-[hsl(217,91%,60%)]/5 border border-[hsl(217,91%,60%)]/20 text-center">
-          <p className="text-2xl font-bold text-[hsl(217,91%,60%)]">{trialing.length}</p>
+        <div className="p-3 rounded-xl bg-[hsl(214,50%,38%)]/5 border border-[hsl(214,50%,38%)]/20 text-center">
+          <p className="text-2xl font-bold text-[hsl(214,50%,38%)]">{trialing.length}</p>
           <p className="text-xs text-muted-foreground">Trialing</p>
         </div>
         <div className="p-3 rounded-xl bg-yellow-500/5 border border-yellow-500/20 text-center">
@@ -79,9 +79,9 @@ const OwnerSubscriptionsTab = ({ subscriptions, showSecret }: OwnerSubscriptions
                       <Badge
                         className={`text-xs ${
                           s.status === "active" || s.is_lifetime
-                            ? "bg-[hsl(160,60%,45%)]/20 text-[hsl(160,60%,45%)]"
+                            ? "bg-[hsl(35,34%,68%)]/20 text-[hsl(35,34%,68%)]"
                             : s.status === "trialing"
-                            ? "bg-[hsl(217,91%,60%)]/20 text-[hsl(217,91%,60%)]"
+                            ? "bg-[hsl(214,50%,38%)]/20 text-[hsl(214,50%,38%)]"
                             : "bg-destructive/20 text-destructive"
                         }`}
                       >

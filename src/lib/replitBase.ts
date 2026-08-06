@@ -1,4 +1,4 @@
-// Sovereign HostFlow Brain — runs on owner's own server (Hetzner).
+// Sovereign NEXATECT Brain — runs on owner's own server (Hetzner).
 // Single source of truth for AI advisors, founder OS, and inbox.
 const DEFAULT_BRAIN_ORIGIN = "https://api.hostflowai.net";
 
@@ -12,7 +12,7 @@ function normalizeOrigin(value?: string): string {
     const url = new URL(sanitized);
     const host = url.hostname.toLowerCase();
 
-    // Only allow the sovereign HostFlow Brain host. Everything else rejected.
+    // Only allow the sovereign NEXATECT Brain host. Everything else rejected.
     const isSovereign = host === "88.198.208.90" || host.endsWith("hostflowai.net");
     if (!isSovereign) return "";
 
@@ -39,7 +39,7 @@ export const REPLIT_ORIGIN = BRAIN_ORIGIN;
 export const REPLIT_API_BASE = BRAIN_API_BASE;
 
 // Publishable Brain identifier — sent as X-Sovereign-Token so Hetzner
-// recognizes the official HostFlow frontend. Real per-user security comes
+// recognizes the official NEXATECT frontend. Real per-user security comes
 // from the Supabase JWT (Authorization: Bearer). Acts like an anon key.
 // Override at build time with VITE_SOVEREIGN_TOKEN if rotated.
 export const SOVEREIGN_TOKEN =

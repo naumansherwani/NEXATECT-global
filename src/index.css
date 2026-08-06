@@ -51,57 +51,51 @@ html {
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 220 20% 25%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 220 20% 25%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 25%;
-
-    --primary: 174 55% 42%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 217 70% 52%;
-    --secondary-foreground: 0 0% 100%;
-
-    --muted: 210 20% 95%;
-    --muted-foreground: 220 10% 46%;
-
-    --accent: 217 70% 52%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 65% 48%;
-    --destructive-foreground: 0 0% 100%;
-
-    --success: 160 50% 38%;
-    --success-foreground: 0 0% 100%;
-
-    --warning: 38 80% 48%;
-    --warning-foreground: 220 20% 20%;
-
-    --border: 220 15% 88%;
-    --input: 220 15% 88%;
-    --ring: 174 55% 42%;
+    /* NEXATECT cinematic: charcoal #121418 / navy #1F385C / champagne gold #CBB393 */
+    --background: 220 9% 8%;
+    --foreground: 40 20% 95%;
+    --card: 220 10% 11%;
+    --card-foreground: 40 20% 95%;
+    --popover: 220 10% 11%;
+    --popover-foreground: 40 20% 95%;
+    --primary: 35 34% 68%;
+    --primary-foreground: 220 9% 8%;
+    --secondary: 214 50% 24%;
+    --secondary-foreground: 40 20% 95%;
+    --muted: 220 10% 15%;
+    --muted-foreground: 40 8% 62%;
+    --accent: 214 50% 30%;
+    --accent-foreground: 40 20% 95%;
+    --destructive: 0 62.8% 38%;
+    --destructive-foreground: 40 20% 95%;
+    --success: 150 40% 42%;
+    --success-foreground: 220 9% 8%;
+    --warning: 35 60% 55%;
+    --warning-foreground: 220 9% 8%;
+    --border: 220 10% 18%;
+    --input: 220 10% 18%;
+    --ring: 35 34% 68%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 174 62% 50%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 217 91% 60%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 214 32% 91%;
-    --sidebar-ring: 174 62% 50%;
+    --sidebar-background: 220 10% 10%;
+    --sidebar-foreground: 40 20% 92%;
+    --sidebar-primary: 35 34% 68%;
+    --sidebar-primary-foreground: 220 9% 8%;
+    --sidebar-accent: 214 50% 24%;
+    --sidebar-accent-foreground: 40 20% 95%;
+    --sidebar-border: 220 10% 18%;
+    --sidebar-ring: 35 34% 68%;
 
-    --gradient-primary: linear-gradient(135deg, #2DD4BF, #3B82F6);
-    --gradient-secondary: linear-gradient(135deg, #3B82F6, #2DD4BF);
-    --gradient-hero: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
-    --gradient-accent: linear-gradient(135deg, #3B82F6, #2DD4BF);
-    --shadow-card: 0 1px 3px 0 rgba(0, 0, 0, 0.06), 0 1px 2px -1px rgba(0, 0, 0, 0.06);
-    --shadow-elevated: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+    --nexa-charcoal: 220 9% 8%;
+    --nexa-navy: 214 50% 24%;
+    --nexa-gold: 35 34% 68%;
+    --gradient-primary: linear-gradient(135deg, #CBB393, #1F385C);
+    --gradient-secondary: linear-gradient(135deg, #1F385C, #CBB393);
+    --gradient-hero: linear-gradient(135deg, #121418 0%, #1F385C 100%);
+    --gradient-accent: linear-gradient(135deg, #1F385C, #CBB393);
+    --shadow-card: 0 1px 3px 0 rgba(0,0,0,0.5), 0 1px 2px -1px rgba(0,0,0,0.4);
+    --shadow-elevated: 0 18px 40px -18px rgba(0,0,0,0.85);
   }
 
   .dark {
@@ -196,13 +190,13 @@ html {
   .crm-feature-star::before {
     top: -4px;
     right: -14px;
-    color: hsl(174, 62%, 50%);
+    color: hsl(35, 34%, 68%);
   }
 
   .crm-feature-star::after {
     bottom: -2px;
     left: -12px;
-    color: hsl(217, 91%, 60%);
+    color: hsl(214,50%,38%);
     font-size: 8px;
   }
 
@@ -356,7 +350,7 @@ html:not(.dark) .ghost-sidebar-bg .ghost-sidebar-active {
   background: linear-gradient(135deg, rgba(var(--industry-rgb, 15 23 42), 0.12) 0%, rgba(var(--industry-rgb, 15 23 42), 0.04) 100%);
 }
 
-/* ===== Ghost Sidebar — HostFlow AI brand header ("H" + wordmark) =====
+/* ===== Ghost Sidebar — NEXATECT brand header ("H" + wordmark) =====
    Dark mode keeps the original plain H logo.
    Light mode keeps the premium industry-colored treatment. */
 .ghost-brand-mark {
@@ -452,7 +446,7 @@ html:not(.dark) .ghost-brand:hover .ghost-brand-mark {
   --fos-neon-gradient: linear-gradient(135deg, #F0CF60 0%, #D4AF37 35%, #22D3EE 70%, #A855F7 100%);
   background:
     radial-gradient(1200px 600px at 80% -10%, rgba(212,175,55,0.08), transparent 60%),
-    radial-gradient(900px 500px at -10% 100%, rgba(34,211,238,0.05), transparent 60%),
+    radial-gradient(900px 500px at -10% 100%, rgba(203,179,147,0.05), transparent 60%),
     var(--fos-bg);
   color: var(--fos-text);
   font-family: 'Inter', system-ui, sans-serif;
@@ -518,13 +512,13 @@ html:not(.dark) .ghost-brand:hover .ghost-brand-mark {
 /* Glow on lucide SVGs */
 .founder-os .fos-icon-neon {
   color: var(--fos-accent-bright);
-  filter: drop-shadow(0 0 4px rgba(212,175,55,0.55)) drop-shadow(0 0 10px rgba(34,211,238,0.18));
+  filter: drop-shadow(0 0 4px rgba(212,175,55,0.55)) drop-shadow(0 0 10px rgba(203,179,147,0.18));
   transition: filter .2s ease, color .2s ease;
 }
 .founder-os .fos-icon-neon:hover,
 .founder-os a:hover .fos-icon-neon,
 .founder-os button:hover .fos-icon-neon {
-  filter: drop-shadow(0 0 6px rgba(240,207,96,0.85)) drop-shadow(0 0 14px rgba(168,85,247,0.35));
+  filter: drop-shadow(0 0 6px rgba(240,207,96,0.85)) drop-shadow(0 0 14px rgba(31,56,92,0.35));
 }
 
 /* Sidebar nav rows: gold/neon active state */
@@ -537,7 +531,7 @@ html:not(.dark) .ghost-brand:hover .ghost-brand-mark {
 }
 .founder-os .founder-sidebar nav button[class*="text-[var(--fos-accent)]"],
 .founder-os .founder-sidebar nav button.fos-active {
-  background: linear-gradient(90deg, rgba(212,175,55,0.16), rgba(168,85,247,0.06) 60%, transparent) !important;
+  background: linear-gradient(90deg, rgba(212,175,55,0.16), rgba(31,56,92,0.06) 60%, transparent) !important;
   color: var(--fos-accent-bright) !important;
   box-shadow: inset 2px 0 0 var(--fos-accent), 0 0 18px -6px rgba(212,175,55,0.4);
 }
@@ -546,7 +540,7 @@ html:not(.dark) .ghost-brand:hover .ghost-brand-mark {
   transition: filter .2s ease, transform .2s ease;
 }
 .founder-os .founder-sidebar nav button:hover svg {
-  filter: drop-shadow(0 0 6px rgba(240,207,96,0.7)) drop-shadow(0 0 12px rgba(34,211,238,0.3));
+  filter: drop-shadow(0 0 6px rgba(240,207,96,0.7)) drop-shadow(0 0 12px rgba(203,179,147,0.3));
   transform: scale(1.06);
 }
 
@@ -1081,7 +1075,7 @@ html.dark[data-industry="railways"] {
   --sidebar-ring: 0 100% 50%;
 }
 
-/* -------- BRAND (HostFlow Teal — fallback when user picks "Brand" mode) --------
+/* -------- BRAND (NEXATECT Teal — fallback when user picks "Brand" mode) --------
    Explicitly mirrors the default :root / .dark tokens so the brand selection
    feels deliberate and consistent across all industries. */
 [data-industry="brand"] {

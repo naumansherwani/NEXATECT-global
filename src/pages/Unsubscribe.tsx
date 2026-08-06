@@ -48,7 +48,7 @@ const Unsubscribe = () => {
           <>
             <MailX className="w-16 h-16 text-muted-foreground mx-auto" />
             <h1 className="text-2xl font-bold text-foreground">Unsubscribe</h1>
-            <p className="text-muted-foreground">Are you sure you want to unsubscribe from HostFlow AI emails?</p>
+            <p className="text-muted-foreground">Are you sure you want to unsubscribe from NEXATECT emails?</p>
             <Button onClick={handleUnsubscribe} disabled={processing} className="w-full">
               {processing ? <><Loader2 className="w-4 h-4 mr-2 animate-spin" /> Processing...</> : "Confirm Unsubscribe"}
             </Button>
