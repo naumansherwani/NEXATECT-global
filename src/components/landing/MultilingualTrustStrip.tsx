@@ -10,7 +10,7 @@ import { Check, Sparkles } from "lucide-react";
 // Each country: ISO code (for SVG flag) + native greeting + tasteful accent color
 // 14 languages — matches site i18n (en, ur, ar, es, fr, de, zh, ja, ko, it, tr, pt, ro, de-CH)
 const LANGUAGES: { code: string; name: string; greeting: string; color: string; dir?: "rtl" }[] = [
-  { code: "us", name: "United States", greeting: "Hello", color: "#93C5FD" },
+  { code: "gb-eng", name: "England", greeting: "England", color: "#E4D3B6" },
   { code: "pk", name: "Pakistan", greeting: "خوش آمدید", color: "#86EFAC", dir: "rtl" },
   { code: "sa", name: "Saudi Arabia", greeting: "أهلاً", color: "#86EFAC", dir: "rtl" },
   { code: "es", name: "Spain", greeting: "Hola", color: "#FCD34D" },
@@ -127,13 +127,6 @@ const MultilingualTrustStrip = () => {
             ))}
           </ul>
 
-          {/* Row 6 — Limited launch offer */}
-          <p className="text-[11px] md:text-[12px] text-[#94A3B8] text-center max-w-[640px] leading-relaxed">
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#FBBF24] mr-2 align-middle animate-pulse" />
-            <span className="font-semibold text-[#F8FAFC]/90">Limited Launch Offer</span>
-            <span className="mx-1.5 text-[#CBB393]/50">—</span>
-            First <span className="font-semibold text-[#E4D3B6]">100 early users</span> lock discounted pricing for <span className="font-semibold text-[#F8FAFC]/90">12 months</span>.
-          </p>
         </div>
       </div>
 
