@@ -26,7 +26,7 @@ const ADVISORS: Advisor[] = [
 ];
 
 const FROM_IDENTITIES = [
-  { id: "advisor", email: "connectai@hostflowai.net", name: "NEXATECT ConnectAI" },
+  { id: "advisor", email: "connectai@nexatect.com", name: "NEXATECT ConnectAI" },
   { id: "aria", email: "aria@hostflowai.net", name: "Aria | NEXATECT" },
   { id: "orion", email: "orion@hostflowai.net", name: "Orion | NEXATECT" },
   { id: "rex", email: "rex@hostflowai.net", name: "Rex | NEXATECT" },

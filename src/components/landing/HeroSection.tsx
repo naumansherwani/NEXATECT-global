@@ -106,7 +106,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
             <Button
               size="lg"
-              className="relative group bg-gradient-to-r from-[hsl(35,34%,68%)] to-[hsl(214,50%,38%)] hover:from-[hsl(35,34%,68%)] hover:to-[hsl(214,50%,38%)] text-white text-lg px-10 py-7 font-bold rounded-xl shadow-[0_0_40px_rgba(203,179,147,0.3)] hover:shadow-[0_0_60px_rgba(203,179,147,0.5)] transition-all duration-500 hover:scale-[1.03] border-0"
+              className="relative group bg-gradient-to-r from-[#E4D3B6] via-[#CBB393] to-[#A98C63] hover:from-[#E4D3B6] hover:to-[#CBB393] text-[#121418] text-lg px-10 py-7 font-bold rounded-xl shadow-[0_0_40px_rgba(203,179,147,0.35)] hover:shadow-[0_0_65px_rgba(203,179,147,0.55)] transition-all duration-500 hover:scale-[1.03] border-0"
               onClick={() => navigate("/signup")}
             >
               Get Started Free
@@ -114,7 +114,7 @@ const HeroSection = () => {
             </Button>
             <Button
               size="lg"
-              className="text-lg px-8 py-7 bg-white/5 border border-white/15 text-white/80 hover:text-white hover:bg-white/10 hover:border-white/25 backdrop-blur-sm rounded-xl transition-all duration-300 font-medium"
+              className="text-lg px-8 py-7 bg-[#1F385C]/40 border border-[#CBB393]/40 text-[#CBB393] hover:text-[#E4D3B6] hover:bg-[#1F385C]/60 hover:border-[#CBB393]/70 backdrop-blur-sm rounded-xl transition-all duration-300 font-semibold shadow-[0_0_25px_rgba(31,56,92,0.35)]"
               onClick={() => navigate("/pricing")}
             >
               <Globe className="mr-2 w-5 h-5" /> View Pricing

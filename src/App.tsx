@@ -110,7 +110,7 @@ const BrainBridge = () => {
           domain: {
             primary: "hostflowai.net",
             owner_email: "naumansherwani@hostflowai.net",
-            public_contact_email: "connectai@hostflowai.net",
+            public_contact_email: "connectai@nexatect.com",
             removed_public_emails: ["contact@hostflowai.net", "support@hostflowai.net", "any public support@ address"],
           },
           industries: {
