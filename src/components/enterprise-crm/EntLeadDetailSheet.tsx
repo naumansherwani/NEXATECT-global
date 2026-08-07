@@ -34,7 +34,7 @@ interface AiInsight {
 const PACKAGE_TEMPLATES: Record<string, ComposeInitial> = {
   proposal: {
     subject: "NEXATECT · Custom Enterprise Proposal",
-    body: "Hi {{name}},\n\nThank you for your interest in NEXATECT. Based on your requirements ({{industry}}, {{team}} team), I've prepared a tailored proposal:\n\n• Multi-user workspace with SSO\n• Custom AI workflows for your operations\n• Dedicated async onboarding (no calls required)\n• Priority support with SLA\n• Invoice / contract billing in GBP\n\nI'll send the full PDF proposal in a follow-up email shortly. Let me know if you'd like any adjustments.\n\nBest regards,\nNauman Sherwani\nFounder, NEXATECT Technologies\nconnectai@hostflowai.net",
+    body: "Hi {{name}},\n\nThank you for your interest in NEXATECT. Based on your requirements ({{industry}}, {{team}} team), I've prepared a tailored proposal:\n\n• Multi-user workspace with SSO\n• Custom AI workflows for your operations\n• Dedicated async onboarding (no calls required)\n• Priority support with SLA\n• Invoice / contract billing in GBP\n\nI'll send the full PDF proposal in a follow-up email shortly. Let me know if you'd like any adjustments.\n\nBest regards,\nNauman Sherwani\nFounder, NEXATECT Technologies\nconnectai@nexatect.com",
     fromIdentity: "advisor",
   },
   pricing: {
@@ -347,7 +347,7 @@ export default function EntLeadDetailSheet({ lead, open, onClose, onChanged }: P
             <div className="text-[10px] text-muted-foreground space-y-0.5">
               <div>Submitted {new Date(lead.created_at).toLocaleString("en-GB")}</div>
               <div>Source: {lead.source}</div>
-              <div>Reply identity: <span className="text-amber-400">connectai@hostflowai.net</span></div>
+              <div>Reply identity: <span className="text-amber-400">connectai@nexatect.com</span></div>
             </div>
           </div>
         </SheetContent>

@@ -22,7 +22,7 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 );
 
 const SOCIAL_LINKS = [
-  { href: "mailto:connect@nexatect.com", icon: Mail, label: "connect@nexatect.com" },
+  { href: "mailto:connectai@nexatect.com", icon: Mail, label: "connectai@nexatect.com" },
   { href: "https://instagram.com/nexatect", icon: InstagramIcon, label: "Instagram" },
   { href: "https://wa.me/923001234567", icon: WhatsAppIcon, label: "WhatsApp" },
   { href: "https://facebook.com/nexatect", icon: Facebook, label: "Facebook" },
