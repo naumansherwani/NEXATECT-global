@@ -52,7 +52,6 @@ const getWmo = (c: number) => WMO[c] || WMO[0];
 
 /* ─── World clocks ─── */
 const CLOCKS = [
-  { city: "New York", tz: "America/New_York", flag: "🇺🇸" },
   { city: "London", tz: "Europe/London", flag: "🇬🇧" },
   { city: "Dubai", tz: "Asia/Dubai", flag: "🇦🇪" },
   { city: "Tokyo", tz: "Asia/Tokyo", flag: "🇯🇵" },
