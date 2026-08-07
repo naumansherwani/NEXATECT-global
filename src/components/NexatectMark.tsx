@@ -3,33 +3,34 @@ interface MarkProps {
 }
 
 /**
- * NEXATECT monogram — navy M/X armature with the champagne-gold A/V ribbon
- * threaded through the centre, matching the sculpted reference mark.
+ * NEXATECT monogram — a clean geometric N in navy with a champagne-gold
+ * chevron locked into its counter. Balanced, crisp at every size.
  */
 const NexatectMark = ({ className }: MarkProps) => (
-  <svg viewBox="-9 -8 122 116" className={className} role="img" aria-label="NEXATECT logo">
+  <svg viewBox="0 0 100 100" className={className} role="img" aria-label="NEXATECT logo">
     <defs>
-      <linearGradient id="nx-gold" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="80" y2="100">
+      <linearGradient id="nx-gold" gradientUnits="userSpaceOnUse" x1="30" y1="20" x2="75" y2="85">
         <stop offset="0%" stopColor="#EEDCBC" />
-        <stop offset="50%" stopColor="#CBB393" />
+        <stop offset="55%" stopColor="#CBB393" />
         <stop offset="100%" stopColor="#9C7D53" />
       </linearGradient>
-      <linearGradient id="nx-navy" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="90" y2="100">
+      <linearGradient id="nx-navy" gradientUnits="userSpaceOnUse" x1="10" y1="10" x2="90" y2="90">
         <stop offset="0%" stopColor="#31578A" />
         <stop offset="55%" stopColor="#1F385C" />
         <stop offset="100%" stopColor="#112542" />
       </linearGradient>
     </defs>
-    {/* Navy armature: upright, descending valley, rising arm, crossing right leg. */}
-    <g stroke="url(#nx-navy)" strokeWidth="17" fill="none">
-      <path d="M12 4 V96" />
-      <path d="M12 8 L50 96" />
-      <path d="M50 96 L84 4" />
-      <path d="M64 4 L94 96" />
+    {/* Navy N: left stem, diagonal, right stem */}
+    <g fill="url(#nx-navy)">
+      <rect x="10" y="14" width="15" height="72" rx="2" />
+      <rect x="75" y="14" width="15" height="72" rx="2" />
+      <path d="M25 14 L40 14 L90 86 L75 86 Z" />
     </g>
-    {/* Champagne-gold chevron and its descending leg. */}
-    <path d="M46 4 L64 46 L55 46 L46 25 L37 46 L28 46 Z" fill="url(#nx-gold)" />
-    <path d="M28 46 L37 46 L33 96 L20 96 Z" fill="url(#nx-gold)" />
+    {/* Champagne-gold chevron locked in the counter */}
+    <path
+      d="M50 30 L69 74 L59 74 L50 51 L41 74 L31 74 Z"
+      fill="url(#nx-gold)"
+    />
   </svg>
 );
 
