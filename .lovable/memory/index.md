@@ -31,6 +31,8 @@ RAG vector store LIVE on Supabase #3: hf_documents + match_hf_documents. OpenRou
 
 STACK LOCKED (Aug 2026): tRPC primary (REST optional legacy) → Bun → Rust/Tokio → OpenRouter/self-hosted → Supabase → Caddy HTTP/3+QUIC. Transport: WebTransport primary, WS fallback, SSE compat. React 19 + Vite + Tailwind 4 + TanStack Query + Zustand. Redis. No Docker, no Python.
 SITE IS FOUNDER-ONLY: public sees Maintenance "work in progress"; only owner emails see the real site (src/components/gate/FounderOnlyGate.tsx).
+AI HOUSE BOUNDARY LOCKED: core agents (Jimmy/Sherlock/8 advisors/Trojan) = self-hosted only, routing from agent_registry.routing_config. Lovable AI Gateway = frontend copy helpers only, never core brain. No provider keys in frontend.
+TROJAN BY JIMMY = revenue autopilot layer ON TOP of existing Enterprise CRM in Founder OS. No new CRM is built; Salesforce/HubSpot/Zoho connect + mirror + kill switch.
 
 ## Memories
 - [Pricing tiers](mem://features/pricing) — Plan features and limits for Basic/Standard/Premium
@@ -65,3 +67,4 @@ SITE IS FOUNDER-ONLY: public sees Maintenance "work in progress"; only owner ema
 - [Industry subdomains (LOCKED)](mem://features/industry-subdomains) — Each industry on its own subdomain of hostflowai.net (hospitality/airlines/car-rental/healthcare/education/logistics/events/railways). Root = landing + chooser. Helper: src/lib/industryDomain.ts.
 - [Tech stack 2026 (LOCKED)](mem://constraints/tech-stack-2026) — tRPC/Bun/Rust/WebTransport/Caddy stack, REST optional, no Docker/Python
 - [Live Caddyfile map](mem://features/caddyfile-live) — nexatect/anexvotpay/axonetis domain → port map, founder IP allowlist
+- [AI house boundary (LOCKED)](mem://constraints/ai-house-boundary-LOCKED) — Core agents self-hosted; Lovable AI Gateway builder-side helpers only; no frontend provider keys
