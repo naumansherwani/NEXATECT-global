@@ -1,4 +1,4 @@
-import { LayoutDashboard, Crown, TrendingUp, Users, Target, Briefcase, ShieldCheck, CheckSquare, Sparkles, BarChart3, Settings, UserCircle, LogOut, Moon, Sun, Mail, Search, Activity, Bot, Pin, PinOff } from "lucide-react";
+import { LayoutDashboard, Crown, TrendingUp, Users, Target, Briefcase, ShieldCheck, CheckSquare, BarChart3, Settings, UserCircle, LogOut, Moon, Sun, Search, Activity, Pin, PinOff } from "lucide-react";
 import { useFounderTheme } from "./FounderTheme";
 import { useAuth } from "@/hooks/useAuth";
 import { useNavigate, Link } from "react-router-dom";
@@ -7,7 +7,7 @@ import NexatectMark from "@/components/NexatectMark";
 
 export type FounderSection =
   | "overview" | "executive" | "revenue" | "customers" | "leads" | "crm"
-  | "emails" | "agents_email" | "tasks" | "ai" | "sherlock" | "analytics" | "security" | "settings" | "profile"
+  | "tasks" | "ai" | "sherlock" | "analytics" | "security" | "settings" | "profile"
   | "revenue_intel";
 
 const SHERLOCK_USER_ID = "d089432d-5d6b-416e-bd29-abe913121d99";
@@ -20,8 +20,6 @@ const items: { id: FounderSection; label: string; icon: any }[] = [
   { id: "customers", label: "Customers", icon: Users },
   { id: "leads", label: "Leads", icon: Target },
   { id: "crm", label: "Enterprise CRM", icon: Briefcase },
-  { id: "emails", label: "AI Email Center", icon: Mail },
-  { id: "agents_email", label: "AI Agents Email Center", icon: Bot },
   { id: "tasks", label: "Tasks", icon: CheckSquare },
   { id: "sherlock", label: "Sherlock AI Advisor of Founder", icon: Search },
   { id: "analytics", label: "Analytics", icon: BarChart3 },
@@ -101,7 +99,7 @@ export default function FounderSidebar({ active, onSelect }: { active: FounderSe
               <Icon className={`w-4 h-4 shrink-0 ${isActive ? "fos-icon-neon" : ""}`} />
               <span>{it.label}</span>
             </button>
-            {it.id === "emails" && (
+            {it.id === "crm" && (
               <button
                 onClick={() => window.dispatchEvent(new Event("jj:open"))}
                 className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-[13px] font-semibold transition-all duration-200 bg-gradient-to-r from-[#0a0a0a] to-[#1a1a1a] border border-[#D4AF37]/40 text-[#D4AF37] hover:border-[#D4AF37] hover:shadow-[0_0_18px_-2px_rgba(212,175,55,0.55)]"

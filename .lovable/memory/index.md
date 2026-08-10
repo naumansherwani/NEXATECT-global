@@ -8,6 +8,7 @@ Delivery rule: Lovable pushes to GitHub, owner runs `git pull` on Hetzner. Alway
 Site stays founder-only (Maintenance gate) until every feature verified working, then goes live on nexatect.com.
 7-day free trial (SQL handle_new_user locked), then Basic $15/Standard $39/Premium $99 monthly.
 8 industries ONLY: hospitality, airlines, car_rental, healthcare, education, logistics, events_entertainment, railways.
+Email: Founder Inbox + AI Email Center REMOVED from this app. ANEXOMAIL owns all email. Never rebuild here.
 Hospitality has 2 sub-types in profiles.business_subtype: hotel_property | travel_tours. NEVER mix hotel data with tour data.
 Pricing 5 industries get AI Smart Pricing: hospitality, airlines, car_rental, events_entertainment, railways. NO pricing for healthcare/education/logistics.
 AI Ticket Generator/Email only for: airlines, railways, events_entertainment.
@@ -35,6 +36,7 @@ AI HOUSE BOUNDARY LOCKED: core agents (Jimmy/Sherlock/8 advisors/Trojan) = self-
 TROJAN BY JIMMY = revenue autopilot layer ON TOP of existing Enterprise CRM in Founder OS. No new CRM is built; Salesforce/HubSpot/Zoho connect + mirror + kill switch.
 
 ## Memories
+- [ANEXOMAIL owns email](mem://constraints/anexomail-owns-email) — Founder inbox/email center removed; ANEXOMAIL + AI Server 2 rules, OpenRouter OR1-3, tiers
 - [Pricing tiers](mem://features/pricing) — Plan features and limits for Basic/Standard/Premium
 - [Industries](mem://features/industries) — 8 supported industry types and their configs
 - [Owner credentials](mem://features/owner-credentials) — Owner login & Gmail notification config
