@@ -287,8 +287,8 @@ export default function ExecutiveHQ({ onNavigate }: { onNavigate?: (s: string) =
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
           <CmdBtn icon={FileText} label="Send Invoice" onClick={() => onNavigate?.("crm")} />
-          <CmdBtn icon={Mail} label="Reply Lead" accent onClick={() => onNavigate?.("emails")} />
-          <CmdBtn icon={Sparkles} label="Launch Campaign" onClick={() => onNavigate?.("emails")} />
+          <CmdBtn icon={Mail} label="Reply Lead" accent onClick={() => onNavigate?.("leads")} />
+          <CmdBtn icon={Sparkles} label="Launch Campaign" onClick={() => onNavigate?.("crm")} />
           <CmdBtn icon={RotateCcw} label="Review Churn" onClick={() => onNavigate?.("revenue")} />
           <CmdBtn icon={UserPlus} label="Add Team Member" onClick={() => onNavigate?.("settings")} />
           <CmdBtn icon={Plus} label="Create Deal" onClick={() => onNavigate?.("crm")} />
