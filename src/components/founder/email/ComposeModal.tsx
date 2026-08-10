@@ -11,8 +11,8 @@ import { toast } from "sonner";
 const SEND_IDENTITIES = [
   { id: "advisor",    address: "connectai@nexatect.com",     label: "NEXATECT ConnectAI",       sub: "AI Advisor",          color: "#06B6D4" },
   { id: "enterprise", address: "connectai@nexatect.com",     label: "Enterprise Sales",         sub: "Owner",               color: "#F59E0B" },
-  { id: "support",    address: "support@hostflowai.net",       label: "Support",                  sub: "Customer Success",    color: "#10B981" },
-  { id: "billing",    address: "billing@hostflowai.net",       label: "Billing",                  sub: "Finance",             color: "#3B82F6" },
+  { id: "support",    address: "support@nexatect.com",       label: "Support",                  sub: "Customer Success",    color: "#10B981" },
+  { id: "billing",    address: "billing@nexatect.com",       label: "Billing",                  sub: "Finance",             color: "#3B82F6" },
   { id: "general",    address: "naumansherwani.founder@nexatect.com",label: "Nauman Sherwani",          sub: "Founder",             color: "#8B5CF6" },
 ] as const;
 type SendIdentityId = typeof SEND_IDENTITIES[number]["id"];

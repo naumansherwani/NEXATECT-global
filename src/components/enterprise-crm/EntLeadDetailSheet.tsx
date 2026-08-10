@@ -49,12 +49,12 @@ const PACKAGE_TEMPLATES: Record<string, ComposeInitial> = {
   },
   invoice: {
     subject: "NEXATECT · Invoice for {{company}}",
-    body: "Hi {{name}},\n\nPlease find your invoice attached.\n\nAmount due: £___\nDue date: Net 14\nPayment methods: Bank transfer or custom payment link (details below).\n\nLet me know once payment is initiated and we'll trigger account activation.\n\nBilling team\nbilling@hostflowai.net",
+    body: "Hi {{name}},\n\nPlease find your invoice attached.\n\nAmount due: £___\nDue date: Net 14\nPayment methods: Bank transfer or custom payment link (details below).\n\nLet me know once payment is initiated and we'll trigger account activation.\n\nBilling team\nbilling@nexatect.com",
     fromIdentity: "billing",
   },
   bank_transfer: {
     subject: "NEXATECT · Bank Transfer Details for {{company}}",
-    body: "Hi {{name}},\n\nFor bank transfer payment, please use the following details:\n\nBank: Clear Bank UK\nAccount Name: NEXATECT Technologies Ltd\nSort Code: __-__-__\nAccount Number: ________\nIBAN: GB__ CLRB ____ ____ ____ __\nSWIFT/BIC: CLRBGB22\nReference: {{company}}-ENT\n\nKindly send the remittance confirmation to billing@hostflowai.net so we can match the payment quickly.\n\nThanks,\nBilling team",
+    body: "Hi {{name}},\n\nFor bank transfer payment, please use the following details:\n\nBank: Clear Bank UK\nAccount Name: NEXATECT Technologies Ltd\nSort Code: __-__-__\nAccount Number: ________\nIBAN: GB__ CLRB ____ ____ ____ __\nSWIFT/BIC: CLRBGB22\nReference: {{company}}-ENT\n\nKindly send the remittance confirmation to billing@nexatect.com so we can match the payment quickly.\n\nThanks,\nBilling team",
     fromIdentity: "billing",
   },
 };
