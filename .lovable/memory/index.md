@@ -1,6 +1,7 @@
 # Project Memory
 
 ## Core
+Owner email: naumansherwani.founder@nexatect.com. Legal name: NEXATECT Global Pvt Limited. Domain nexatect.com.
 READ `.lovable/memory/MEMORY-BOOK.md` BEFORE asking the owner anything. It is the consolidated ledger.
 Owner infra: NO Docker, NO Python. Caddy + systemd on Hetzner. Bun/Node/Rust only. New AI work uses OWNER'S OpenRouter key.
 NEXATECT (ex-HostFlow AI) — migration STARTED Aug 2026; hostflowai.net RETIRED on Caddy. Palette LOCKED: charcoal #121418, navy #1F385C, champagne gold #CBB393.
@@ -36,6 +37,8 @@ AI HOUSE BOUNDARY LOCKED: core agents (Jimmy/Sherlock/8 advisors/Trojan) = self-
 TROJAN BY JIMMY = revenue autopilot layer ON TOP of existing Enterprise CRM in Founder OS. No new CRM is built; Salesforce/HubSpot/Zoho connect + mirror + kill switch.
 
 ## Memories
+- [SB1 forensic map](mem://features/sb1-forensic-map) — 611 tables, layer ownership, do-not-touch rules + successful NEXATECT rebrand/hard-heal SQL
+- [Owner identity](mem://features/owner-identity) — founder email, legacy login email, NEXATECT Global Pvt Limited legal name
 - [ANEXOMAIL owns email](mem://constraints/anexomail-owns-email) — Founder inbox/email center removed; ANEXOMAIL + AI Server 2 rules, OpenRouter OR1-3, tiers
 - [Pricing tiers](mem://features/pricing) — Plan features and limits for Basic/Standard/Premium
 - [Industries](mem://features/industries) — 8 supported industry types and their configs
