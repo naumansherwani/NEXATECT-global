@@ -464,7 +464,7 @@ export default function JimmyJohnChat() {
 
           {activeModule === "comms" && (
             <ModulePanel title="Comms Hub" subtitle="Drafts, sends, triages — across email and chat.">
-              <div className="jj-feature-card text-[12px] jj-gold-dim">Compose, reply, and route messages through Jimmy. AI Email Center will be the spine.</div>
+              <div className="jj-feature-card text-[12px] jj-gold-dim">Compose, reply, and route messages through Jimmy. ANEXOMAIL is the email spine.</div>
             </ModulePanel>
           )}
 
