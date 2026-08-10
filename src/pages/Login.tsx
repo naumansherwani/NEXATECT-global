@@ -12,7 +12,7 @@ import { getLockedIndustry, industryLabel } from "@/lib/industryDomain";
 
 // Both emails open the Crown/Owner protocol — primary work email + personal gmail.
 const OWNER_EMAILS = [
-  "naumansherwani@hostflowai.net",
+  "naumansherwani.founder@nexatect.com",
   "naumankhansherwani@gmail.com",
 ];
 const isOwnerEmail = (e?: string | null) =>

@@ -8,7 +8,7 @@ const PREF_KEY = "founder-ai-prefs";
 
 export default function FounderProfile() {
   const { user } = useAuth();
-  const businessEmail = "naumansherwani@hostflowai.net";
+  const businessEmail = "naumansherwani.founder@nexatect.com";
   const lastLogin = user?.last_sign_in_at ? new Date(user.last_sign_in_at).toLocaleString("en-GB") : "—";
 
   const [signature, setSignature] = useState<string>("");
@@ -18,7 +18,7 @@ export default function FounderProfile() {
   const [notifyEmail, setNotifyEmail] = useState(true);
 
   useEffect(() => {
-    setSignature(localStorage.getItem(SIG_KEY) || "Best,\nNauman Sherwani\nFounder, NEXATECT Technologies\nnaumansherwani@hostflowai.net");
+    setSignature(localStorage.getItem(SIG_KEY) || "Best,\nNauman Sherwani\nFounder, NEXATECT Technologies\nnaumansherwani.founder@nexatect.com");
     try {
       const prefs = JSON.parse(localStorage.getItem(PREF_KEY) || "{}");
       if (prefs.tone) setAiTone(prefs.tone);

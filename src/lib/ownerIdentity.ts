@@ -1,5 +1,5 @@
 const OWNER_EMAILS = [
-  "naumansherwani@hostflowai.net",
+  "naumansherwani.founder@nexatect.com",
   "naumankhansherwani@gmail.com",
 ];
 

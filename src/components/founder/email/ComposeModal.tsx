@@ -13,7 +13,7 @@ const SEND_IDENTITIES = [
   { id: "enterprise", address: "connectai@nexatect.com",     label: "Enterprise Sales",         sub: "Owner",               color: "#F59E0B" },
   { id: "support",    address: "support@hostflowai.net",       label: "Support",                  sub: "Customer Success",    color: "#10B981" },
   { id: "billing",    address: "billing@hostflowai.net",       label: "Billing",                  sub: "Finance",             color: "#3B82F6" },
-  { id: "general",    address: "naumansherwani@hostflowai.net",label: "Nauman Sherwani",          sub: "Founder",             color: "#8B5CF6" },
+  { id: "general",    address: "naumansherwani.founder@nexatect.com",label: "Nauman Sherwani",          sub: "Founder",             color: "#8B5CF6" },
 ] as const;
 type SendIdentityId = typeof SEND_IDENTITIES[number]["id"];
 

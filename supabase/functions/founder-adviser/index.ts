@@ -302,13 +302,13 @@ serve(async (req) => {
 
     // Owner email identities (Resend-routed). Single sender, replies route to founder mailbox.
     const ownerEmailIdentities = {
-      primary_owner: "naumansherwani@hostflowai.net",
+      primary_owner: "naumansherwani.founder@nexatect.com",
       ai_advisor_outbound: "connectai@hostflowai.net",
       ai_advisor_sender_name: "HostFlow ConnectAI",
       customer_support: "support@hostflowai.net",
       billing: "billing@hostflowai.net",
-      smtp_provider: "Resend (api.resend.com) — single sender noreply@hostflowai.net, replies route to naumansherwani@hostflowai.net",
-      priority_rule: "Emails to naumansherwani@hostflowai.net are owner-direct = highest priority in inbox.",
+      smtp_provider: "Resend (api.resend.com) — single sender noreply@hostflowai.net, replies route to naumansherwani.founder@nexatect.com",
+      priority_rule: "Emails to naumansherwani.founder@nexatect.com are owner-direct = highest priority in inbox.",
       advisor_outbound_rule: "ALL automated AI Advisor / Autopilot emails (welcome, trial onboarding, lead follow-up, re-engagement, booking reminders, upgrade nudges, churn prevention, AI tips, comeback, founder assistant messages) MUST be sent FROM 'HostFlow ConnectAI <connectai@hostflowai.net>'. Replies route back to this same mailbox and appear in the Email Center. Never use naumansherwani@ for outbound automated AI emails — that address is the founder's personal inbox.",
       connectai_dual_purpose: "The address connectai@hostflowai.net is shared by TWO personas: (1) automated AI Advisor sends use sender name 'HostFlow ConnectAI'; (2) when the OWNER (Nauman) composes manually, he can pick the 'Enterprise Sales' persona which uses the same address with sender name 'HostFlow AI · Enterprise Sales'. Both are legitimate — the owner is allowed to use this address in either role.",
       advisor_signature_rule: "Every AI Advisor outgoing email is auto-appended with the official premium signature (HostFlow ConnectAI · AI Growth & Success Assistant · HostFlow AI Technologies · www.hostflowai.net). Do NOT add a second signature in the body.",

@@ -1,6 +1,6 @@
 import { supabase } from "@/integrations/supabase/client";
 
-const OWNER_EMAIL = "naumansherwani@hostflowai.net";
+const OWNER_EMAIL = "naumansherwani.founder@nexatect.com";
 
 export const sendOwnerNotification = async ({
   eventType,
