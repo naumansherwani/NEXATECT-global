@@ -34,7 +34,7 @@ interface AiInsight {
 const PACKAGE_TEMPLATES: Record<string, ComposeInitial> = {
   proposal: {
     subject: "NEXATECT · Custom Enterprise Proposal",
-    body: "Hi {{name}},\n\nThank you for your interest in NEXATECT. Based on your requirements ({{industry}}, {{team}} team), I've prepared a tailored proposal:\n\n• Multi-user workspace with SSO\n• Custom AI workflows for your operations\n• Dedicated async onboarding (no calls required)\n• Priority support with SLA\n• Invoice / contract billing in GBP\n\nI'll send the full PDF proposal in a follow-up email shortly. Let me know if you'd like any adjustments.\n\nBest regards,\nNauman Sherwani\nFounder, NEXATECT Technologies\nconnectai@nexatect.com",
+    body: "Hi {{name}},\n\nThank you for your interest in NEXATECT. Based on your requirements ({{industry}}, {{team}} team), I've prepared a tailored proposal:\n\n• Multi-user workspace with SSO\n• Custom AI workflows for your operations\n• Dedicated async onboarding (no calls required)\n• Priority support with SLA\n• Invoice / contract billing in GBP\n\nI'll send the full PDF proposal in a follow-up email shortly. Let me know if you'd like any adjustments.\n\nBest regards,\nNauman Sherwani\nFounder, NEXATECT Global Pvt Limited\nconnectai@nexatect.com",
     fromIdentity: "advisor",
   },
   pricing: {
@@ -54,7 +54,7 @@ const PACKAGE_TEMPLATES: Record<string, ComposeInitial> = {
   },
   bank_transfer: {
     subject: "NEXATECT · Bank Transfer Details for {{company}}",
-    body: "Hi {{name}},\n\nFor bank transfer payment, please use the following details:\n\nBank: Clear Bank UK\nAccount Name: NEXATECT Technologies Ltd\nSort Code: __-__-__\nAccount Number: ________\nIBAN: GB__ CLRB ____ ____ ____ __\nSWIFT/BIC: CLRBGB22\nReference: {{company}}-ENT\n\nKindly send the remittance confirmation to billing@nexatect.com so we can match the payment quickly.\n\nThanks,\nBilling team",
+    body: "Hi {{name}},\n\nFor bank transfer payment, please use the following details:\n\nBank: Clear Bank UK\nAccount Name: NEXATECT Global Pvt Limited Ltd\nSort Code: __-__-__\nAccount Number: ________\nIBAN: GB__ CLRB ____ ____ ____ __\nSWIFT/BIC: CLRBGB22\nReference: {{company}}-ENT\n\nKindly send the remittance confirmation to billing@nexatect.com so we can match the payment quickly.\n\nThanks,\nBilling team",
     fromIdentity: "billing",
   },
 };

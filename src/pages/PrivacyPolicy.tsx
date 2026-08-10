@@ -11,7 +11,7 @@ const PrivacyPolicy = () => (
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">1. Introduction</h2>
-          <p>NEXATECT Technologies ("we," "us," or "our") operates the NEXATECT platform at nexatect.com. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform. Please read this policy carefully. By using NEXATECT, you consent to the practices described herein.</p>
+          <p>NEXATECT Global Pvt Limited ("we," "us," or "our") operates the NEXATECT platform at nexatect.com. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform. Please read this policy carefully. By using NEXATECT, you consent to the practices described herein.</p>
         </section>
 
         <section className="space-y-3">

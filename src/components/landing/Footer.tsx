@@ -76,7 +76,7 @@ const Footer = () => (
       </div>
 
       <div className="mt-14 pt-6 border-t border-white/[0.06] flex flex-col md:flex-row items-center justify-between gap-3">
-        <p className="text-xs text-white/30">© 2026 NEXATECT. All rights reserved.</p>
+        <p className="text-xs text-white/30">© 2026 NEXATECT Global Pvt Limited. All rights reserved.</p>
         <p className="text-xs text-white/30">Bun · Rust · tRPC · WebTransport · Caddy HTTP/3</p>
       </div>
     </div>

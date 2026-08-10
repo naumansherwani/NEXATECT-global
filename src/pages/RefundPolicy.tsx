@@ -10,7 +10,7 @@ const RefundPolicy = () => (
         <p className="text-sm text-muted-foreground">Last updated: April 23, 2026</p>
 
         <section className="space-y-3">
-          <p>NEXATECT Technologies offers digital software subscriptions and instant access services. Because our service activates immediately, the following fair-use refund terms apply:</p>
+          <p>NEXATECT Global Pvt Limited offers digital software subscriptions and instant access services. Because our service activates immediately, the following fair-use refund terms apply:</p>
         </section>
 
         <section className="space-y-3">

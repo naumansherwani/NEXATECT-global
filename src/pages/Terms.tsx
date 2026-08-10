@@ -11,7 +11,7 @@ const Terms = () => (
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">1. Acceptance of Terms</h2>
-          <p>By accessing or using NEXATECT, a product of NEXATECT Technologies ("the Platform," "we," "us"), you agree to be bound by these Terms & Conditions. If you do not agree, you may not use the Platform.</p>
+          <p>By accessing or using NEXATECT, a product of NEXATECT Global Pvt Limited ("the Platform," "we," "us"), you agree to be bound by these Terms & Conditions. If you do not agree, you may not use the Platform.</p>
         </section>
 
         <section className="space-y-3">
@@ -72,7 +72,7 @@ const Terms = () => (
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">9. Data Ownership & Intellectual Property</h2>
-          <p>You retain full ownership of all data you input into the Platform, including booking data, customer information, CRM records, and business documents. We do not claim any intellectual property rights over your content. NEXATECT, its logo, design, and underlying technology are the intellectual property of NEXATECT Technologies.</p>
+          <p>You retain full ownership of all data you input into the Platform, including booking data, customer information, CRM records, and business documents. We do not claim any intellectual property rights over your content. NEXATECT, its logo, design, and underlying technology are the intellectual property of NEXATECT Global Pvt Limited.</p>
         </section>
 
         <section className="space-y-3">
@@ -96,12 +96,12 @@ const Terms = () => (
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">12. Limitation of Liability</h2>
-          <p>To the maximum extent permitted by law, NEXATECT Technologies shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use or inability to use the Platform. Our total aggregate liability shall not exceed the total amount paid by you to us in the 12 months preceding the claim.</p>
+          <p>To the maximum extent permitted by law, NEXATECT Global Pvt Limited shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use or inability to use the Platform. Our total aggregate liability shall not exceed the total amount paid by you to us in the 12 months preceding the claim.</p>
         </section>
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">13. Indemnification</h2>
-          <p>You agree to indemnify and hold harmless NEXATECT Technologies, its officers, directors, employees, and agents from any claims, damages, losses, or expenses (including legal fees) arising from your use of the Platform or violation of these Terms.</p>
+          <p>You agree to indemnify and hold harmless NEXATECT Global Pvt Limited, its officers, directors, employees, and agents from any claims, damages, losses, or expenses (including legal fees) arising from your use of the Platform or violation of these Terms.</p>
         </section>
 
         <section className="space-y-3">
