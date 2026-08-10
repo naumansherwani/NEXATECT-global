@@ -8,8 +8,6 @@ import Revenue from "@/components/founder/sections/Revenue";
 import Customers from "@/components/founder/sections/Customers";
 import Leads from "@/components/founder/sections/Leads";
 import CRM from "@/components/founder/sections/CRM";
-import Emails from "@/components/founder/sections/Emails";
-import AIAgentsEmailCenter from "@/components/founder/sections/AIAgentsEmailCenter";
 import Security from "@/components/founder/sections/Security";
 import Tasks from "@/components/founder/sections/Tasks";
 import AIAdviser from "@/components/founder/sections/AIAdviser";
@@ -27,13 +25,12 @@ export default function FounderOS() {
   const SHERLOCK_USER_ID = "d089432d-5d6b-416e-bd29-abe913121d99";
   const [sherlockHidden, setSherlockHidden] = useState(false);
   const sherlockAllowed = user?.id === SHERLOCK_USER_ID && !sherlockHidden;
-  const validSections: FounderSection[] = ["overview","executive","revenue","revenue_intel","customers","leads","crm","emails","agents_email","tasks","ai","sherlock","analytics","security","settings","profile"];
+  const validSections: FounderSection[] = ["overview","executive","revenue","revenue_intel","customers","leads","crm","tasks","ai","sherlock","analytics","security","settings","profile"];
   const rawSection = searchParams.get("section");
   // Backward-compat: old "arc" links open the AI Co-Owner (Autopilot lives inside it)
   const sectionParam = (rawSection === "arc" ? "ai" : rawSection) as FounderSection | null;
   const initial: FounderSection =
     sectionParam && validSections.includes(sectionParam) ? sectionParam :
-    location.pathname.startsWith("/owner/email") ? "emails" :
     location.pathname.startsWith("/owner/executive") ? "executive" :
     "overview";
   const [active, setActive] = useState<FounderSection>(initial);
@@ -47,8 +44,6 @@ export default function FounderOS() {
       {active === "customers" && <Customers />}
       {active === "leads" && <Leads />}
       {active === "crm" && <CRM />}
-      {active === "emails" && <Emails />}
-      {active === "agents_email" && <AIAgentsEmailCenter />}
       {active === "security" && <Security />}
       {active === "tasks" && <Tasks />}
       {active === "ai" && <AIAdviser />}
