@@ -35,6 +35,7 @@ AI HOUSE BOUNDARY LOCKED: core agents (Jimmy/Sherlock/8 advisors/Trojan) = self-
 TROJAN BY JIMMY = revenue autopilot layer ON TOP of existing Enterprise CRM in Founder OS. No new CRM is built; Salesforce/HubSpot/Zoho connect + mirror + kill switch.
 
 ## Memories
+- [ANEXOMAIL owns email](mem://constraints/anexomail-owns-email) — Founder inbox/email center removed; ANEXOMAIL + AI Server 2 rules, OpenRouter OR1-3, tiers
 - [Pricing tiers](mem://features/pricing) — Plan features and limits for Basic/Standard/Premium
 - [Industries](mem://features/industries) — 8 supported industry types and their configs
 - [Owner credentials](mem://features/owner-credentials) — Owner login & Gmail notification config
