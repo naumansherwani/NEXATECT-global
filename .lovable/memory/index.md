@@ -8,6 +8,7 @@ Delivery rule: Lovable pushes to GitHub, owner runs `git pull` on Hetzner. Alway
 Site stays founder-only (Maintenance gate) until every feature verified working, then goes live on nexatect.com.
 7-day free trial (SQL handle_new_user locked), then Basic $15/Standard $39/Premium $99 monthly.
 8 industries ONLY: hospitality, airlines, car_rental, healthcare, education, logistics, events_entertainment, railways.
+Email: Founder Inbox + AI Email Center REMOVED from this app. ANEXOMAIL owns all email. Never rebuild here.
 Hospitality has 2 sub-types in profiles.business_subtype: hotel_property | travel_tours. NEVER mix hotel data with tour data.
 Pricing 5 industries get AI Smart Pricing: hospitality, airlines, car_rental, events_entertainment, railways. NO pricing for healthcare/education/logistics.
 AI Ticket Generator/Email only for: airlines, railways, events_entertainment.
