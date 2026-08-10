@@ -123,7 +123,7 @@ const Terms = () => (
           <h2 className="text-xl font-semibold text-white">17. Contact Us</h2>
           <p>For questions about these Terms & Conditions:</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Website: <a href="https://www.hostflowai.net" className="text-primary hover:underline">www.hostflowai.net</a></li>
+            <li>Website: <a href="https://www.nexatect.com" className="text-primary hover:underline">www.nexatect.com</a></li>
           </ul>
         </section>
       </div>

@@ -108,10 +108,10 @@ const BrainBridge = () => {
             ai_provider_policy: "replit_primary; lovable_ai_gateway still active in existing edge functions until Replit migrates them",
           },
           domain: {
-            primary: "hostflowai.net",
+            primary: "nexatect.com",
             owner_email: "naumansherwani.founder@nexatect.com",
             public_contact_email: "connectai@nexatect.com",
-            removed_public_emails: ["contact@hostflowai.net", "support@hostflowai.net", "any public support@ address"],
+            removed_public_emails: ["contact@nexatect.com", "support@nexatect.com", "any public support@ address"],
           },
           industries: {
             count: 8,
@@ -296,7 +296,7 @@ const BrainBridge = () => {
             ],
           },
           frontend_changes_lovable_shipped: [
-            "Domain: hostflowai.net is the only domain in the UI.",
+            "Domain: nexatect.com is the only domain in the UI.",
             "Removed all public support@ email addresses from the website (footer, contact pages, policy pages, CTAs, settings).",
             "Removed 'Book Demo' CTA from Enterprise card on PricingSection and from EnterpriseContactDialog flow on the landing/pricing page.",
             "Owner email: naumansherwani.founder@nexatect.com (password unchanged; bound to user_id).",

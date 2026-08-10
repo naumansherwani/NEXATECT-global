@@ -6,15 +6,15 @@ import { toast } from "sonner";
 export type MailFolder = "inbox" | "priority" | "unread" | "sent" | "drafts" | "scheduled" | "starred" | "archive" | "spam" | "trash";
 
 // Identities are display-name only (Resend single-sender). All identities map
-// to the same physical sender address (noreply@hostflowai.net) and route
+// to the same physical sender address (noreply@nexatect.com) and route
 // replies back to the founder mailbox via reply-to.
 export type MailIdentity = "advisor" | "enterprise" | "support" | "billing" | "general";
 
 export const MAIL_IDENTITIES: { id: MailIdentity; address: string; label: string }[] = [
-  { id: "general", address: "noreply@hostflowai.net", label: "Founder (Owner)" },
-  { id: "advisor", address: "noreply@hostflowai.net", label: "AI Advisor" },
-  { id: "support", address: "noreply@hostflowai.net", label: "Support" },
-  { id: "billing", address: "noreply@hostflowai.net", label: "Billing" },
+  { id: "general", address: "noreply@nexatect.com", label: "Founder (Owner)" },
+  { id: "advisor", address: "noreply@nexatect.com", label: "AI Advisor" },
+  { id: "support", address: "noreply@nexatect.com", label: "Support" },
+  { id: "billing", address: "noreply@nexatect.com", label: "Billing" },
 ];
 
 export interface MailListItem {
