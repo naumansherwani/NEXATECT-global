@@ -52,7 +52,7 @@ export default function Settings() {
           <Mail className="w-4 h-4 text-[var(--fos-accent)]" /> Email System (Resend)
         </h3>
         <p className="text-[var(--fos-muted)] text-xs mb-4">
-          api.resend.com · From: <span className="text-[var(--fos-text)] font-semibold">noreply@hostflowai.net</span> · Domain: hostflowai.net (DNS verified)
+          api.resend.com · From: <span className="text-[var(--fos-text)] font-semibold">noreply@nexatect.com</span> · Domain: nexatect.com (DNS verified)
         </p>
         <div className="flex flex-col sm:flex-row gap-2">
           <input

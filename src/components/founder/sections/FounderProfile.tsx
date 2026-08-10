@@ -8,7 +8,7 @@ const PREF_KEY = "founder-ai-prefs";
 
 export default function FounderProfile() {
   const { user } = useAuth();
-  const businessEmail = "naumansherwani@hostflowai.net";
+  const businessEmail = "naumansherwani.founder@nexatect.com";
   const lastLogin = user?.last_sign_in_at ? new Date(user.last_sign_in_at).toLocaleString("en-GB") : "—";
 
   const [signature, setSignature] = useState<string>("");
@@ -18,7 +18,7 @@ export default function FounderProfile() {
   const [notifyEmail, setNotifyEmail] = useState(true);
 
   useEffect(() => {
-    setSignature(localStorage.getItem(SIG_KEY) || "Best,\nNauman Sherwani\nFounder, NEXATECT Technologies\nnaumansherwani@hostflowai.net");
+    setSignature(localStorage.getItem(SIG_KEY) || "Best,\nNauman Sherwani\nFounder, NEXATECT Global Pvt Limited\nnaumansherwani.founder@nexatect.com");
     try {
       const prefs = JSON.parse(localStorage.getItem(PREF_KEY) || "{}");
       if (prefs.tone) setAiTone(prefs.tone);
@@ -43,14 +43,14 @@ export default function FounderProfile() {
           </div>
           <div className="flex-1">
             <div className="text-[var(--fos-text)] text-xl font-bold">Nauman Sherwani</div>
-            <div className="text-[var(--fos-muted)] text-sm">Founder · NEXATECT Technologies</div>
+            <div className="text-[var(--fos-muted)] text-sm">Founder · NEXATECT Global Pvt Limited</div>
             <div className="text-[var(--fos-success)] text-xs mt-1 flex items-center gap-1">● Admin · Lifetime Premium · Verified</div>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6 text-sm">
           <Field label="Role" value="Owner / Founder" />
-          <Field label="Company" value="NEXATECT Technologies" />
+          <Field label="Company" value="NEXATECT Global Pvt Limited" />
           <Field label="Business Email" value={businessEmail} icon={Mail} accent />
           <Field label="Account Email" value={user?.email || "—"} />
           <Field label="Last Login" value={lastLogin} />

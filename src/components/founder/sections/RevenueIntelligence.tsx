@@ -220,7 +220,7 @@ export default function RevenueIntelligence() {
     if (!report) return;
     try {
       await emailIntelligenceReport(report.id);
-      toast({ title: "Report emailed", description: "Sent to revenuereport@hostflowai.net" });
+      toast({ title: "Report emailed", description: "Sent to revenuereport@nexatect.com" });
     } catch (e) {
       toast({ title: "Email failed", description: (e as ApiError).message, variant: "destructive" });
     }
@@ -317,7 +317,7 @@ export default function RevenueIntelligence() {
           <FileText className="w-8 h-8 mx-auto text-[var(--fos-muted)] mb-3" />
           <h3 className="text-[var(--fos-text)] text-lg font-semibold mb-1">No report generated yet</h3>
           <p className="text-[var(--fos-muted)] text-sm mb-5">
-            Powered by revenuereport@hostflowai.net
+            Powered by revenuereport@nexatect.com
           </p>
           <button onClick={onGenerate} disabled={generating} className="founder-cmd-btn inline-flex items-center gap-2">
             <Sparkles className="w-3.5 h-3.5" />
@@ -605,7 +605,7 @@ export default function RevenueIntelligence() {
                   {safe(s10.verdictOneLiner)}
                 </p>
                 <p className="text-center text-[10px] text-[var(--fos-muted)] mt-4 uppercase tracking-[0.2em]">
-                  Powered by revenuereport@hostflowai.net
+                  Powered by revenuereport@nexatect.com
                 </p>
               </div>
             </SectionShell>

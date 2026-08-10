@@ -10,7 +10,7 @@ const corsHeaders = {
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY") || "";
 const FROM_EMAIL = "noreply@hostflowai.net";
 const FROM_NAME = "HostFlow AI";
-const OWNER_EMAIL = "naumansherwani@hostflowai.net";
+const OWNER_EMAIL = "naumansherwani.founder@nexatect.com";
 const NOTIFY_GMAIL = "naumankhansherwani@gmail.com";
 
 async function resendSend(payload: { to: string | string[]; subject: string; html: string; text?: string; replyTo?: string }) {

@@ -11,7 +11,7 @@ const PrivacyPolicy = () => (
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">1. Introduction</h2>
-          <p>NEXATECT Technologies ("we," "us," or "our") operates the NEXATECT platform at hostflowai.net. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform. Please read this policy carefully. By using NEXATECT, you consent to the practices described herein.</p>
+          <p>NEXATECT Global Pvt Limited ("we," "us," or "our") operates the NEXATECT platform at nexatect.com. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform. Please read this policy carefully. By using NEXATECT, you consent to the practices described herein.</p>
         </section>
 
         <section className="space-y-3">
@@ -91,7 +91,7 @@ const PrivacyPolicy = () => (
             <li><strong>Objection:</strong> Object to data processing for certain purposes</li>
             <li><strong>Withdraw Consent:</strong> Opt out of non-essential communications at any time</li>
           </ul>
-          <p>To exercise any of these rights, contact us at <a href="mailto:privacy@hostflowai.com" className="text-primary hover:underline">privacy@hostflowai.com</a>.</p>
+          <p>To exercise any of these rights, contact us at <a href="mailto:privacy@nexatect.com" className="text-primary hover:underline">privacy@nexatect.com</a>.</p>
         </section>
 
         <section className="space-y-3">
@@ -118,7 +118,7 @@ const PrivacyPolicy = () => (
           <h2 className="text-xl font-semibold text-white">14. Contact Us</h2>
           <p>For privacy-related inquiries or to exercise your data rights:</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Website: <a href="https://www.hostflowai.net" className="text-primary hover:underline">www.hostflowai.net</a></li>
+            <li>Website: <a href="https://www.nexatect.com" className="text-primary hover:underline">www.nexatect.com</a></li>
           </ul>
         </section>
       </div>

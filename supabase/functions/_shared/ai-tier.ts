@@ -29,7 +29,7 @@ export interface TierDecision {
 }
 
 const FOUNDER_EMAILS = new Set([
-  "naumansherwani@hostflowai.net",
+  "naumansherwani.founder@nexatect.com",
   "raanamasood1962@gmail.com",
 ]);
 

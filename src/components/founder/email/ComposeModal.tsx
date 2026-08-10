@@ -11,17 +11,17 @@ import { toast } from "sonner";
 const SEND_IDENTITIES = [
   { id: "advisor",    address: "connectai@nexatect.com",     label: "NEXATECT ConnectAI",       sub: "AI Advisor",          color: "#06B6D4" },
   { id: "enterprise", address: "connectai@nexatect.com",     label: "Enterprise Sales",         sub: "Owner",               color: "#F59E0B" },
-  { id: "support",    address: "support@hostflowai.net",       label: "Support",                  sub: "Customer Success",    color: "#10B981" },
-  { id: "billing",    address: "billing@hostflowai.net",       label: "Billing",                  sub: "Finance",             color: "#3B82F6" },
-  { id: "general",    address: "naumansherwani@hostflowai.net",label: "Nauman Sherwani",          sub: "Founder",             color: "#8B5CF6" },
+  { id: "support",    address: "support@nexatect.com",       label: "Support",                  sub: "Customer Success",    color: "#10B981" },
+  { id: "billing",    address: "billing@nexatect.com",       label: "Billing",                  sub: "Finance",             color: "#3B82F6" },
+  { id: "general",    address: "naumansherwani.founder@nexatect.com",label: "Nauman Sherwani",          sub: "Founder",             color: "#8B5CF6" },
 ] as const;
 type SendIdentityId = typeof SEND_IDENTITIES[number]["id"];
 
 type Template = { key: string; label: string; icon: any; subject: string; body: string };
 const TEMPLATES: Template[] = [
   { key: "welcome",    label: "Welcome",    icon: Star,
-    subject: "Welcome to NEXATECT Technologies",
-    body: "Hi {{name}},\n\nThank you for reaching out to NEXATECT Technologies. I'm Nauman, founder of NEXATECT.\n\nI'd love to learn more about your business and how we can help you scale.\n\nBest,\nNauman Sherwani\nFounder, NEXATECT Technologies" },
+    subject: "Welcome to NEXATECT Global Pvt Limited",
+    body: "Hi {{name}},\n\nThank you for reaching out to NEXATECT Global Pvt Limited. I'm Nauman, founder of NEXATECT.\n\nI'd love to learn more about your business and how we can help you scale.\n\nBest,\nNauman Sherwani\nFounder, NEXATECT Global Pvt Limited" },
   { key: "demo",       label: "Demo",       icon: Calendar,
     subject: "Your NEXATECT Demo · Booking Confirmation",
     body: "Hi {{name}},\n\nI've reserved time on the calendar for your NEXATECT demo.\n\nMeeting link: {{link}}\nDate & time: {{date}}\n\nLooking forward to it.\n\nNauman" },
@@ -36,7 +36,7 @@ const TEMPLATES: Template[] = [
     body: "Hi {{name}},\n\nA quick reminder that invoice {{invoice}} is due. Let me know if you need anything from our side.\n\nThanks,\nNauman" },
   { key: "enterprise", label: "Enterprise", icon: Building2,
     subject: "Welcome to NEXATECT Enterprise",
-    body: "Hi {{name}},\n\nWelcome aboard. Our enterprise onboarding team will reach out within 24 hours with your dedicated success manager.\n\nMy direct line is below — use it any time.\n\nNauman Sherwani\nFounder, NEXATECT Technologies" },
+    body: "Hi {{name}},\n\nWelcome aboard. Our enterprise onboarding team will reach out within 24 hours with your dedicated success manager.\n\nMy direct line is below — use it any time.\n\nNauman Sherwani\nFounder, NEXATECT Global Pvt Limited" },
 ];
 
 const AI_MODES = [

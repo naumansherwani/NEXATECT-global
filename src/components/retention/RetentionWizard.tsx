@@ -143,12 +143,12 @@ export default function RetentionWizard({ open, onOpenChange, onCompleted }: Pro
       case "missing_features":
         return [
           { id: "feature_request", label: "Request a feature", icon: Sparkles, action: () => setStep(2.5 as any) },
-          { id: "roadmap", label: "View product roadmap", icon: Globe2, action: () => window.open("https://hostflowai.net/about", "_blank") },
+          { id: "roadmap", label: "View product roadmap", icon: Globe2, action: () => window.open("https://nexatect.com/about", "_blank") },
         ];
       case "technical":
         return [
           { id: "priority_support", label: "Get priority support ticket", icon: Zap, action: () => { setOfferAccepted("priority_support"); submit("stayed", { offerShown: "priority_support" }); } },
-          { id: "live_help", label: "Open live help chat", icon: Heart, action: () => { setOfferAccepted("live_help"); window.open("https://hostflowai.net/contact", "_blank"); } },
+          { id: "live_help", label: "Open live help chat", icon: Heart, action: () => { setOfferAccepted("live_help"); window.open("https://nexatect.com/contact", "_blank"); } },
         ];
       case "competitor":
         return [

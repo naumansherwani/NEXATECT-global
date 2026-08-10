@@ -10,7 +10,7 @@ const RefundPolicy = () => (
         <p className="text-sm text-muted-foreground">Last updated: April 23, 2026</p>
 
         <section className="space-y-3">
-          <p>NEXATECT Technologies offers digital software subscriptions and instant access services. Because our service activates immediately, the following fair-use refund terms apply:</p>
+          <p>NEXATECT Global Pvt Limited offers digital software subscriptions and instant access services. Because our service activates immediately, the following fair-use refund terms apply:</p>
         </section>
 
         <section className="space-y-3">
@@ -55,7 +55,7 @@ const RefundPolicy = () => (
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-white">Contact</h2>
-          <p>Visit <a href="https://www.hostflowai.net" className="text-primary hover:underline">www.hostflowai.net</a> and use the in-app contact form to reach our team.</p>
+          <p>Visit <a href="https://www.nexatect.com" className="text-primary hover:underline">www.nexatect.com</a> and use the in-app contact form to reach our team.</p>
           <p className="text-xs text-muted-foreground">We aim to respond to refund requests within 1 business day.</p>
         </section>
       </div>

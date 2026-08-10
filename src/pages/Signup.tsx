@@ -22,7 +22,7 @@ export default function Signup() {
   const navigate = useNavigate();
   const { toast } = useToast();
 
-  // Industry is locked by the current subdomain (e.g. airlines.hostflowai.net).
+  // Industry is locked by the current subdomain (e.g. airlines.nexatect.com).
   const lockedIndustry = useMemo(() => getLockedIndustry(), []);
 
   useEffect(() => {

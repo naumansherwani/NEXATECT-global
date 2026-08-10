@@ -2,23 +2,23 @@ import type { IndustryType } from "@/lib/industryConfig";
 
 /**
  * Owner-locked May 2026: each industry runs on its own subdomain of
- * hostflowai.net. Root domain hosts the landing + industry chooser only.
+ * nexatect.com. Root domain hosts the landing + industry chooser only.
  *
- *   hostflowai.net            → landing (no industry locked)
- *   www.hostflowai.net        → landing
- *   hospitality.hostflowai.net
- *   airlines.hostflowai.net
- *   car-rental.hostflowai.net
- *   healthcare.hostflowai.net
- *   education.hostflowai.net
- *   logistics.hostflowai.net
- *   events.hostflowai.net          (events_entertainment)
- *   railways.hostflowai.net
+ *   nexatect.com            → landing (no industry locked)
+ *   www.nexatect.com        → landing
+ *   hospitality.nexatect.com
+ *   airlines.nexatect.com
+ *   car-rental.nexatect.com
+ *   healthcare.nexatect.com
+ *   education.nexatect.com
+ *   logistics.nexatect.com
+ *   events.nexatect.com          (events_entertainment)
+ *   railways.nexatect.com
  *
  * Founder/Owner console stays on the root domain.
  */
 
-export const ROOT_DOMAIN = "hostflowai.net";
+export const ROOT_DOMAIN = "nexatect.com";
 
 // subdomain → IndustryType
 export const SUBDOMAIN_TO_INDUSTRY: Record<string, IndustryType> = {
@@ -61,7 +61,7 @@ export function getIndustryFromHost(host?: string): IndustryType | null {
   if (isPreviewOrLocalHost(h)) return null;
   if (h === ROOT_DOMAIN || h === `www.${ROOT_DOMAIN}`) return null;
   if (!h.endsWith(`.${ROOT_DOMAIN}`)) return null;
-  const sub = h.slice(0, -1 - ROOT_DOMAIN.length); // strip ".hostflowai.net"
+  const sub = h.slice(0, -1 - ROOT_DOMAIN.length); // strip ".nexatect.com"
   return SUBDOMAIN_TO_INDUSTRY[sub] ?? null;
 }
 

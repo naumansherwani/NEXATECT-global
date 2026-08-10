@@ -9,7 +9,7 @@ import { REPLIT_API_BASE, SOVEREIGN_TOKEN } from "@/lib/replitBase";
 import { supabase } from "@/integrations/supabase/client";
 import "./jimmy-john.css";
 
-const CHAIRMAN_EMAIL = "naumansherwani@hostflowai.net";
+const CHAIRMAN_EMAIL = "naumansherwani.founder@nexatect.com";
 const STATE_KEY = "jj-state-v1";
 const POS_KEY = "jj-pos-v1";
 const SIZE_KEY = "jj-size-v1";
