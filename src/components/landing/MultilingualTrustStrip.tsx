@@ -10,7 +10,7 @@ import { Check, Sparkles } from "lucide-react";
 // Each country: ISO code (for SVG flag) + native greeting + tasteful accent color
 // 14 languages — matches site i18n (en, ur, ar, es, fr, de, zh, ja, ko, it, tr, pt, ro, de-CH)
 const LANGUAGES: { code: string; name: string; greeting: string; color: string; dir?: "rtl" }[] = [
-  { code: "gb-eng", name: "England", greeting: "England", color: "#E4D3B6" },
+  { code: "gb-eng", name: "England", greeting: "Hello", color: "#E4D3B6" },
   { code: "pk", name: "Pakistan", greeting: "خوش آمدید", color: "#86EFAC", dir: "rtl" },
   { code: "ch", name: "Switzerland", greeting: "Grüezi", color: "#FCA5A5" },
   { code: "sa", name: "Saudi Arabia", greeting: "أهلاً", color: "#86EFAC", dir: "rtl" },
@@ -89,6 +89,9 @@ const MultilingualTrustStrip = () => {
                     dir={l.dir}
                   >
                     {l.greeting}
+                  </span>
+                  <span className="text-[8px] md:text-[10px] font-medium leading-tight text-center whitespace-nowrap text-[#94A3B8]">
+                    {l.name}
                   </span>
                 </li>
               ))}
