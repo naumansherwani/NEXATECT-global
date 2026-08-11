@@ -90,6 +90,9 @@ const MultilingualTrustStrip = () => {
                   >
                     {l.greeting}
                   </span>
+                  <span className="text-[8px] md:text-[10px] font-medium leading-tight text-center whitespace-nowrap text-[#94A3B8]">
+                    {l.name}
+                  </span>
                 </li>
               ))}
             </ul>
