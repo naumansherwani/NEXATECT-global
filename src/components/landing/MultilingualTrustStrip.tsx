@@ -12,6 +12,7 @@ import { Check, Sparkles } from "lucide-react";
 const LANGUAGES: { code: string; name: string; greeting: string; color: string; dir?: "rtl" }[] = [
   { code: "gb-eng", name: "England", greeting: "England", color: "#E4D3B6" },
   { code: "pk", name: "Pakistan", greeting: "خوش آمدید", color: "#86EFAC", dir: "rtl" },
+  { code: "ch", name: "Switzerland", greeting: "Grüezi", color: "#FCA5A5" },
   { code: "sa", name: "Saudi Arabia", greeting: "أهلاً", color: "#86EFAC", dir: "rtl" },
   { code: "es", name: "Spain", greeting: "Hola", color: "#FCD34D" },
   { code: "fr", name: "France", greeting: "Bonjour", color: "#93C5FD" },
@@ -20,10 +21,9 @@ const LANGUAGES: { code: string; name: string; greeting: string; color: string; 
   { code: "jp", name: "Japan", greeting: "ようこそ", color: "#F8FAFC" },
   { code: "kr", name: "South Korea", greeting: "환영합니다", color: "#C7D2FE" },
   { code: "it", name: "Italy", greeting: "Benvenuto", color: "#86EFAC" },
-  { code: "tr", name: "Turkey", greeting: "Hoşgeldiniz", color: "#FCA5A5" },
   { code: "pt", name: "Portugal", greeting: "Bem-vindo", color: "#86EFAC" },
   { code: "ro", name: "Romania", greeting: "Bun venit", color: "#FCD34D" },
-  { code: "ch", name: "Switzerland", greeting: "Grüezi", color: "#FCA5A5" },
+  { code: "tr", name: "Turkey", greeting: "Hoşgeldiniz", color: "#FCA5A5" },
 ];
 
 const TRUST_BADGES = [
