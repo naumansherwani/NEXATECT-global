@@ -18,6 +18,7 @@ Domain: hostflowai.net (primary, May 2026). .live FULLY REMOVED everywhere.
 Owner: naumansherwani@hostflowai.net, notifications → naumankhansherwani@gmail.com
 No public support@ email on website — removed per owner. Internal founder mailbox Support identity kept.
 No "Book Demo" CTA on landing/pricing — removed per owner.
+Plans: ONLY Basic/Pro/Premium/Business monthly + one-off AI credit top-ups. Enterprise tier removed Aug 2026 — never re-add.
 Payments: Polar lives on Supabase #2 (ANEXVOT AI PAY) ONLY. Endpoint https://yinpfejochafukrwmkgg.supabase.co/functions/v1/polar-checkout. Lovable Cloud has ZERO polar functions (deleted 2026-06-24). Rust bridge syncs sub status to Supabase #1 & #3. Multi-product via metadata.product (nexatect|axonetis|...). Never recreate polar functions in Lovable.
 For Supabase #2/#3, Hetzner, Rust bridge, Caddy: output copy-paste blocks for the user's terminal. Lovable has no tools that reach those systems.
 FINAL ARCHITECTURE (May 2026): Frontend=Lovable, Database=Supabase (source of truth, SQL-first), AI Backend=Hetzner https://api.hostflowai.net/api, Models=Ollama Qwen3 (Jimmy qwen3:8b 3M ctx, Sherlock qwen3:8b 1M ctx, 8 industry advisors qwen3:4b 100K ctx each) + Gemini/Groq fallback. Replit FULLY RETIRED.
