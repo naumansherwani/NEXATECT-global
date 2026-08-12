@@ -6,10 +6,9 @@ import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, Crown, Building2, Loader2, Clock, Flame } from "lucide-react";
+import { Check, Crown, Loader2, Clock, Flame, Sparkles, Zap } from "lucide-react";
 import Navbar from "@/components/landing/Navbar";
 import Footer from "@/components/landing/Footer";
-import EnterpriseContactDialog from "@/components/pricing/EnterpriseContactDialog";
 import {
   fetchPaymentProducts,
   createPaymentsCheckout,
@@ -17,6 +16,7 @@ import {
   type PaymentsPlanKey,
 } from "@/lib/api";
 import { handleApiError } from "@/lib/handleApiError";
+import { TOP_UPS, PLAN_PRICING } from "@/lib/pricingConfig";
 
 type PlanMeta = {
   plan: PaymentsPlanKey;
@@ -91,6 +91,24 @@ const PLAN_META: Record<PaymentsPlanKey, PlanMeta> = {
       "Revenue optimization",
       "Route optimization (Logistics, Airlines, Railways)",
       "Priority email support",
+    ],
+  },
+  business: {
+    plan: "business",
+    highlight: "🏛️ AI at Scale",
+    features: [
+      "Everything in Premium",
+      "",
+      "⭐ 5,000 AI credits / month",
+      "⭐ Highest priority AI queue",
+      "⭐ Multi-user team seats",
+      "⭐ Custom AI workflows & integrations",
+      "",
+      "Dedicated success manager",
+      "SSO & enterprise-grade security",
+      "Invoice / PO-based billing",
+      "GDPR & data residency options",
+      "99.9% uptime SLA",
     ],
   },
 };
@@ -181,7 +199,7 @@ export default function Pricing() {
     return m;
   }, [products]);
 
-  const PLAN_ORDER: PaymentsPlanKey[] = ["basic", "pro", "premium"];
+  const PLAN_ORDER: PaymentsPlanKey[] = ["basic", "pro", "premium", "business"];
 
   return (
     <div className="min-h-screen bg-background">
@@ -236,6 +254,9 @@ export default function Pricing() {
                       </span>
                     )}
                     <span className="text-muted-foreground">/month</span>
+                    <div className="mt-2 inline-flex items-center gap-1.5 text-[11px] font-semibold px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/25">
+                      <Sparkles className="w-3 h-3" /> {PLAN_PRICING[planKey].credits.toLocaleString()} AI credits / month
+                    </div>
                     {launchActive && (
                       <div className="mt-3 flex flex-col items-center gap-1">
                         <div className="inline-flex items-center gap-1.5 text-[10px] font-bold px-2.5 py-1 rounded-full bg-pink-500/15 text-pink-300 border border-pink-500/30">
@@ -278,45 +299,31 @@ export default function Pricing() {
             );
           })}
 
-          {/* Enterprise card */}
-          <Card className="relative flex flex-col border-amber-500/40 ring-1 ring-amber-500/20 hover:ring-2 hover:ring-amber-500/50 hover:shadow-[0_0_25px_hsl(38,92%,55%,0.3)] transition-all duration-300">
-            <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-500 to-orange-500 text-white border-0 shadow-lg px-4 py-1">
-              <Building2 className="w-3 h-3 mr-1" /> Enterprise
-            </Badge>
-            <CardHeader className="text-center pb-2 pt-8">
-              <CardTitle className="text-xl">Enterprise</CardTitle>
-              <p className="text-xs text-muted-foreground mt-1">For larger teams and custom deployments.</p>
-              <div className="mt-4">
-                <span className="text-4xl font-bold text-foreground">Custom</span>
-                <div className="text-[11px] text-muted-foreground mt-1">Tailored pricing in GBP (£)</div>
-              </div>
-            </CardHeader>
-            <CardContent className="flex-1 flex flex-col">
-              <ul className="space-y-3 flex-1 mb-6">
-                {[
-                  "Multi-user teams",
-                  "Dedicated onboarding",
-                  "Custom integrations",
-                  "Priority support",
-                  "Security controls",
-                  "Tailored pricing",
-                ].map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-sm">
-                    <Check className="w-4 h-4 mt-0.5 shrink-0 text-amber-400" />
-                    <span className="text-foreground">{f}</span>
-                  </li>
-                ))}
-              </ul>
-              <EnterpriseContactDialog
-                trigger={
-                  <Button className="w-full font-semibold bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-[0_0_20px_hsl(38,92%,55%,0.3)] hover:shadow-[0_0_30px_hsl(38,92%,55%,0.5)]">
-                    <Building2 className="w-4 h-4 mr-2" /> Contact Sales
-                  </Button>
-                }
-              />
-            </CardContent>
-          </Card>
         </div>
+
+        {/* AI credit top-ups */}
+        <section className="max-w-6xl mx-auto space-y-6">
+          <div className="text-center space-y-2">
+            <h2 className="text-2xl font-bold text-foreground flex items-center justify-center gap-2">
+              <Zap className="w-5 h-5 text-primary" /> AI Credit Top-ups
+            </h2>
+            <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
+              Need more AI? Add credits anytime — one-off purchase, no subscription change.
+              The bigger the pack, the more you get.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            {TOP_UPS.map((t) => (
+              <Card key={t.id} className="flex flex-col items-center justify-center text-center py-6 border-border/60 hover:border-primary/50 hover:shadow-[0_0_20px_hsl(174,62%,50%,0.2)] transition-all">
+                <div className="text-2xl font-extrabold text-foreground">£{t.priceGBP.toLocaleString()}</div>
+                <div className="mt-1 text-sm font-semibold text-primary">{t.credits.toLocaleString()} credits</div>
+              </Card>
+            ))}
+          </div>
+          <p className="text-[11px] text-muted-foreground text-center">
+            Credits are consumed by AI actions. Balance is tracked live in your dashboard.
+          </p>
+        </section>
       </main>
 
       <Footer />

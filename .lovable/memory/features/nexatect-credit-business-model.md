@@ -6,15 +6,14 @@ type: feature
 # NEXATECT Business Model (owner-locked, relaunch next month)
 
 ## Plans (GBP/month → included AI credits)
-| Plan | Price | Credits |
+ONLY 4 PLANS. Enterprise tier is DEAD (removed Aug 2026, owner decision) — no "Contact Sales" card anywhere.
+
+| Plan | Price/mo | Credits |
 |---|---|---|
 | Basic | £25 | 100 |
 | Pro | £52 | 250 |
 | Premium | £110 | 600 |
-| (tier) | £150 | 1,000 |
-| (tier) | £300 | 1,800 |
 | Business | £1,000 | 5,000 |
-| AI Executive | £2,000 | 10,000 |
 
 No free AI for anyone. Credits are the only AI currency.
 
@@ -29,7 +28,7 @@ No free AI for anyone. Credits are the only AI currency.
 | £500 | 1,800 | £0.278 |
 | £1,000 | 4,000 | £0.250 |
 | £2,000 | 9,000 | £0.222 |
-| £5,000 | 21,000 | £0.238 |
+| £5,000 | 21,500 | £0.233 |  <- owner raised 21,000 -> 21,500 (jitna meetha utna naachna)
 
 **Per-credit rate is NEVER shown to users.** UI shows only £ price + credit count. Rates live in the internal ledger only.
 
