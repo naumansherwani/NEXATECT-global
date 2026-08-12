@@ -36,6 +36,9 @@ SITE IS FOUNDER-ONLY: public sees Maintenance "work in progress"; only owner ema
 AI HOUSE BOUNDARY LOCKED: core agents (Jimmy/Sherlock/8 advisors/Trojan) = self-hosted only, routing from agent_registry.routing_config. Lovable AI Gateway = frontend copy helpers only, never core brain. No provider keys in frontend.
 TROJAN BY JIMMY = revenue autopilot layer ON TOP of existing Enterprise CRM in Founder OS. No new CRM is built; Salesforce/HubSpot/Zoho connect + mirror + kill switch.
 
+AI credits: no free AI. Credits = only AI currency, Supabase ledger is truth. Per-credit rates NEVER shown to users.
+Relaunch launches ONE industry only: Travel/Tourism/Hospitality. Other 7 = coming soon + waitlist.
+
 ## Memories
 - [SB1 forensic map](mem://features/sb1-forensic-map) — 611 tables, layer ownership, do-not-touch rules + successful NEXATECT rebrand/hard-heal SQL
 - [Owner identity](mem://features/owner-identity) — founder email, legacy login email, NEXATECT Global Pvt Limited legal name
@@ -53,6 +56,8 @@ TROJAN BY JIMMY = revenue autopilot layer ON TOP of existing Enterprise CRM in F
 - [Advisor architecture](mem://features/advisor-architecture) — platform-knowledge.ts → 8 industry advisors → Sherlock auto-import chain
 - [Never-mix rules](mem://constraints/never-mix-rules) — Industry/sub-type/plan isolation rules
 - [Replit backend contract](mem://features/replit-backend-contract) — JWT, plan enforcement, SSE advisor contract
+- [Master AI model registry](mem://features/ai-model-registry-master) — agent→model map, providers, credit costs, rate limits (Hetzner ai-models.ts)
+- [NEXATECT credit business model](mem://features/nexatect-credit-business-model) — plan tiers + AI credits, top-up ladder, hidden per-credit rates, Travel-only launch
 - [No mock data](mem://constraints/no-mock-data) — Forbid hardcoded sample arrays in production UI
 - [MEMORY BOOK](mem://MEMORY-BOOK) — Consolidated ledger: products, 3 Supabase map, Polar status, infra, open decisions
 - [Infra stack rules](mem://constraints/infra-stack-rules) — No Docker/Python, Caddy+systemd, OpenRouter, copy-paste handoff
