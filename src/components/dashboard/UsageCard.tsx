@@ -12,7 +12,7 @@ const PLAN_LABEL: Record<string, string> = {
   basic: "Basic",
   pro: "Pro",
   premium: "Premium",
-  enterprise: "Enterprise",
+  business: "Business",
 };
 
 /** Pull a numeric AI usage count out of whatever the backend exposes. */
