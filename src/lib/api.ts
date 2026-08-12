@@ -281,7 +281,7 @@ async function streamSSE(path: string, body: unknown, handlers: StreamHandlers) 
  * Plan limits — public + per-user.
  * ────────────────────────────────────────────────────────── */
 
-export type PlanKey = "trial" | "basic" | "pro" | "premium" | "enterprise";
+export type PlanKey = "trial" | "basic" | "pro" | "premium" | "business";
 
 export interface PlanLimitBucket {
   ai?: { daily_messages: number | null; hourly_fair_use: number | null };
@@ -312,7 +312,7 @@ export const fetchMyPlan = () => apiGet<PlanMeResponse>("/plan/me");
  * hardcodes prices. All catalog + checkout + cancel goes through here.
  * ────────────────────────────────────────────────────────── */
 
-export type PaymentsPlanKey = "basic" | "pro" | "premium";
+export type PaymentsPlanKey = "basic" | "pro" | "premium" | "business";
 
 export interface PaymentProduct {
   plan: PaymentsPlanKey;
@@ -369,7 +369,7 @@ async function fetchPaymentProductsLocal(): Promise<PaymentsProductsResponse> {
   const end = new Date(LAUNCH_DISCOUNT.campaignEnd).getTime();
   const launchActive = now >= start && now <= end;
 
-  const products: PaymentProduct[] = (["basic", "pro", "premium"] as PaymentsPlanKey[]).map((plan) => {
+  const products: PaymentProduct[] = (["basic", "pro", "premium", "business"] as PaymentsPlanKey[]).map((plan) => {
     const p = PLAN_PRICING[plan];
     const regular = Math.round(p.basePriceGBP * 100);
     const active = Math.round(discountedPrice(plan) * 100);
