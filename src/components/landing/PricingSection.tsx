@@ -7,7 +7,6 @@ import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { useSubscription } from "@/hooks/useSubscription";
-import EnterpriseContactDialog from "@/components/pricing/EnterpriseContactDialog";
 import {
   fetchPaymentProducts,
   createPaymentsCheckout,
@@ -101,6 +100,25 @@ const PLAN_META: Record<PaymentsPlanKey, PlanMeta> = {
     ],
     style: "border-yellow-500/50 hover:ring-2 hover:ring-yellow-500/40 hover:shadow-[0_0_25px_hsl(45,100%,50%,0.35)]",
   },
+  business: {
+    plan: "business",
+    desc: "For high-volume teams running AI at scale",
+    features: [
+      "Everything in Premium",
+      "",
+      "⭐ 5,000 AI credits / month",
+      "⭐ Highest priority AI queue",
+      "⭐ Multi-user team seats",
+      "⭐ Custom AI workflows & integrations",
+      "",
+      "Dedicated success manager",
+      "SSO & enterprise-grade security",
+      "Invoice / PO-based billing",
+      "GDPR & data residency options",
+      "99.9% uptime SLA",
+    ],
+    style: "border-amber-500/50 ring-1 ring-amber-500/25 hover:ring-2 hover:ring-amber-500/50 hover:shadow-[0_0_30px_hsl(38,92%,55%,0.3)]",
+  },
 };
 
 const CURRENCY_SYMBOL: Record<string, string> = { gbp: "£", usd: "$", eur: "€" };
@@ -109,7 +127,7 @@ const formatMoney = (pence: number, currency: string) => {
   return `${symbol}${(pence / 100).toFixed(2)}`;
 };
 
-const PLAN_ORDER: PaymentsPlanKey[] = ["basic", "pro", "premium"];
+const PLAN_ORDER: PaymentsPlanKey[] = ["basic", "pro", "premium", "business"];
 
 const PricingSection = () => {
   const navigate = useNavigate();
@@ -271,55 +289,6 @@ const PricingSection = () => {
             );
           })}
 
-          {/* Enterprise card */}
-          <Card className="relative flex flex-col bg-gradient-to-b from-card/70 to-card/40 backdrop-blur-sm border-amber-500/50 ring-2 ring-amber-500/30 shadow-[0_0_40px_hsl(38,92%,55%,0.2)] hover:ring-amber-500/60 hover:shadow-[0_0_50px_hsl(38,92%,55%,0.4)] hover:border-amber-500/70 transition-all duration-300 hover:-translate-y-1">
-            <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 text-white border-0 shadow-[0_0_20px_hsl(38,92%,55%,0.6)] px-4 py-1">
-              <Star className="w-3 h-3 mr-1 fill-white" /> Enterprise · Global
-            </Badge>
-            <CardHeader className="text-center pb-2 pt-8">
-              <CardTitle className="text-lg font-bold">Enterprise</CardTitle>
-              <p className="text-xs text-muted-foreground">Built for multinational teams &amp; growing global brands.</p>
-              <div className="mt-4">
-                <span className="text-4xl font-extrabold text-foreground">Custom</span>
-                <div className="text-[11px] text-muted-foreground mt-1">Tailored pricing · GBP (£) default · USD/EUR/AED on request</div>
-              </div>
-            </CardHeader>
-            <CardContent className="flex-1 flex flex-col pt-4">
-              <ul className="space-y-2.5 flex-1 mb-4">
-                {[
-                  "Multi-region, multi-user teams",
-                  "Dedicated success manager",
-                  "Custom AI workflows & integrations",
-                  "SSO, SAML & enterprise-grade security",
-                  "99.9% uptime SLA · priority support",
-                  "Invoice, contract & PO-based billing",
-                  "GDPR & data residency options",
-                  "Async onboarding — no calls required",
-                ].map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-sm">
-                    <Check className="w-4 h-4 mt-0.5 shrink-0 text-amber-400" />
-                    <span className="text-foreground/80">{f}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="text-xs text-amber-400/90 italic mb-4 text-center">
-                Trusted by serious teams. We handle everything online.
-              </p>
-              <EnterpriseContactDialog
-                trigger={
-                  <Button
-                    variant="default"
-                    className="w-full font-semibold bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-[0_0_20px_hsl(38,92%,55%,0.4)] hover:shadow-[0_0_30px_hsl(38,92%,55%,0.6)]"
-                  >
-                    <Building2 className="w-4 h-4 mr-2" /> Get Custom Proposal
-                  </Button>
-                }
-              />
-              <p className="text-[11px] text-muted-foreground text-center mt-2.5">
-                Contact: <a href="mailto:connectai@nexatect.com" className="text-amber-400 hover:underline">connectai@nexatect.com</a> · Reply within 1 business day
-              </p>
-            </CardContent>
-          </Card>
         </div>
 
         {/* Trust micro-badges */}
