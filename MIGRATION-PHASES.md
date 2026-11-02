@@ -46,7 +46,19 @@ nexatect/                     <- ONE repo (new: NEXATECT-OS, or reuse NEXATECT-g
 
 Build order per deploy: `web` -> `bun run build` -> static to Caddy; `engine` -> `cargo build --release` -> systemd unit behind Caddy.
 
-## 4. Phases
+## 4. Strict Execution Order (owner follows this exactly)
+
+1. Phase 0 — monorepo consolidate
+2. Phase 1 — frontend revival (site must be alive BEFORE any Rust)
+3. Phase 2 — contract freeze (pin TS brain behavior in tests)
+4. Phase 3 — Rust skeleton (axum + tokio + Caddy block + systemd)
+5. Phase 4 — hot path in Rust: auth → credits ledger → booking guard → rate limits → **payments**
+6. Phase 5 — WebTransport + SSE fallback
+7. Phase 6 — AI advisors in Rust + typed tRPC client
+8. Phase 7 — cutover, decommission Node brain
+Relaunch gate = Phase 4 done (auth + credits + payments live in Rust). WebTransport/advisors may trail after relaunch.
+
+## 5. Phases
 
 ### Phase 0 — Consolidate (1 session)
 1. Create monorepo with layout above. Copy trees with `rsync -a --exclude node_modules --exclude .git --exclude bun.lockb`.
@@ -82,6 +94,7 @@ Port from TS brain, in this order (highest value first):
 2. **Credits ledger**: debit/credit/balance endpoints, atomic Supabase RPC calls, idempotency keys. Every AI call routes through this.
 3. **Double-booking guard / conflict detection**: this is latency-critical, perfect for async Rust.
 4. Rate limits + tier enforcement (Basic/Pro/Premium/Business, unlimited for founder).
+5. **Payments = ONE Polar brain.** Port `routes/payments.ts` (522 lines, existing Polar product→plan map) to Rust. NEXATECT plans, AI credit top-ups, and ANEXOMAIL all ride this single brain and single ledger: ANEXOMAIL gets its own product IDs inside the same `PRODUCT_PLAN_MAP` under an `anexomail:*` namespace, plus an ANEXOMAIL credit wallet in the same Supabase ledger. NO second payment brain per product — Polar is integrated once and every product hangs off it. Polar webhooks (svix) must be signature-verified in Rust; ledger writes idempotent.
 Each port: run TS + Rust side by side, mirror-traffic or canary, compare outputs in tests before switching web/ over.
 Acceptance: contract tests from Phase 2 pass against the Rust implementation for the ported routes.
 
